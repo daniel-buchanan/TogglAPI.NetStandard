@@ -22,7 +22,7 @@ jobs:
     - name: Pack
       env:
         PACKAGE_VERSION: ${{ format('0.2.{0}+{1}', github.run_number, github.sha) }}
-      run: dotnet pack TogglAPI.NetStandard/TogglAPI.NetStandard.csproj -c Release -p:Version=$PACKAGE_VERSION -o /output
+      run: dotnet pack -c Release -p:Version=$PACKAGE_VERSION -o ./output
     - name: Upload Package
       uses: actions/upload-artifact@v2.2.4
       with:

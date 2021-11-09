@@ -2,6 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
+    <PackageId>TogglAPI.NetStandard</PackageId>
+    <Authors>Pirozhenko Ilya</Authors>
+    <Owners>Daniel Buchanan</Owners>
+    <ProjectUrl>https://github.com/daniel-buchanan/TogglAPI.NetStandard</ProjectUrl>
+    <IconUrl></IconUrl>
+    <Tags>toggl api sdk togglapi wrapper</Tags>
   </PropertyGroup>
 
   <ItemGroup>
@@ -18,5 +24,4 @@
   <ItemGroup>
     <Folder Include="Properties\" />
   </ItemGroup>
-
 </Project>
