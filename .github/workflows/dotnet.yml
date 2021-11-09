@@ -1,4 +1,4 @@
-name: .NET
+name: Build and Publish
 
 on:
   push:
@@ -21,5 +21,11 @@ jobs:
       run: dotnet restore
     - name: Build
       run: dotnet build --no-restore
-    - name: Test
-      run: dotnet test --no-build --verbosity normal
+    - name: Pack
+      run: dotnet pack TogglAPI.NetStandard/TogglAPI.NetStandard.csproj -c Release -p:Version=${{ format('0.2.{0}+{1}', env.GITHUB_RUN_NUMBER, env.GITHUB_SHA) }} -o /output
+    - name: Upload Package
+      uses: actions/upload-artifact@v2.2.4
+      with:
+        name: package
+        path: /output
+        retention-days: 0
