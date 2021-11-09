@@ -8,11 +8,9 @@ on:
 
 jobs:
   build:
-    env:
-      VERSION: ${{ format('0.2.{0}+{1}', env.GITHUB_RUN_NUMBER, env.GITHUB_SHA) }}
-      
     runs-on: ubuntu-latest
-
+    env:
+      PACKAGE_VERSION: ${{ format('0.2.{0}+{1}', env.GITHUB_RUN_NUMBER, env.GITHUB_SHA) }}
     steps:
     - uses: actions/checkout@v2
     - name: Setup .NET
