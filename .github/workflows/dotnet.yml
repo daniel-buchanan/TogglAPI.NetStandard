@@ -37,11 +37,10 @@ jobs:
       with:
         dotnet-version: 5.0.x
     - name: Download Artifact
-      uses: actions/download-artifact#v2.2.4
+      uses: actions/download-artifact@v2.0.10
       with:
         name: package
-        version: ${{ github.sha }}
-        output-path: ./output
+        path: ./output
     - name: Upload to NuGet
       env:
         NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
