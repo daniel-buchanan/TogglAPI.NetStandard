@@ -9,8 +9,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      PACKAGE_VERSION: ${{ format('0.2.{0}+{1}', $GITHUB_RUN_NUMBER, $GITHUB_SHA) }}
     steps:
     - uses: actions/checkout@v2
     - name: Setup .NET
@@ -22,7 +20,9 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
     - name: Pack
-      run: dotnet pack TogglAPI.NetStandard/TogglAPI.NetStandard.csproj -c Release -p:Version=$VERSION -o /output
+      env:
+        PACKAGE_VERSION: ${{ format('0.2.{0}+{1}', env.GITHUB_RUN_NUMBER, github.sha) }}
+      run: dotnet pack TogglAPI.NetStandard/TogglAPI.NetStandard.csproj -c Release -p:Version=$PACKAGE_VERSION -o /output
     - name: Upload Package
       uses: actions/upload-artifact@v2.2.4
       with:
