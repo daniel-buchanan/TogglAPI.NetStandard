@@ -8,7 +8,9 @@ on:
 
 jobs:
   build:
-
+    env:
+      VERSION: ${{ format('0.2.{0}+{1}', env.GITHUB_RUN_NUMBER, env.GITHUB_SHA) }}
+      
     runs-on: ubuntu-latest
 
     steps:
@@ -22,7 +24,7 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
     - name: Pack
-      run: dotnet pack TogglAPI.NetStandard/TogglAPI.NetStandard.csproj -c Release -p:Version=${{ format('0.2.{0}+{1}', env.GITHUB_RUN_NUMBER, env.GITHUB_SHA) }} -o /output
+      run: dotnet pack TogglAPI.NetStandard/TogglAPI.NetStandard.csproj -c Release -p:Version=$VERSION -o /output
     - name: Upload Package
       uses: actions/upload-artifact@v2.2.4
       with:
