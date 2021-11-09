@@ -30,6 +30,7 @@ jobs:
         path: ./output
         retention-days: 0
   publish:
+    needs: [build]
     runs-on: ubuntu-latest
     steps:
     - name: Setup .NET
