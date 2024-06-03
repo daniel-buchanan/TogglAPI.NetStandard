@@ -146,7 +146,7 @@ namespace Toggl.Services
             return response;
         }
 
-        private async System.Threading.Tasks.Task<TResponse> Get<TResponse>(ApiRequest apiRequest) 
+        private System.Threading.Tasks.Task<TResponse> Get<TResponse>(ApiRequest apiRequest) 
         {
             string value = "";
 
@@ -173,16 +173,17 @@ namespace Toggl.Services
 
             var authResponse = (HttpWebResponse)authRequest.GetResponse();
             string content = "";
+            
             using (var reader = new StreamReader(authResponse.GetResponseStream(), Encoding.UTF8))
             {
                 content = reader.ReadToEnd();
             }
 
             var rsp = JsonConvert.DeserializeObject<TResponse>(content);              
-            return rsp;
+            return System.Threading.Tasks.Task.FromResult(rsp);
         }
 
-        private async System.Threading.Tasks.Task<ApiResponse> Get(ApiRequest apiRequest)
+        private System.Threading.Tasks.Task<ApiResponse> Get(ApiRequest apiRequest)
         {
             string value = "";
 
@@ -235,7 +236,7 @@ namespace Toggl.Services
                 rsp.StatusCode = authResponse.StatusCode;
                 rsp.Method = authResponse.Method;
 
-                return rsp;
+                return System.Threading.Tasks.Task.FromResult(rsp);
             }
 
             try
@@ -246,7 +247,7 @@ namespace Toggl.Services
 	            
                 rsp.StatusCode = authResponse.StatusCode;
                 rsp.Method = authResponse.Method;
-                return rsp;
+                return System.Threading.Tasks.Task.FromResult(rsp);
             }
             catch (Exception)
             {
@@ -258,7 +259,7 @@ namespace Toggl.Services
                         StatusCode = authResponse.StatusCode,
                         Method = authResponse.Method
                     };
-                return rsp;
+                return System.Threading.Tasks.Task.FromResult(rsp);
             }
 
         }

@@ -30,9 +30,11 @@ namespace Toggl
 		
 		public T Execute<T>(RestRequest request) where T : new()
 		{
-			var client = new RestClient();
-			client.BaseUrl = new Uri("https://www.toggl.com/api/v8");
-			client.Authenticator = new HttpBasicAuthenticator(username, password);
+			var client = new RestClient(o =>
+			{
+				o.BaseUrl = new Uri("https://www.toggl.com/api/v9");
+				o.Authenticator = new HttpBasicAuthenticator(username, password);
+			});
 			
 			var response = client.Execute<T>(request);
 
@@ -82,7 +84,7 @@ namespace Toggl
 		{
 			var request = new RestRequest();
 			request.Resource = "clients";
-			request.Method = Method.POST;
+			request.Method = Method.Post;
 			request.RootElement = "data";
 			request.RequestFormat = DataFormat.Json;
 			request.AddBody(new { client = clientToAdd });
@@ -94,7 +96,7 @@ namespace Toggl
 		{
 			var request = new RestRequest();
 			request.Resource = "clients/{client_id}";
-			request.Method = Method.GET;
+			request.Method = Method.Get;
 			request.RootElement = "data";
 			request.RequestFormat = DataFormat.Json;
 			request.AddParameter("client_id", id, ParameterType.UrlSegment);
@@ -119,7 +121,7 @@ namespace Toggl
 		{
 			var request = new RestRequest();
 			request.Resource = "clients/{client_id}";
-			request.Method = Method.PUT;
+			request.Method = Method.Put;
 			request.RootElement = "data";
 			request.RequestFormat = DataFormat.Json;
 			request.AddBody(new { client = updatedClient });
@@ -132,7 +134,7 @@ namespace Toggl
 		{
 			var request = new RestRequest();
 			request.Resource = "clients/{client_id}";
-			request.Method = Method.DELETE;
+			request.Method = Method.Delete;
 			request.RootElement = "data";
 			request.RequestFormat = DataFormat.Json;
 			request.AddParameter("client_id", id, ParameterType.UrlSegment);

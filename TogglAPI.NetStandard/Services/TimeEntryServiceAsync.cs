@@ -27,7 +27,7 @@ namespace Toggl.Services
         /// https://github.com/toggl/toggl_api_docs/blob/master/chapters/time_entries.md#get-time-entries-started-in-a-specific-time-range
         /// </summary>
         /// <returns></returns>
-        public async System.Threading.Tasks.Task<List<TimeEntry>> ListRecent()
+        public System.Threading.Tasks.Task<List<TimeEntry>> ListRecent()
         {
             throw new NotImplementedException();
         }
@@ -163,13 +163,6 @@ namespace Toggl.Services
             return rsp.StatusCode == HttpStatusCode.OK;
         }
 
-		public async System.Threading.Tasks.Task<bool> DeleteIfAny(long[] ids)
-		{
-			if (!ids.Any() || ids == null)
-				return true;
-			return await Delete(ids);
-		}
-
 		public async System.Threading.Tasks.Task<bool> Delete(long[] ids)
 		{
 			if (!ids.Any() || ids == null)
@@ -182,6 +175,13 @@ namespace Toggl.Services
 			}
 
 			return !result.ContainsValue(false);
-		}       
+		}      
+        
+        public async System.Threading.Tasks.Task<bool> DeleteIfAny(long[] ids)
+        {
+            if (ids == null || !ids.Any())
+                return true;
+            return await Delete(ids);
+        }
     }
 }
