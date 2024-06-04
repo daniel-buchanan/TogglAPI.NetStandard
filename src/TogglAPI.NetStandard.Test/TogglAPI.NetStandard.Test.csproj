@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <AssemblyName>TogglAPI.NetStandard.Test</AssemblyName>
+    <RootNamespace>TogglAPI.NetStandard.Test</RootNamespace>
+    <Company>TogglAPI.NetStandard</Company>
+    <Product>TogglAPI.NetStandard</Product>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="JsonSubTypes" Version="2.0.1" />
+    <PackageReference Include="NUnit" Version="4.1.0" />
+    <PackageReference Include="RestSharp" Version="106.15.0" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TogglAPI.NetStandard\TogglAPI.NetStandard.csproj" />
+  </ItemGroup>
+</Project>
