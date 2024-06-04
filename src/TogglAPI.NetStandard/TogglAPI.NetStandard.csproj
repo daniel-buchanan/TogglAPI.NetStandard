@@ -12,8 +12,8 @@
     <RootNamespace>TogglAPI.NetStandard</RootNamespace>
     <Company>D. K. Buchanan</Company>
     <Product>TogglApi.NetStandard</Product>
-    <AssemblyVersion>$version$</AssemblyVersion>
-    <FileVersion>$verson$</FileVersion>
+    <AssemblyVersion>1.0.0</AssemblyVersion>
+    <FileVersion>1.0.0</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
