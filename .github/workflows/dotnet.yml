@@ -21,7 +21,7 @@ jobs:
       run: dotnet build --no-restore
     - name: Pack
       env:
-        PACKAGE_VERSION: ${{ format('0.3.{0}+{1}', github.run_number, github.sha) }}
+        PACKAGE_VERSION: ${{ format('0.4.{0}+{1}', github.run_number, github.sha) }}
       run: dotnet pack -c Release -p:Version=$PACKAGE_VERSION -o ./output
     - name: Upload Package
       uses: actions/upload-artifact@v2.2.4
@@ -45,5 +45,5 @@ jobs:
     - name: Upload to NuGet
       env:
         NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
-        PACKAGE_NAME: ${{ format('TogglAPI.NetStandard.0.3.{0}.nupkg', github.run_number) }}
+        PACKAGE_NAME: ${{ format('TogglAPI.NetStandard.0.4.{0}.nupkg', github.run_number) }}
       run: dotnet nuget push ./output/$PACKAGE_NAME -k $NUGET_API_KEY -s https://api.nuget.org/v3/index.json
