@@ -41,7 +41,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="name">name.</param>
         /// <param name="sharedSsoProfileId">sharedSsoProfileId.</param>
         /// <param name="ssoUrl">ssoUrl.</param>
-        public ModelsSSOConfig(string certificate = default(string), string domain = default(string), bool? enabled = default(bool?), string entityId = default(string), string metadataUrl = default(string), string name = default(string), int? sharedSsoProfileId = default(int?), string ssoUrl = default(string))
+        public ModelsSSOConfig(string certificate = default(string), string domain = default(string), bool? enabled = default(bool?), string entityId = default(string), string metadataUrl = default(string), string name = default(string), long? sharedSsoProfileId = default(long?), string ssoUrl = default(string))
         {
             this.Certificate = certificate;
             this.Domain = domain;
@@ -93,7 +93,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets SharedSsoProfileId
         /// </summary>
         [DataMember(Name="shared_sso_profile_id", EmitDefaultValue=false)]
-        public int? SharedSsoProfileId { get; set; }
+        public long? SharedSsoProfileId { get; set; }
 
         /// <summary>
         /// Gets or Sets SsoUrl

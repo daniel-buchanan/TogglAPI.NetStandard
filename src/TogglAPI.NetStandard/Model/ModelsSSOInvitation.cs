@@ -41,7 +41,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="senderName">senderName.</param>
         /// <param name="sso">sso.</param>
         /// <param name="token">token.</param>
-        public ModelsSSOInvitation(string accountsSignupUrl = default(string), string code = default(string), string email = default(string), int? organizationId = default(int?), string senderEmail = default(string), string senderName = default(string), bool? sso = default(bool?), string token = default(string))
+        public ModelsSSOInvitation(string accountsSignupUrl = default(string), string code = default(string), string email = default(string), long? organizationId = default(long?), string senderEmail = default(string), string senderName = default(string), bool? sso = default(bool?), string token = default(string))
         {
             this.AccountsSignupUrl = accountsSignupUrl;
             this.Code = code;
@@ -76,7 +76,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets OrganizationId
         /// </summary>
         [DataMember(Name="organization_id", EmitDefaultValue=false)]
-        public int? OrganizationId { get; set; }
+        public long? OrganizationId { get; set; }
 
         /// <summary>
         /// Gets or Sets SenderEmail

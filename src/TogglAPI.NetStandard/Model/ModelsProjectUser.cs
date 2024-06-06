@@ -44,7 +44,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="rateLastUpdated">Date for rate last updated.</param>
         /// <param name="userId">User ID.</param>
         /// <param name="workspaceId">Workspace ID.</param>
-        public ModelsProjectUser(string at = default(string), int? gid = default(int?), int? groupId = default(int?), int? id = default(int?), int? labourCost = default(int?), bool? manager = default(bool?), int? projectId = default(int?), decimal? rate = default(decimal?), string rateLastUpdated = default(string), int? userId = default(int?), int? workspaceId = default(int?))
+        public ModelsProjectUser(string at = default(string), long? gid = default(long?), long? groupId = default(long?), long? id = default(long?), long? labourCost = default(long?), bool? manager = default(bool?), long? projectId = default(long?), decimal? rate = default(decimal?), string rateLastUpdated = default(string), long? userId = default(long?), long? workspaceId = default(long?))
         {
             this.At = at;
             this.Gid = gid;
@@ -71,28 +71,28 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Group ID, legacy field</value>
         [DataMember(Name="gid", EmitDefaultValue=false)]
-        public int? Gid { get; set; }
+        public long? Gid { get; set; }
 
         /// <summary>
         /// Group ID
         /// </summary>
         /// <value>Group ID</value>
         [DataMember(Name="group_id", EmitDefaultValue=false)]
-        public int? GroupId { get; set; }
+        public long? GroupId { get; set; }
 
         /// <summary>
         /// Project User ID
         /// </summary>
         /// <value>Project User ID</value>
         [DataMember(Name="id", EmitDefaultValue=false)]
-        public int? Id { get; set; }
+        public long? Id { get; set; }
 
         /// <summary>
         /// Labour cost for this project user
         /// </summary>
         /// <value>Labour cost for this project user</value>
         [DataMember(Name="labour_cost", EmitDefaultValue=false)]
-        public int? LabourCost { get; set; }
+        public long? LabourCost { get; set; }
 
         /// <summary>
         /// Whether the user is manager of the project
@@ -106,7 +106,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Project ID</value>
         [DataMember(Name="project_id", EmitDefaultValue=false)]
-        public int? ProjectId { get; set; }
+        public long? ProjectId { get; set; }
 
         /// <summary>
         /// Custom rate for project user
@@ -127,14 +127,14 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>User ID</value>
         [DataMember(Name="user_id", EmitDefaultValue=false)]
-        public int? UserId { get; set; }
+        public long? UserId { get; set; }
 
         /// <summary>
         /// Workspace ID
         /// </summary>
         /// <value>Workspace ID</value>
         [DataMember(Name="workspace_id", EmitDefaultValue=false)]
-        public int? WorkspaceId { get; set; }
+        public long? WorkspaceId { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

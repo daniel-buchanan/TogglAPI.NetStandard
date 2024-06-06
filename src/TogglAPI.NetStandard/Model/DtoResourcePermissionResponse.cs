@@ -39,7 +39,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="permissionType">permissionType.</param>
         /// <param name="userId">userId.</param>
         /// <param name="workspaceId">workspaceId.</param>
-        public DtoResourcePermissionResponse(List<string> allowedActions = default(List<string>), int? groupId = default(int?), int? organizationId = default(int?), string permissionType = default(string), int? userId = default(int?), int? workspaceId = default(int?))
+        public DtoResourcePermissionResponse(List<string> allowedActions = default(List<string>), long? groupId = default(long?), long? organizationId = default(long?), string permissionType = default(string), long? userId = default(long?), long? workspaceId = default(long?))
         {
             this.AllowedActions = allowedActions;
             this.GroupId = groupId;
@@ -59,13 +59,13 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets GroupId
         /// </summary>
         [DataMember(Name="group_id", EmitDefaultValue=false)]
-        public int? GroupId { get; set; }
+        public long? GroupId { get; set; }
 
         /// <summary>
         /// Gets or Sets OrganizationId
         /// </summary>
         [DataMember(Name="organization_id", EmitDefaultValue=false)]
-        public int? OrganizationId { get; set; }
+        public long? OrganizationId { get; set; }
 
         /// <summary>
         /// Gets or Sets PermissionType
@@ -77,13 +77,13 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets UserId
         /// </summary>
         [DataMember(Name="user_id", EmitDefaultValue=false)]
-        public int? UserId { get; set; }
+        public long? UserId { get; set; }
 
         /// <summary>
         /// Gets or Sets WorkspaceId
         /// </summary>
         [DataMember(Name="workspace_id", EmitDefaultValue=false)]
-        public int? WorkspaceId { get; set; }
+        public long? WorkspaceId { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

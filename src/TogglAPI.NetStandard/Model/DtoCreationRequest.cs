@@ -46,7 +46,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="query">query (required).</param>
         /// <param name="source">source.</param>
         /// <param name="type">type (required).</param>
-        public DtoCreationRequest(string description = default(string), string name = default(string), int? organizationId = default(int?), bool? pinned = default(bool?), Dictionary<string, object> preferences = default(Dictionary<string, object>), DtoQueryRequest query = default(DtoQueryRequest), string source = default(string), string type = default(string))
+        public DtoCreationRequest(string description = default(string), string name = default(string), long? organizationId = default(long?), bool? pinned = default(bool?), Dictionary<string, object> preferences = default(Dictionary<string, object>), DtoQueryRequest query = default(DtoQueryRequest), string source = default(string), string type = default(string))
         {
             // to ensure "name" is required (not null)
             if (name == null)
@@ -106,7 +106,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets OrganizationId
         /// </summary>
         [DataMember(Name="organization_id", EmitDefaultValue=false)]
-        public int? OrganizationId { get; set; }
+        public long? OrganizationId { get; set; }
 
         /// <summary>
         /// Gets or Sets Pinned

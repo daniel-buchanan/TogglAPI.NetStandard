@@ -40,7 +40,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="isActive">internal.</param>
         /// <param name="isAdmin">Flag indicating if user is admin.</param>
         /// <param name="role">Role of the user.</param>
-        public ModelsSimpleWorkspaceUser(string email = default(string), string fullname = default(string), int? id = default(int?), bool? inactive = default(bool?), bool? isActive = default(bool?), bool? isAdmin = default(bool?), string role = default(string))
+        public ModelsSimpleWorkspaceUser(string email = default(string), string fullname = default(string), long? id = default(long?), bool? inactive = default(bool?), bool? isActive = default(bool?), bool? isAdmin = default(bool?), string role = default(string))
         {
             this.Email = email;
             this.Fullname = fullname;
@@ -70,7 +70,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Global user identifier</value>
         [DataMember(Name="id", EmitDefaultValue=false)]
-        public int? Id { get; set; }
+        public long? Id { get; set; }
 
         /// <summary>
         /// internal

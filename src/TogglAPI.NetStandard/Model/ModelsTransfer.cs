@@ -45,7 +45,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="outcomeName">outcomeName.</param>
         /// <param name="ownerTransferId">ownerTransferId.</param>
         /// <param name="requesterId">requesterId.</param>
-        public ModelsTransfer(string createdAt = default(string), bool? currentOwnerAccepted = default(bool?), string currentOwnerAnsweredAt = default(string), int? currentOwnerId = default(int?), string finishedAt = default(string), bool? newOwnerAccepted = default(bool?), string newOwnerAnsweredAt = default(string), int? newOwnerId = default(int?), int? organizationId = default(int?), string outcomeName = default(string), int? ownerTransferId = default(int?), int? requesterId = default(int?))
+        public ModelsTransfer(string createdAt = default(string), bool? currentOwnerAccepted = default(bool?), string currentOwnerAnsweredAt = default(string), long? currentOwnerId = default(long?), string finishedAt = default(string), bool? newOwnerAccepted = default(bool?), string newOwnerAnsweredAt = default(string), long? newOwnerId = default(long?), long? organizationId = default(long?), string outcomeName = default(string), long? ownerTransferId = default(long?), long? requesterId = default(long?))
         {
             this.CreatedAt = createdAt;
             this.CurrentOwnerAccepted = currentOwnerAccepted;
@@ -83,7 +83,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets CurrentOwnerId
         /// </summary>
         [DataMember(Name="current_owner_id", EmitDefaultValue=false)]
-        public int? CurrentOwnerId { get; set; }
+        public long? CurrentOwnerId { get; set; }
 
         /// <summary>
         /// Gets or Sets FinishedAt
@@ -107,13 +107,13 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets NewOwnerId
         /// </summary>
         [DataMember(Name="new_owner_id", EmitDefaultValue=false)]
-        public int? NewOwnerId { get; set; }
+        public long? NewOwnerId { get; set; }
 
         /// <summary>
         /// Gets or Sets OrganizationId
         /// </summary>
         [DataMember(Name="organization_id", EmitDefaultValue=false)]
-        public int? OrganizationId { get; set; }
+        public long? OrganizationId { get; set; }
 
         /// <summary>
         /// Gets or Sets OutcomeName
@@ -125,13 +125,13 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets OwnerTransferId
         /// </summary>
         [DataMember(Name="owner_transfer_id", EmitDefaultValue=false)]
-        public int? OwnerTransferId { get; set; }
+        public long? OwnerTransferId { get; set; }
 
         /// <summary>
         /// Gets or Sets RequesterId
         /// </summary>
         [DataMember(Name="requester_id", EmitDefaultValue=false)]
-        public int? RequesterId { get; set; }
+        public long? RequesterId { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

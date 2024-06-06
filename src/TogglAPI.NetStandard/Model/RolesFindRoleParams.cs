@@ -35,7 +35,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <param name="code">code.</param>
         /// <param name="organizationId">organizationId.</param>
-        public RolesFindRoleParams(string code = default(string), int? organizationId = default(int?))
+        public RolesFindRoleParams(string code = default(string), long? organizationId = default(long?))
         {
             this.Code = code;
             this.OrganizationId = organizationId;
@@ -51,7 +51,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets OrganizationId
         /// </summary>
         [DataMember(Name="organization_id", EmitDefaultValue=false)]
-        public int? OrganizationId { get; set; }
+        public long? OrganizationId { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

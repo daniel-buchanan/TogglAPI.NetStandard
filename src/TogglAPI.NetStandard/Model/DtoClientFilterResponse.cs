@@ -35,7 +35,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <param name="id">Client ID..</param>
         /// <param name="name">Client name..</param>
-        public DtoClientFilterResponse(int? id = default(int?), string name = default(string))
+        public DtoClientFilterResponse(long? id = default(long?), string name = default(string))
         {
             this.Id = id;
             this.Name = name;
@@ -46,7 +46,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Client ID.</value>
         [DataMember(Name="id", EmitDefaultValue=false)]
-        public int? Id { get; set; }
+        public long? Id { get; set; }
 
         /// <summary>
         /// Client name.

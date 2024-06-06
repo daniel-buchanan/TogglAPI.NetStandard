@@ -49,7 +49,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="options">will be omitted if empty.</param>
         /// <param name="timezone">timezone.</param>
         /// <param name="updatedAt">updatedAt.</param>
-        public ModelsTogglUser(string apiToken = default(string), DateTime? at = default(DateTime?), int? beginningOfWeek = default(int?), int? countryId = default(int?), DateTime? createdAt = default(DateTime?), int? defaultWorkspaceId = default(int?), string email = default(string), string fullname = default(string), bool? hasPassword = default(bool?), int? id = default(int?), string imageUrl = default(string), string openidEmail = default(string), bool? openidEnabled = default(bool?), ModelsOptions options = default(ModelsOptions), string timezone = default(string), DateTime? updatedAt = default(DateTime?))
+        public ModelsTogglUser(string apiToken = default(string), DateTime? at = default(DateTime?), long? beginningOfWeek = default(long?), long? countryId = default(long?), DateTime? createdAt = default(DateTime?), long? defaultWorkspaceId = default(long?), string email = default(string), string fullname = default(string), bool? hasPassword = default(bool?), long? id = default(long?), string imageUrl = default(string), string openidEmail = default(string), bool? openidEnabled = default(bool?), ModelsOptions options = default(ModelsOptions), string timezone = default(string), DateTime? updatedAt = default(DateTime?))
         {
             this.ApiToken = apiToken;
             this.At = at;
@@ -86,13 +86,13 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets BeginningOfWeek
         /// </summary>
         [DataMember(Name="beginning_of_week", EmitDefaultValue=false)]
-        public int? BeginningOfWeek { get; set; }
+        public long? BeginningOfWeek { get; set; }
 
         /// <summary>
         /// Gets or Sets CountryId
         /// </summary>
         [DataMember(Name="country_id", EmitDefaultValue=false)]
-        public int? CountryId { get; set; }
+        public long? CountryId { get; set; }
 
         /// <summary>
         /// Gets or Sets CreatedAt
@@ -104,7 +104,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets DefaultWorkspaceId
         /// </summary>
         [DataMember(Name="default_workspace_id", EmitDefaultValue=false)]
-        public int? DefaultWorkspaceId { get; set; }
+        public long? DefaultWorkspaceId { get; set; }
 
         /// <summary>
         /// Gets or Sets Email
@@ -128,7 +128,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Id
         /// </summary>
         [DataMember(Name="id", EmitDefaultValue=false)]
-        public int? Id { get; set; }
+        public long? Id { get; set; }
 
         /// <summary>
         /// Gets or Sets ImageUrl

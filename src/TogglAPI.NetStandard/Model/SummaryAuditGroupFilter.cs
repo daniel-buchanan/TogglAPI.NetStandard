@@ -38,7 +38,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="maxDurationSeconds">Audit max duration in seconds, optional, premium feature..</param>
         /// <param name="minAmountCents">Audit min amount in cents, optional, premium feature..</param>
         /// <param name="minDurationSeconds">Audit min duration in seconds, optional, premium feature..</param>
-        public SummaryAuditGroupFilter(string currency = default(string), int? maxAmountCents = default(int?), int? maxDurationSeconds = default(int?), int? minAmountCents = default(int?), int? minDurationSeconds = default(int?))
+        public SummaryAuditGroupFilter(string currency = default(string), long? maxAmountCents = default(long?), long? maxDurationSeconds = default(long?), long? minAmountCents = default(long?), long? minDurationSeconds = default(long?))
         {
             this.Currency = currency;
             this.MaxAmountCents = maxAmountCents;
@@ -59,28 +59,28 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Audit max amount in cents, optional, premium feature.</value>
         [DataMember(Name="max_amount_cents", EmitDefaultValue=false)]
-        public int? MaxAmountCents { get; set; }
+        public long? MaxAmountCents { get; set; }
 
         /// <summary>
         /// Audit max duration in seconds, optional, premium feature.
         /// </summary>
         /// <value>Audit max duration in seconds, optional, premium feature.</value>
         [DataMember(Name="max_duration_seconds", EmitDefaultValue=false)]
-        public int? MaxDurationSeconds { get; set; }
+        public long? MaxDurationSeconds { get; set; }
 
         /// <summary>
         /// Audit min amount in cents, optional, premium feature.
         /// </summary>
         /// <value>Audit min amount in cents, optional, premium feature.</value>
         [DataMember(Name="min_amount_cents", EmitDefaultValue=false)]
-        public int? MinAmountCents { get; set; }
+        public long? MinAmountCents { get; set; }
 
         /// <summary>
         /// Audit min duration in seconds, optional, premium feature.
         /// </summary>
         /// <value>Audit min duration in seconds, optional, premium feature.</value>
         [DataMember(Name="min_duration_seconds", EmitDefaultValue=false)]
-        public int? MinDurationSeconds { get; set; }
+        public long? MinDurationSeconds { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

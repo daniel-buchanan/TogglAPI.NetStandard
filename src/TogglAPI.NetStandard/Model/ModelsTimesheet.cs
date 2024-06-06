@@ -60,7 +60,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="updatedAt">updatedAt.</param>
         /// <param name="workingHoursInMinutes">workingHoursInMinutes.</param>
         /// <param name="workspaceID">workspaceID.</param>
-        public ModelsTimesheet(string approvedOrRejectedAt = default(string), int? approvedOrRejectedID = default(int?), string approvedOrRejectedName = default(string), int? approverID = default(int?), string approverName = default(string), string createdAt = default(string), string deletedAt = default(string), string endDate = default(string), int? memberID = default(int?), string memberName = default(string), bool? periodEditable = default(bool?), string periodEndDate = default(string), bool? periodLocked = default(bool?), string periodStartDate = default(string), string periodicity = default(string), string rejectionComment = default(string), string reminderDay = default(string), string reminderSentAt = default(string), string reminderTime = default(string), string startDate = default(string), string status = default(string), string submittedAt = default(string), int? timesheetSetupID = default(int?), string timezone = default(string), string updatedAt = default(string), int? workingHoursInMinutes = default(int?), int? workspaceID = default(int?))
+        public ModelsTimesheet(string approvedOrRejectedAt = default(string), long? approvedOrRejectedID = default(long?), string approvedOrRejectedName = default(string), long? approverID = default(long?), string approverName = default(string), string createdAt = default(string), string deletedAt = default(string), string endDate = default(string), long? memberID = default(long?), string memberName = default(string), bool? periodEditable = default(bool?), string periodEndDate = default(string), bool? periodLocked = default(bool?), string periodStartDate = default(string), string periodicity = default(string), string rejectionComment = default(string), string reminderDay = default(string), string reminderSentAt = default(string), string reminderTime = default(string), string startDate = default(string), string status = default(string), string submittedAt = default(string), long? timesheetSetupID = default(long?), string timezone = default(string), string updatedAt = default(string), long? workingHoursInMinutes = default(long?), long? workspaceID = default(long?))
         {
             this.ApprovedOrRejectedAt = approvedOrRejectedAt;
             this.ApprovedOrRejectedID = approvedOrRejectedID;
@@ -101,7 +101,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets ApprovedOrRejectedID
         /// </summary>
         [DataMember(Name="approvedOrRejectedID", EmitDefaultValue=false)]
-        public int? ApprovedOrRejectedID { get; set; }
+        public long? ApprovedOrRejectedID { get; set; }
 
         /// <summary>
         /// Gets or Sets ApprovedOrRejectedName
@@ -113,7 +113,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets ApproverID
         /// </summary>
         [DataMember(Name="approverID", EmitDefaultValue=false)]
-        public int? ApproverID { get; set; }
+        public long? ApproverID { get; set; }
 
         /// <summary>
         /// Gets or Sets ApproverName
@@ -143,7 +143,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets MemberID
         /// </summary>
         [DataMember(Name="memberID", EmitDefaultValue=false)]
-        public int? MemberID { get; set; }
+        public long? MemberID { get; set; }
 
         /// <summary>
         /// Gets or Sets MemberName
@@ -227,7 +227,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets TimesheetSetupID
         /// </summary>
         [DataMember(Name="timesheetSetupID", EmitDefaultValue=false)]
-        public int? TimesheetSetupID { get; set; }
+        public long? TimesheetSetupID { get; set; }
 
         /// <summary>
         /// Gets or Sets Timezone
@@ -245,13 +245,13 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets WorkingHoursInMinutes
         /// </summary>
         [DataMember(Name="workingHoursInMinutes", EmitDefaultValue=false)]
-        public int? WorkingHoursInMinutes { get; set; }
+        public long? WorkingHoursInMinutes { get; set; }
 
         /// <summary>
         /// Gets or Sets WorkspaceID
         /// </summary>
         [DataMember(Name="workspaceID", EmitDefaultValue=false)]
-        public int? WorkspaceID { get; set; }
+        public long? WorkspaceID { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

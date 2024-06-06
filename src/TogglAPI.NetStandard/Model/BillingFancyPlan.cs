@@ -36,7 +36,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="name">name.</param>
         /// <param name="planId">planId.</param>
         /// <param name="pricingPlans">pricingPlans.</param>
-        public BillingFancyPlan(string name = default(string), int? planId = default(int?), List<BillingFancyPricingPlan> pricingPlans = default(List<BillingFancyPricingPlan>))
+        public BillingFancyPlan(string name = default(string), long? planId = default(long?), List<BillingFancyPricingPlan> pricingPlans = default(List<BillingFancyPricingPlan>))
         {
             this.Name = name;
             this.PlanId = planId;
@@ -53,7 +53,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets PlanId
         /// </summary>
         [DataMember(Name="plan_id", EmitDefaultValue=false)]
-        public int? PlanId { get; set; }
+        public long? PlanId { get; set; }
 
         /// <summary>
         /// Gets or Sets PricingPlans

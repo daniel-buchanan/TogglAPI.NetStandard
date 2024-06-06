@@ -38,7 +38,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="period">period.</param>
         /// <param name="taxPercentage">taxPercentage.</param>
         /// <param name="totalAmount">totalAmount.</param>
-        public CalculateResponse(string calculation = default(string), string currency = default(string), int? period = default(int?), int? taxPercentage = default(int?), int? totalAmount = default(int?))
+        public CalculateResponse(string calculation = default(string), string currency = default(string), long? period = default(long?), long? taxPercentage = default(long?), long? totalAmount = default(long?))
         {
             this.Calculation = calculation;
             this.Currency = currency;
@@ -63,19 +63,19 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Period
         /// </summary>
         [DataMember(Name="period", EmitDefaultValue=false)]
-        public int? Period { get; set; }
+        public long? Period { get; set; }
 
         /// <summary>
         /// Gets or Sets TaxPercentage
         /// </summary>
         [DataMember(Name="tax_percentage", EmitDefaultValue=false)]
-        public int? TaxPercentage { get; set; }
+        public long? TaxPercentage { get; set; }
 
         /// <summary>
         /// Gets or Sets TotalAmount
         /// </summary>
         [DataMember(Name="total_amount", EmitDefaultValue=false)]
-        public int? TotalAmount { get; set; }
+        public long? TotalAmount { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

@@ -47,7 +47,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="rounding">Rounding, optional, duration rounding settings, premium feature..</param>
         /// <param name="roundingMinutes">RoundingMinutes, optional, duration rounding minutes settings, premium feature..</param>
         /// <param name="startDate">Start date, optional, example: time.DateOnly. Should be less than End date..</param>
-        public RequestsProjectProfitability(bool? billable = default(bool?), List<int?> clientIds = default(List<int?>), string currency = default(string), string endDate = default(string), List<int?> projectIds = default(List<int?>), string resolution = default(string), int? rounding = default(int?), int? roundingMinutes = default(int?), string startDate = default(string))
+        public RequestsProjectProfitability(bool? billable = default(bool?), List<long?> clientIds = default(List<long?>), string currency = default(string), string endDate = default(string), List<long?> projectIds = default(List<long?>), string resolution = default(string), long? rounding = default(long?), long? roundingMinutes = default(long?), string startDate = default(string))
         {
             // to ensure "currency" is required (not null)
             if (currency == null)
@@ -80,7 +80,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Client IDs, optional. A nil entry on this list means that only projects without client will be selected.</value>
         [DataMember(Name="client_ids", EmitDefaultValue=false)]
-        public List<int?> ClientIds { get; set; }
+        public List<long?> ClientIds { get; set; }
 
         /// <summary>
         /// Currency, example: \&quot;usd\&quot;.
@@ -101,7 +101,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Project IDS, optional.</value>
         [DataMember(Name="project_ids", EmitDefaultValue=false)]
-        public List<int?> ProjectIds { get; set; }
+        public List<long?> ProjectIds { get; set; }
 
         /// <summary>
         /// Resolution, optional. Can be \&quot;day\&quot;, \&quot;week\&quot; or \&quot;month\&quot;.
@@ -115,14 +115,14 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Rounding, optional, duration rounding settings, premium feature.</value>
         [DataMember(Name="rounding", EmitDefaultValue=false)]
-        public int? Rounding { get; set; }
+        public long? Rounding { get; set; }
 
         /// <summary>
         /// RoundingMinutes, optional, duration rounding minutes settings, premium feature.
         /// </summary>
         /// <value>RoundingMinutes, optional, duration rounding minutes settings, premium feature.</value>
         [DataMember(Name="rounding_minutes", EmitDefaultValue=false)]
-        public int? RoundingMinutes { get; set; }
+        public long? RoundingMinutes { get; set; }
 
         /// <summary>
         /// Start date, optional, example: time.DateOnly. Should be less than End date.

@@ -38,7 +38,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="timeEntry">timeEntry.</param>
         /// <param name="timeEntryInvitationId">timeEntryInvitationId.</param>
         /// <param name="workspaceId">workspaceId.</param>
-        public TimeentriesGetTimEntryInvitationsResponse(int? sharedByUserId = default(int?), string sharedByUserName = default(string), ModelsTimeEntry timeEntry = default(ModelsTimeEntry), int? timeEntryInvitationId = default(int?), int? workspaceId = default(int?))
+        public TimeentriesGetTimEntryInvitationsResponse(long? sharedByUserId = default(long?), string sharedByUserName = default(string), ModelsTimeEntry timeEntry = default(ModelsTimeEntry), long? timeEntryInvitationId = default(long?), long? workspaceId = default(long?))
         {
             this.SharedByUserId = sharedByUserId;
             this.SharedByUserName = sharedByUserName;
@@ -51,7 +51,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets SharedByUserId
         /// </summary>
         [DataMember(Name="shared_by_user_id", EmitDefaultValue=false)]
-        public int? SharedByUserId { get; set; }
+        public long? SharedByUserId { get; set; }
 
         /// <summary>
         /// Gets or Sets SharedByUserName
@@ -69,13 +69,13 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets TimeEntryInvitationId
         /// </summary>
         [DataMember(Name="time_entry_invitation_id", EmitDefaultValue=false)]
-        public int? TimeEntryInvitationId { get; set; }
+        public long? TimeEntryInvitationId { get; set; }
 
         /// <summary>
         /// Gets or Sets WorkspaceId
         /// </summary>
         [DataMember(Name="workspace_id", EmitDefaultValue=false)]
-        public int? WorkspaceId { get; set; }
+        public long? WorkspaceId { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

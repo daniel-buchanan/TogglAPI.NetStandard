@@ -39,7 +39,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="_params">_params.</param>
         /// <param name="_public">_public.</param>
         /// <param name="regenerateToken">regenerateToken.</param>
-        public SavedPayload(bool? fixedDaterange = default(bool?), int? id = default(int?), string name = default(string), Dictionary<string, object> _params = default(Dictionary<string, object>), bool? _public = default(bool?), bool? regenerateToken = default(bool?))
+        public SavedPayload(bool? fixedDaterange = default(bool?), long? id = default(long?), string name = default(string), Dictionary<string, object> _params = default(Dictionary<string, object>), bool? _public = default(bool?), bool? regenerateToken = default(bool?))
         {
             this.FixedDaterange = fixedDaterange;
             this.Id = id;
@@ -59,7 +59,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Id
         /// </summary>
         [DataMember(Name="id", EmitDefaultValue=false)]
-        public int? Id { get; set; }
+        public long? Id { get; set; }
 
         /// <summary>
         /// Gets or Sets Name

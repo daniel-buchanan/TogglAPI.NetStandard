@@ -53,7 +53,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="userId">Time Entry creator ID, if omitted will use the requester user ID.</param>
         /// <param name="wid">Workspace ID, legacy field.</param>
         /// <param name="workspaceId">Workspace ID, required.</param>
-        public TimeentryPayload(bool? billable = default(bool?), string createdWith = default(string), string description = default(string), int? duration = default(int?), bool? duronly = default(bool?), int? pid = default(int?), int? projectId = default(int?), List<int?> sharedWithUserIds = default(List<int?>), string start = default(string), string startDate = default(string), string stop = default(string), string tagAction = default(string), List<int?> tagIds = default(List<int?>), List<string> tags = default(List<string>), int? taskId = default(int?), int? tid = default(int?), int? uid = default(int?), int? userId = default(int?), int? wid = default(int?), int? workspaceId = default(int?))
+        public TimeentryPayload(bool? billable = default(bool?), string createdWith = default(string), string description = default(string), long? duration = default(long?), bool? duronly = default(bool?), long? pid = default(long?), long? projectId = default(long?), List<long?> sharedWithUserIds = default(List<long?>), string start = default(string), string startDate = default(string), string stop = default(string), string tagAction = default(string), List<long?> tagIds = default(List<long?>), List<string> tags = default(List<string>), long? taskId = default(long?), long? tid = default(long?), long? uid = default(long?), long? userId = default(long?), long? wid = default(long?), long? workspaceId = default(long?))
         {
             this.Billable = billable;
             this.CreatedWith = createdWith;
@@ -103,7 +103,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Time entry duration. For running entries should be negative, preferable -1</value>
         [DataMember(Name="duration", EmitDefaultValue=false)]
-        public int? Duration { get; set; }
+        public long? Duration { get; set; }
 
         /// <summary>
         /// Deprecated: Used to create a time entry with a duration but without a stop time. This parameter can be ignored.
@@ -117,21 +117,21 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Project ID, legacy field</value>
         [DataMember(Name="pid", EmitDefaultValue=false)]
-        public int? Pid { get; set; }
+        public long? Pid { get; set; }
 
         /// <summary>
         /// Project ID, optional
         /// </summary>
         /// <value>Project ID, optional</value>
         [DataMember(Name="project_id", EmitDefaultValue=false)]
-        public int? ProjectId { get; set; }
+        public long? ProjectId { get; set; }
 
         /// <summary>
         /// List of user IDs to share this time entry with
         /// </summary>
         /// <value>List of user IDs to share this time entry with</value>
         [DataMember(Name="shared_with_user_ids", EmitDefaultValue=false)]
-        public List<int?> SharedWithUserIds { get; set; }
+        public List<long?> SharedWithUserIds { get; set; }
 
         /// <summary>
         /// Start time in UTC, required for creation. Format: 2006-01-02T15:04:05Z
@@ -166,7 +166,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>IDs of tags to add/remove</value>
         [DataMember(Name="tag_ids", EmitDefaultValue=false)]
-        public List<int?> TagIds { get; set; }
+        public List<long?> TagIds { get; set; }
 
         /// <summary>
         /// Names of tags to add/remove. If name does not exist as tag, one will be created automatically
@@ -180,42 +180,42 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Task ID, optional</value>
         [DataMember(Name="task_id", EmitDefaultValue=false)]
-        public int? TaskId { get; set; }
+        public long? TaskId { get; set; }
 
         /// <summary>
         /// Task ID, legacy field
         /// </summary>
         /// <value>Task ID, legacy field</value>
         [DataMember(Name="tid", EmitDefaultValue=false)]
-        public int? Tid { get; set; }
+        public long? Tid { get; set; }
 
         /// <summary>
         /// Time Entry creator ID, legacy field
         /// </summary>
         /// <value>Time Entry creator ID, legacy field</value>
         [DataMember(Name="uid", EmitDefaultValue=false)]
-        public int? Uid { get; set; }
+        public long? Uid { get; set; }
 
         /// <summary>
         /// Time Entry creator ID, if omitted will use the requester user ID
         /// </summary>
         /// <value>Time Entry creator ID, if omitted will use the requester user ID</value>
         [DataMember(Name="user_id", EmitDefaultValue=false)]
-        public int? UserId { get; set; }
+        public long? UserId { get; set; }
 
         /// <summary>
         /// Workspace ID, legacy field
         /// </summary>
         /// <value>Workspace ID, legacy field</value>
         [DataMember(Name="wid", EmitDefaultValue=false)]
-        public int? Wid { get; set; }
+        public long? Wid { get; set; }
 
         /// <summary>
         /// Workspace ID, required
         /// </summary>
         /// <value>Workspace ID, required</value>
         [DataMember(Name="workspace_id", EmitDefaultValue=false)]
-        public int? WorkspaceId { get; set; }
+        public long? WorkspaceId { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

@@ -42,7 +42,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="scheduled">scheduled.</param>
         /// <param name="sortDirection">sortDirection.</param>
         /// <param name="sortField">sortField.</param>
-        public SavedListParams(bool? fixedDates = default(bool?), string name = default(string), int? ownerID = default(int?), int? page = default(int?), int? perPage = default(int?), bool? _public = default(bool?), bool? scheduled = default(bool?), string sortDirection = default(string), string sortField = default(string))
+        public SavedListParams(bool? fixedDates = default(bool?), string name = default(string), long? ownerID = default(long?), long? page = default(long?), long? perPage = default(long?), bool? _public = default(bool?), bool? scheduled = default(bool?), string sortDirection = default(string), string sortField = default(string))
         {
             this.FixedDates = fixedDates;
             this.Name = name;
@@ -71,19 +71,19 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets OwnerID
         /// </summary>
         [DataMember(Name="ownerID", EmitDefaultValue=false)]
-        public int? OwnerID { get; set; }
+        public long? OwnerID { get; set; }
 
         /// <summary>
         /// Gets or Sets Page
         /// </summary>
         [DataMember(Name="page", EmitDefaultValue=false)]
-        public int? Page { get; set; }
+        public long? Page { get; set; }
 
         /// <summary>
         /// Gets or Sets PerPage
         /// </summary>
         [DataMember(Name="per_page", EmitDefaultValue=false)]
-        public int? PerPage { get; set; }
+        public long? PerPage { get; set; }
 
         /// <summary>
         /// Gets or Sets Public

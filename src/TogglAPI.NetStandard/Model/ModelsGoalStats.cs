@@ -37,7 +37,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="status">open, finished or archived.</param>
         /// <param name="successfulCadences">successfulCadences.</param>
         /// <param name="totalCadences">totalCadences.</param>
-        public ModelsGoalStats(int? longestStreak = default(int?), string status = default(string), int? successfulCadences = default(int?), int? totalCadences = default(int?))
+        public ModelsGoalStats(long? longestStreak = default(long?), string status = default(string), long? successfulCadences = default(long?), long? totalCadences = default(long?))
         {
             this.LongestStreak = longestStreak;
             this.Status = status;
@@ -49,7 +49,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets LongestStreak
         /// </summary>
         [DataMember(Name="longest_streak", EmitDefaultValue=false)]
-        public int? LongestStreak { get; set; }
+        public long? LongestStreak { get; set; }
 
         /// <summary>
         /// open, finished or archived
@@ -62,13 +62,13 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets SuccessfulCadences
         /// </summary>
         [DataMember(Name="successful_cadences", EmitDefaultValue=false)]
-        public int? SuccessfulCadences { get; set; }
+        public long? SuccessfulCadences { get; set; }
 
         /// <summary>
         /// Gets or Sets TotalCadences
         /// </summary>
         [DataMember(Name="total_cadences", EmitDefaultValue=false)]
-        public int? TotalCadences { get; set; }
+        public long? TotalCadences { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

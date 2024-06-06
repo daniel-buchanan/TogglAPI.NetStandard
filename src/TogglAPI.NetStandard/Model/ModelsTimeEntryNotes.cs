@@ -35,7 +35,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <param name="id">Time Entry ID.</param>
         /// <param name="notes">Notes.</param>
-        public ModelsTimeEntryNotes(int? id = default(int?), string notes = default(string))
+        public ModelsTimeEntryNotes(long? id = default(long?), string notes = default(string))
         {
             this.Id = id;
             this.Notes = notes;
@@ -46,7 +46,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Time Entry ID</value>
         [DataMember(Name="id", EmitDefaultValue=false)]
-        public int? Id { get; set; }
+        public long? Id { get; set; }
 
         /// <summary>
         /// Notes

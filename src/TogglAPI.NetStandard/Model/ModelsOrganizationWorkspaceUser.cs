@@ -55,7 +55,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="workingHoursInMinutes">Working hours value in minutes.</param>
         /// <param name="workspaceAdmin">Flag indicating if user is admin inside workspace.</param>
         /// <param name="workspaceId">Workspace identifier.</param>
-        public ModelsOrganizationWorkspaceUser(bool? active = default(bool?), bool? admin = default(bool?), string at = default(string), string avatarFileName = default(string), string email = default(string), UtilsInt64Slice groupIds = default(UtilsInt64Slice), int? id = default(int?), bool? inactive = default(bool?), string invitationCode = default(string), string inviteUrl = default(string), bool? isDirect = default(bool?), int? labourCost = default(int?), string name = default(string), bool? organizationAdmin = default(bool?), decimal? rate = default(decimal?), string rateLastUpdated = default(string), string role = default(string), string timezone = default(string), int? userId = default(int?), int? workingHoursInMinutes = default(int?), bool? workspaceAdmin = default(bool?), int? workspaceId = default(int?))
+        public ModelsOrganizationWorkspaceUser(bool? active = default(bool?), bool? admin = default(bool?), string at = default(string), string avatarFileName = default(string), string email = default(string), UtilsInt64Slice groupIds = default(UtilsInt64Slice), long? id = default(long?), bool? inactive = default(bool?), string invitationCode = default(string), string inviteUrl = default(string), bool? isDirect = default(bool?), long? labourCost = default(long?), string name = default(string), bool? organizationAdmin = default(bool?), decimal? rate = default(decimal?), string rateLastUpdated = default(string), string role = default(string), string timezone = default(string), long? userId = default(long?), long? workingHoursInMinutes = default(long?), bool? workspaceAdmin = default(bool?), long? workspaceId = default(long?))
         {
             this.Active = active;
             this.Admin = admin;
@@ -128,7 +128,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Identifier of the user inside workspace</value>
         [DataMember(Name="id", EmitDefaultValue=false)]
-        public int? Id { get; set; }
+        public long? Id { get; set; }
 
         /// <summary>
         /// Flag indicating if user was deactivated by admin of the workspace
@@ -163,7 +163,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Labour cost assigned to the user</value>
         [DataMember(Name="labour_cost", EmitDefaultValue=false)]
-        public int? LabourCost { get; set; }
+        public long? LabourCost { get; set; }
 
         /// <summary>
         /// Name of the user
@@ -212,14 +212,14 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Global user identifier</value>
         [DataMember(Name="user_id", EmitDefaultValue=false)]
-        public int? UserId { get; set; }
+        public long? UserId { get; set; }
 
         /// <summary>
         /// Working hours value in minutes
         /// </summary>
         /// <value>Working hours value in minutes</value>
         [DataMember(Name="working_hours_in_minutes", EmitDefaultValue=false)]
-        public int? WorkingHoursInMinutes { get; set; }
+        public long? WorkingHoursInMinutes { get; set; }
 
         /// <summary>
         /// Flag indicating if user is admin inside workspace
@@ -233,7 +233,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Workspace identifier</value>
         [DataMember(Name="workspace_id", EmitDefaultValue=false)]
-        public int? WorkspaceId { get; set; }
+        public long? WorkspaceId { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

@@ -36,7 +36,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="date">date.</param>
         /// <param name="earnings">earnings.</param>
         /// <param name="labourCost">labourCost.</param>
-        public ProjectsGraphItem(string date = default(string), int? earnings = default(int?), int? labourCost = default(int?))
+        public ProjectsGraphItem(string date = default(string), long? earnings = default(long?), long? labourCost = default(long?))
         {
             this.Date = date;
             this.Earnings = earnings;
@@ -53,13 +53,13 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Earnings
         /// </summary>
         [DataMember(Name="earnings", EmitDefaultValue=false)]
-        public int? Earnings { get; set; }
+        public long? Earnings { get; set; }
 
         /// <summary>
         /// Gets or Sets LabourCost
         /// </summary>
         [DataMember(Name="labour_cost", EmitDefaultValue=false)]
-        public int? LabourCost { get; set; }
+        public long? LabourCost { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

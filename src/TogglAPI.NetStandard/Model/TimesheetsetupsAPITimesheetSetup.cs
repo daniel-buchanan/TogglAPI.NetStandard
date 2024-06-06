@@ -45,7 +45,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="reminderTime">reminderTime.</param>
         /// <param name="startDate">startDate.</param>
         /// <param name="workspaceId">workspaceId.</param>
-        public TimesheetsetupsAPITimesheetSetup(int? approverId = default(int?), string approverName = default(string), string endDate = default(string), List<ModelsTimesheetSetupError> errors = default(List<ModelsTimesheetSetupError>), int? id = default(int?), int? memberId = default(int?), string memberName = default(string), string periodicity = default(string), string reminderDay = default(string), string reminderTime = default(string), string startDate = default(string), int? workspaceId = default(int?))
+        public TimesheetsetupsAPITimesheetSetup(long? approverId = default(long?), string approverName = default(string), string endDate = default(string), List<ModelsTimesheetSetupError> errors = default(List<ModelsTimesheetSetupError>), long? id = default(long?), long? memberId = default(long?), string memberName = default(string), string periodicity = default(string), string reminderDay = default(string), string reminderTime = default(string), string startDate = default(string), long? workspaceId = default(long?))
         {
             this.ApproverId = approverId;
             this.ApproverName = approverName;
@@ -65,7 +65,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets ApproverId
         /// </summary>
         [DataMember(Name="approver_id", EmitDefaultValue=false)]
-        public int? ApproverId { get; set; }
+        public long? ApproverId { get; set; }
 
         /// <summary>
         /// Gets or Sets ApproverName
@@ -89,13 +89,13 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Id
         /// </summary>
         [DataMember(Name="id", EmitDefaultValue=false)]
-        public int? Id { get; set; }
+        public long? Id { get; set; }
 
         /// <summary>
         /// Gets or Sets MemberId
         /// </summary>
         [DataMember(Name="member_id", EmitDefaultValue=false)]
-        public int? MemberId { get; set; }
+        public long? MemberId { get; set; }
 
         /// <summary>
         /// Gets or Sets MemberName
@@ -131,7 +131,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets WorkspaceId
         /// </summary>
         [DataMember(Name="workspace_id", EmitDefaultValue=false)]
-        public int? WorkspaceId { get; set; }
+        public long? WorkspaceId { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

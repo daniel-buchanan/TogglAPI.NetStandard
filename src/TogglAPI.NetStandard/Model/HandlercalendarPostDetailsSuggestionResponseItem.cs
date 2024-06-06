@@ -35,7 +35,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <param name="eventId">eventId.</param>
         /// <param name="suggestion">suggestion.</param>
-        public HandlercalendarPostDetailsSuggestionResponseItem(int? eventId = default(int?), ModelsSuggestion suggestion = default(ModelsSuggestion))
+        public HandlercalendarPostDetailsSuggestionResponseItem(long? eventId = default(long?), ModelsSuggestion suggestion = default(ModelsSuggestion))
         {
             this.EventId = eventId;
             this.Suggestion = suggestion;
@@ -45,7 +45,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets EventId
         /// </summary>
         [DataMember(Name="event_id", EmitDefaultValue=false)]
-        public int? EventId { get; set; }
+        public long? EventId { get; set; }
 
         /// <summary>
         /// Gets or Sets Suggestion

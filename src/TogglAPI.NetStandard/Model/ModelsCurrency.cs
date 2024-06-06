@@ -36,7 +36,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="currencyId">currencyId.</param>
         /// <param name="isoCode">isoCode.</param>
         /// <param name="symbol">symbol.</param>
-        public ModelsCurrency(int? currencyId = default(int?), string isoCode = default(string), string symbol = default(string))
+        public ModelsCurrency(long? currencyId = default(long?), string isoCode = default(string), string symbol = default(string))
         {
             this.CurrencyId = currencyId;
             this.IsoCode = isoCode;
@@ -47,7 +47,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets CurrencyId
         /// </summary>
         [DataMember(Name="currency_id", EmitDefaultValue=false)]
-        public int? CurrencyId { get; set; }
+        public long? CurrencyId { get; set; }
 
         /// <summary>
         /// Gets or Sets IsoCode

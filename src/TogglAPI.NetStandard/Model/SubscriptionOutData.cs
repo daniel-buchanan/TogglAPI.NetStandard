@@ -68,7 +68,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="trialAvailable">trialAvailable.</param>
         /// <param name="trialEndDate">trialEndDate.</param>
         /// <param name="trialStartDate">trialStartDate.</param>
-        public SubscriptionOutData(bool? autoRenew = default(bool?), int? billingPeriodInMonths = default(int?), bool? campaignAvailable = default(bool?), string cancelDate = default(string), ModelsCardDetails cardDetails = default(ModelsCardDetails), int? companyId = default(int?), ModelsContactDetail contactDetails = default(ModelsContactDetail), string currency = default(string), string currentPeriodEndsAt = default(string), string currentPeriodStartsAt = default(string), int? customerId = default(int?), string endDate = default(string), bool? enterprise = default(bool?), bool? isSubscriptionBeta = default(bool?), bool? isUnified = default(bool?), SubscriptionInvoiceInfo lastInvoice = default(SubscriptionInvoiceInfo), ModelsPaymentInfo lastPayment = default(ModelsPaymentInfo), int? lastPricingPlanId = default(int?), bool? newSignupTrial = default(bool?), string nextPaymentDate = default(string), string paymentMethod = default(string), string planName = default(string), int? pricingPlanId = default(int?), string renewalAt = default(string), string renewalDate = default(string), int? seatCostInCents = default(int?), int? seats = default(int?), string site = default(string), string startDate = default(string), string state = default(string), string subscriptionCreatedAt = default(string), ModelsPeriod subscriptionPeriod = default(ModelsPeriod), bool? trialAvailable = default(bool?), string trialEndDate = default(string), string trialStartDate = default(string))
+        public SubscriptionOutData(bool? autoRenew = default(bool?), long? billingPeriodInMonths = default(long?), bool? campaignAvailable = default(bool?), string cancelDate = default(string), ModelsCardDetails cardDetails = default(ModelsCardDetails), long? companyId = default(long?), ModelsContactDetail contactDetails = default(ModelsContactDetail), string currency = default(string), string currentPeriodEndsAt = default(string), string currentPeriodStartsAt = default(string), long? customerId = default(long?), string endDate = default(string), bool? enterprise = default(bool?), bool? isSubscriptionBeta = default(bool?), bool? isUnified = default(bool?), SubscriptionInvoiceInfo lastInvoice = default(SubscriptionInvoiceInfo), ModelsPaymentInfo lastPayment = default(ModelsPaymentInfo), long? lastPricingPlanId = default(long?), bool? newSignupTrial = default(bool?), string nextPaymentDate = default(string), string paymentMethod = default(string), string planName = default(string), long? pricingPlanId = default(long?), string renewalAt = default(string), string renewalDate = default(string), long? seatCostInCents = default(long?), long? seats = default(long?), string site = default(string), string startDate = default(string), string state = default(string), string subscriptionCreatedAt = default(string), ModelsPeriod subscriptionPeriod = default(ModelsPeriod), bool? trialAvailable = default(bool?), string trialEndDate = default(string), string trialStartDate = default(string))
         {
             this.AutoRenew = autoRenew;
             this.BillingPeriodInMonths = billingPeriodInMonths;
@@ -117,7 +117,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets BillingPeriodInMonths
         /// </summary>
         [DataMember(Name="billing_period_in_months", EmitDefaultValue=false)]
-        public int? BillingPeriodInMonths { get; set; }
+        public long? BillingPeriodInMonths { get; set; }
 
         /// <summary>
         /// Gets or Sets CampaignAvailable
@@ -141,7 +141,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets CompanyId
         /// </summary>
         [DataMember(Name="company_id", EmitDefaultValue=false)]
-        public int? CompanyId { get; set; }
+        public long? CompanyId { get; set; }
 
         /// <summary>
         /// Gets or Sets ContactDetails
@@ -171,7 +171,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets CustomerId
         /// </summary>
         [DataMember(Name="customer_id", EmitDefaultValue=false)]
-        public int? CustomerId { get; set; }
+        public long? CustomerId { get; set; }
 
         /// <summary>
         /// Deprecated: this field will be replaced by CurrentPeriodEndsAt
@@ -215,7 +215,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets LastPricingPlanId
         /// </summary>
         [DataMember(Name="last_pricing_plan_id", EmitDefaultValue=false)]
-        public int? LastPricingPlanId { get; set; }
+        public long? LastPricingPlanId { get; set; }
 
         /// <summary>
         /// Gets or Sets NewSignupTrial
@@ -246,7 +246,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Legacy fields (kept for compatibility with FE)</value>
         [DataMember(Name="pricing_plan_id", EmitDefaultValue=false)]
-        public int? PricingPlanId { get; set; }
+        public long? PricingPlanId { get; set; }
 
         /// <summary>
         /// Gets or Sets RenewalAt
@@ -264,13 +264,13 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets SeatCostInCents
         /// </summary>
         [DataMember(Name="seat_cost_in_cents", EmitDefaultValue=false)]
-        public int? SeatCostInCents { get; set; }
+        public long? SeatCostInCents { get; set; }
 
         /// <summary>
         /// Gets or Sets Seats
         /// </summary>
         [DataMember(Name="seats", EmitDefaultValue=false)]
-        public int? Seats { get; set; }
+        public long? Seats { get; set; }
 
         /// <summary>
         /// Gets or Sets Site

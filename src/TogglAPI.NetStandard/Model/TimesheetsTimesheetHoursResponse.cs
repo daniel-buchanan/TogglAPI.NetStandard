@@ -37,7 +37,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="timesheetSetupId">timesheetSetupId.</param>
         /// <param name="totalSeconds">totalSeconds.</param>
         /// <param name="workingHoursInMinutes">workingHoursInMinutes.</param>
-        public TimesheetsTimesheetHoursResponse(string startDate = default(string), int? timesheetSetupId = default(int?), int? totalSeconds = default(int?), int? workingHoursInMinutes = default(int?))
+        public TimesheetsTimesheetHoursResponse(string startDate = default(string), long? timesheetSetupId = default(long?), long? totalSeconds = default(long?), long? workingHoursInMinutes = default(long?))
         {
             this.StartDate = startDate;
             this.TimesheetSetupId = timesheetSetupId;
@@ -55,19 +55,19 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets TimesheetSetupId
         /// </summary>
         [DataMember(Name="timesheet_setup_id", EmitDefaultValue=false)]
-        public int? TimesheetSetupId { get; set; }
+        public long? TimesheetSetupId { get; set; }
 
         /// <summary>
         /// Gets or Sets TotalSeconds
         /// </summary>
         [DataMember(Name="total_seconds", EmitDefaultValue=false)]
-        public int? TotalSeconds { get; set; }
+        public long? TotalSeconds { get; set; }
 
         /// <summary>
         /// Gets or Sets WorkingHoursInMinutes
         /// </summary>
         [DataMember(Name="working_hours_in_minutes", EmitDefaultValue=false)]
-        public int? WorkingHoursInMinutes { get; set; }
+        public long? WorkingHoursInMinutes { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

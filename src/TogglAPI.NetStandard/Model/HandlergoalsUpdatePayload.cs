@@ -40,7 +40,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="lastNotifiedAt">lastNotifiedAt.</param>
         /// <param name="name">name.</param>
         /// <param name="targetSeconds">targetSeconds.</param>
-        public HandlergoalsUpdatePayload(bool? active = default(bool?), string comparison = default(string), string endDate = default(string), int? icon = default(int?), string lastNotifiedAt = default(string), string name = default(string), int? targetSeconds = default(int?))
+        public HandlergoalsUpdatePayload(bool? active = default(bool?), string comparison = default(string), string endDate = default(string), long? icon = default(long?), string lastNotifiedAt = default(string), string name = default(string), long? targetSeconds = default(long?))
         {
             this.Active = active;
             this.Comparison = comparison;
@@ -73,7 +73,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Icon
         /// </summary>
         [DataMember(Name="icon", EmitDefaultValue=false)]
-        public int? Icon { get; set; }
+        public long? Icon { get; set; }
 
         /// <summary>
         /// Gets or Sets LastNotifiedAt
@@ -91,7 +91,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets TargetSeconds
         /// </summary>
         [DataMember(Name="target_seconds", EmitDefaultValue=false)]
-        public int? TargetSeconds { get; set; }
+        public long? TargetSeconds { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

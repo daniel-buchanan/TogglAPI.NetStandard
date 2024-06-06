@@ -45,7 +45,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="owner">owner.</param>
         /// <param name="userId">userId.</param>
         /// <param name="workspaces">workspaces.</param>
-        public ModelsOrgUserDetailed(bool? admin = default(bool?), string avatarUrl = default(string), string email = default(string), string fullname = default(string), List<ModelsGroupDict> groups = default(List<ModelsGroupDict>), bool? inactive = default(bool?), bool? joined = default(bool?), int? organizationId = default(int?), int? organizationUserId = default(int?), bool? owner = default(bool?), int? userId = default(int?), List<ModelsOrgUserWorkspaceDetails> workspaces = default(List<ModelsOrgUserWorkspaceDetails>))
+        public ModelsOrgUserDetailed(bool? admin = default(bool?), string avatarUrl = default(string), string email = default(string), string fullname = default(string), List<ModelsGroupDict> groups = default(List<ModelsGroupDict>), bool? inactive = default(bool?), bool? joined = default(bool?), long? organizationId = default(long?), long? organizationUserId = default(long?), bool? owner = default(bool?), long? userId = default(long?), List<ModelsOrgUserWorkspaceDetails> workspaces = default(List<ModelsOrgUserWorkspaceDetails>))
         {
             this.Admin = admin;
             this.AvatarUrl = avatarUrl;
@@ -107,13 +107,13 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets OrganizationId
         /// </summary>
         [DataMember(Name="organization_id", EmitDefaultValue=false)]
-        public int? OrganizationId { get; set; }
+        public long? OrganizationId { get; set; }
 
         /// <summary>
         /// Gets or Sets OrganizationUserId
         /// </summary>
         [DataMember(Name="organization_user_id", EmitDefaultValue=false)]
-        public int? OrganizationUserId { get; set; }
+        public long? OrganizationUserId { get; set; }
 
         /// <summary>
         /// Gets or Sets Owner
@@ -125,7 +125,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets UserId
         /// </summary>
         [DataMember(Name="user_id", EmitDefaultValue=false)]
-        public int? UserId { get; set; }
+        public long? UserId { get; set; }
 
         /// <summary>
         /// Gets or Sets Workspaces

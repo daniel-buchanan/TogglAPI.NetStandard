@@ -36,7 +36,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="code">Temporary token to reset password.</param>
         /// <param name="password">User&#39;s new password.</param>
         /// <param name="userId">User&#39;s ID.</param>
-        public MeLostPasswordPayload(string code = default(string), string password = default(string), int? userId = default(int?))
+        public MeLostPasswordPayload(string code = default(string), string password = default(string), long? userId = default(long?))
         {
             this.Code = code;
             this.Password = password;
@@ -62,7 +62,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>User&#39;s ID</value>
         [DataMember(Name="user_id", EmitDefaultValue=false)]
-        public int? UserId { get; set; }
+        public long? UserId { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

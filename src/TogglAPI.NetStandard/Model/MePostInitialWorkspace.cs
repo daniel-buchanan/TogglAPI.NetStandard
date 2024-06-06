@@ -35,7 +35,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <param name="initialPricingPlan">Plan ID for the new workspace.</param>
         /// <param name="name">Workspace name, if not provided it will be based on the user&#39;s full name.</param>
-        public MePostInitialWorkspace(int? initialPricingPlan = default(int?), string name = default(string))
+        public MePostInitialWorkspace(long? initialPricingPlan = default(long?), string name = default(string))
         {
             this.InitialPricingPlan = initialPricingPlan;
             this.Name = name;
@@ -46,7 +46,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Plan ID for the new workspace</value>
         [DataMember(Name="initial_pricing_plan", EmitDefaultValue=false)]
-        public int? InitialPricingPlan { get; set; }
+        public long? InitialPricingPlan { get; set; }
 
         /// <summary>
         /// Workspace name, if not provided it will be based on the user&#39;s full name

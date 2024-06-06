@@ -35,7 +35,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <param name="duration">duration.</param>
         /// <param name="userId">userId.</param>
-        public ModelsMostActiveUser(int? duration = default(int?), int? userId = default(int?))
+        public ModelsMostActiveUser(long? duration = default(long?), long? userId = default(long?))
         {
             this.Duration = duration;
             this.UserId = userId;
@@ -45,13 +45,13 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Duration
         /// </summary>
         [DataMember(Name="duration", EmitDefaultValue=false)]
-        public int? Duration { get; set; }
+        public long? Duration { get; set; }
 
         /// <summary>
         /// Gets or Sets UserId
         /// </summary>
         [DataMember(Name="user_id", EmitDefaultValue=false)]
-        public int? UserId { get; set; }
+        public long? UserId { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

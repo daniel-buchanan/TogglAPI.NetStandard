@@ -35,7 +35,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <param name="features">features.</param>
         /// <param name="workspaceId">workspaceId.</param>
-        public MeWorkspace(List<MeFeature> features = default(List<MeFeature>), int? workspaceId = default(int?))
+        public MeWorkspace(List<MeFeature> features = default(List<MeFeature>), long? workspaceId = default(long?))
         {
             this.Features = features;
             this.WorkspaceId = workspaceId;
@@ -51,7 +51,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets WorkspaceId
         /// </summary>
         [DataMember(Name="workspace_id", EmitDefaultValue=false)]
-        public int? WorkspaceId { get; set; }
+        public long? WorkspaceId { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

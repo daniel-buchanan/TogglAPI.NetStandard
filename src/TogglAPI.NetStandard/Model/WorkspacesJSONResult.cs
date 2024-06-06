@@ -34,7 +34,7 @@ namespace TogglAPI.NetStandard.Model
         /// Initializes a new instance of the <see cref="WorkspacesJSONResult" /> class.
         /// </summary>
         /// <param name="wid">wid.</param>
-        public WorkspacesJSONResult(int? wid = default(int?))
+        public WorkspacesJSONResult(long? wid = default(long?))
         {
             this.Wid = wid;
         }
@@ -43,7 +43,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Wid
         /// </summary>
         [DataMember(Name="wid", EmitDefaultValue=false)]
-        public int? Wid { get; set; }
+        public long? Wid { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

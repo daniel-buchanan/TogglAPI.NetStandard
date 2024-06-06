@@ -46,7 +46,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="uid">uid.</param>
         /// <param name="updatedAt">updatedAt.</param>
         /// <param name="updatedBy">updatedBy.</param>
-        public ModelsSavedReport(string deletedAt = default(string), bool? fixedDaterange = default(bool?), int? id = default(int?), bool? isNAResource = default(bool?), string name = default(string), string _params = default(string), bool? _public = default(bool?), UtilsInt64Slice scheduledEmailGids = default(UtilsInt64Slice), UtilsInt64Slice scheduledEmailUids = default(UtilsInt64Slice), string token = default(string), int? uid = default(int?), string updatedAt = default(string), int? updatedBy = default(int?))
+        public ModelsSavedReport(string deletedAt = default(string), bool? fixedDaterange = default(bool?), long? id = default(long?), bool? isNAResource = default(bool?), string name = default(string), string _params = default(string), bool? _public = default(bool?), UtilsInt64Slice scheduledEmailGids = default(UtilsInt64Slice), UtilsInt64Slice scheduledEmailUids = default(UtilsInt64Slice), string token = default(string), long? uid = default(long?), string updatedAt = default(string), long? updatedBy = default(long?))
         {
             this.DeletedAt = deletedAt;
             this.FixedDaterange = fixedDaterange;
@@ -79,7 +79,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Id
         /// </summary>
         [DataMember(Name="id", EmitDefaultValue=false)]
-        public int? Id { get; set; }
+        public long? Id { get; set; }
 
         /// <summary>
         /// Gets or Sets IsNAResource
@@ -127,7 +127,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Uid
         /// </summary>
         [DataMember(Name="uid", EmitDefaultValue=false)]
-        public int? Uid { get; set; }
+        public long? Uid { get; set; }
 
         /// <summary>
         /// Gets or Sets UpdatedAt
@@ -139,7 +139,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets UpdatedBy
         /// </summary>
         [DataMember(Name="updated_by", EmitDefaultValue=false)]
-        public int? UpdatedBy { get; set; }
+        public long? UpdatedBy { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

@@ -48,7 +48,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="subDivision">subDivision.</param>
         /// <param name="taxNumber">taxNumber.</param>
         /// <param name="zipCode">ZIPCode field is required if country_id &#x3D;&#x3D; 235 (United states).</param>
-        public SubscriptionContactDetailRequest(string companyAddress = default(string), string companyCity = default(string), string companyName = default(string), string contactEmail = default(string), string contactPerson = default(string), int? countryId = default(int?), int? countrySubdivisionId = default(int?), ModelsSubdivision subDivision = default(ModelsSubdivision), string taxNumber = default(string), string zipCode = default(string))
+        public SubscriptionContactDetailRequest(string companyAddress = default(string), string companyCity = default(string), string companyName = default(string), string contactEmail = default(string), string contactPerson = default(string), long? countryId = default(long?), long? countrySubdivisionId = default(long?), ModelsSubdivision subDivision = default(ModelsSubdivision), string taxNumber = default(string), string zipCode = default(string))
         {
             // to ensure "companyAddress" is required (not null)
             if (companyAddress == null)
@@ -128,14 +128,14 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets CountryId
         /// </summary>
         [DataMember(Name="country_id", EmitDefaultValue=false)]
-        public int? CountryId { get; set; }
+        public long? CountryId { get; set; }
 
         /// <summary>
         /// CountrySubdivisionID is the ID of the country subdivision (state in USA) This field is required if country_id &#x3D;&#x3D; 235 (United states)
         /// </summary>
         /// <value>CountrySubdivisionID is the ID of the country subdivision (state in USA) This field is required if country_id &#x3D;&#x3D; 235 (United states)</value>
         [DataMember(Name="country_subdivision_id", EmitDefaultValue=false)]
-        public int? CountrySubdivisionId { get; set; }
+        public long? CountrySubdivisionId { get; set; }
 
         /// <summary>
         /// Gets or Sets SubDivision

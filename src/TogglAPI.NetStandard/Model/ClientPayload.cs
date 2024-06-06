@@ -36,7 +36,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="name">Client name.</param>
         /// <param name="notes">notes.</param>
         /// <param name="wid">Workspace ID.</param>
-        public ClientPayload(string name = default(string), string notes = default(string), int? wid = default(int?))
+        public ClientPayload(string name = default(string), string notes = default(string), long? wid = default(long?))
         {
             this.Name = name;
             this.Notes = notes;
@@ -61,7 +61,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Workspace ID</value>
         [DataMember(Name="wid", EmitDefaultValue=false)]
-        public int? Wid { get; set; }
+        public long? Wid { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

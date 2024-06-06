@@ -42,7 +42,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="reasons">reasons.</param>
         /// <param name="skippedStep">skippedStep.</param>
         /// <param name="userId">userId.</param>
-        public ModelsOrganizationSegmentation(bool? demoRequested = default(bool?), string fullName = default(string), string heard = default(string), string industries = default(string), string membersRange = default(string), int? organizationId = default(int?), string reasons = default(string), string skippedStep = default(string), int? userId = default(int?))
+        public ModelsOrganizationSegmentation(bool? demoRequested = default(bool?), string fullName = default(string), string heard = default(string), string industries = default(string), string membersRange = default(string), long? organizationId = default(long?), string reasons = default(string), string skippedStep = default(string), long? userId = default(long?))
         {
             this.DemoRequested = demoRequested;
             this.FullName = fullName;
@@ -89,7 +89,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets OrganizationId
         /// </summary>
         [DataMember(Name="organization_id", EmitDefaultValue=false)]
-        public int? OrganizationId { get; set; }
+        public long? OrganizationId { get; set; }
 
         /// <summary>
         /// Gets or Sets Reasons
@@ -107,7 +107,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets UserId
         /// </summary>
         [DataMember(Name="user_id", EmitDefaultValue=false)]
-        public int? UserId { get; set; }
+        public long? UserId { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

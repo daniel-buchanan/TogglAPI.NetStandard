@@ -36,7 +36,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="admins">admins.</param>
         /// <param name="groupsCount">groupsCount.</param>
         /// <param name="membersCount">membersCount.</param>
-        public ModelsStatistics(List<ModelsUserData> admins = default(List<ModelsUserData>), int? groupsCount = default(int?), int? membersCount = default(int?))
+        public ModelsStatistics(List<ModelsUserData> admins = default(List<ModelsUserData>), long? groupsCount = default(long?), long? membersCount = default(long?))
         {
             this.Admins = admins;
             this.GroupsCount = groupsCount;
@@ -53,13 +53,13 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets GroupsCount
         /// </summary>
         [DataMember(Name="groups_count", EmitDefaultValue=false)]
-        public int? GroupsCount { get; set; }
+        public long? GroupsCount { get; set; }
 
         /// <summary>
         /// Gets or Sets MembersCount
         /// </summary>
         [DataMember(Name="members_count", EmitDefaultValue=false)]
-        public int? MembersCount { get; set; }
+        public long? MembersCount { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

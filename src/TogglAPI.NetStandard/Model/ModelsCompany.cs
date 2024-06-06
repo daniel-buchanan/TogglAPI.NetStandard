@@ -40,7 +40,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="taxNumber">taxNumber.</param>
         /// <param name="taxNumberName">taxNumberName.</param>
         /// <param name="taxType">taxType.</param>
-        public ModelsCompany(string address = default(string), string bankDetails = default(string), int? companyId = default(int?), string name = default(string), string taxNumber = default(string), string taxNumberName = default(string), string taxType = default(string))
+        public ModelsCompany(string address = default(string), string bankDetails = default(string), long? companyId = default(long?), string name = default(string), string taxNumber = default(string), string taxNumberName = default(string), string taxType = default(string))
         {
             this.Address = address;
             this.BankDetails = bankDetails;
@@ -67,7 +67,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets CompanyId
         /// </summary>
         [DataMember(Name="company_id", EmitDefaultValue=false)]
-        public int? CompanyId { get; set; }
+        public long? CompanyId { get; set; }
 
         /// <summary>
         /// Gets or Sets Name

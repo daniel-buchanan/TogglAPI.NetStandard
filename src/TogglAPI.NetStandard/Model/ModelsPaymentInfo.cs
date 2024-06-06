@@ -37,7 +37,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="description">description.</param>
         /// <param name="id">id.</param>
         /// <param name="status">status.</param>
-        public ModelsPaymentInfo(string createdAt = default(string), string description = default(string), int? id = default(int?), string status = default(string))
+        public ModelsPaymentInfo(string createdAt = default(string), string description = default(string), long? id = default(long?), string status = default(string))
         {
             this.CreatedAt = createdAt;
             this.Description = description;
@@ -61,7 +61,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Id
         /// </summary>
         [DataMember(Name="id", EmitDefaultValue=false)]
-        public int? Id { get; set; }
+        public long? Id { get; set; }
 
         /// <summary>
         /// Gets or Sets Status

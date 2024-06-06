@@ -39,7 +39,7 @@ namespace TogglAPI.NetStandard.Model
         /// Initializes a new instance of the <see cref="PurchaseordersPayload" /> class.
         /// </summary>
         /// <param name="userCount">userCount (required).</param>
-        public PurchaseordersPayload(int? userCount = default(int?))
+        public PurchaseordersPayload(long? userCount = default(long?))
         {
             // to ensure "userCount" is required (not null)
             if (userCount == null)
@@ -56,7 +56,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets UserCount
         /// </summary>
         [DataMember(Name="user_count", EmitDefaultValue=false)]
-        public int? UserCount { get; set; }
+        public long? UserCount { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -130,8 +130,8 @@ namespace TogglAPI.NetStandard.Model
         /// <returns>Validation Result</returns>
         IEnumerable<System.ComponentModel.DataAnnotations.ValidationResult> IValidatableObject.Validate(ValidationContext validationContext)
         {
-            // UserCount (int?) minimum
-            if(this.UserCount < (int?)1)
+            // UserCount (long?) minimum
+            if(this.UserCount < (long?)1)
             {
                 yield return new System.ComponentModel.DataAnnotations.ValidationResult("Invalid value for UserCount, must be a value greater than or equal to 1.", new [] { "UserCount" });
             }

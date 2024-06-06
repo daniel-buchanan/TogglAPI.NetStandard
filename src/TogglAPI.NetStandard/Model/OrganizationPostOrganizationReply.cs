@@ -38,7 +38,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="permissions">permissions.</param>
         /// <param name="workspaceId">workspaceId.</param>
         /// <param name="workspaceName">workspaceName.</param>
-        public OrganizationPostOrganizationReply(int? id = default(int?), string name = default(string), string permissions = default(string), int? workspaceId = default(int?), string workspaceName = default(string))
+        public OrganizationPostOrganizationReply(long? id = default(long?), string name = default(string), string permissions = default(string), long? workspaceId = default(long?), string workspaceName = default(string))
         {
             this.Id = id;
             this.Name = name;
@@ -51,7 +51,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Id
         /// </summary>
         [DataMember(Name="id", EmitDefaultValue=false)]
-        public int? Id { get; set; }
+        public long? Id { get; set; }
 
         /// <summary>
         /// Gets or Sets Name
@@ -69,7 +69,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets WorkspaceId
         /// </summary>
         [DataMember(Name="workspace_id", EmitDefaultValue=false)]
-        public int? WorkspaceId { get; set; }
+        public long? WorkspaceId { get; set; }
 
         /// <summary>
         /// Gets or Sets WorkspaceName

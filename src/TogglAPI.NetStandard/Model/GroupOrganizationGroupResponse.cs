@@ -39,7 +39,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="permissions">permissions.</param>
         /// <param name="users">users.</param>
         /// <param name="workspaces">workspaces.</param>
-        public GroupOrganizationGroupResponse(string at = default(string), int? groupId = default(int?), string name = default(string), string permissions = default(string), List<ModelsOrganizationUserSimple> users = default(List<ModelsOrganizationUserSimple>), List<int?> workspaces = default(List<int?>))
+        public GroupOrganizationGroupResponse(string at = default(string), long? groupId = default(long?), string name = default(string), string permissions = default(string), List<ModelsOrganizationUserSimple> users = default(List<ModelsOrganizationUserSimple>), List<long?> workspaces = default(List<long?>))
         {
             this.At = at;
             this.GroupId = groupId;
@@ -59,7 +59,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets GroupId
         /// </summary>
         [DataMember(Name="group_id", EmitDefaultValue=false)]
-        public int? GroupId { get; set; }
+        public long? GroupId { get; set; }
 
         /// <summary>
         /// Gets or Sets Name
@@ -83,7 +83,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Workspaces
         /// </summary>
         [DataMember(Name="workspaces", EmitDefaultValue=false)]
-        public List<int?> Workspaces { get; set; }
+        public List<long?> Workspaces { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

@@ -38,7 +38,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="email">email.</param>
         /// <param name="errorStatus">errorStatus.</param>
         /// <param name="provider">provider.</param>
-        public ModelsIntegration(int? calendarIntegrationId = default(int?), string createdAt = default(string), string email = default(string), string errorStatus = default(string), string provider = default(string))
+        public ModelsIntegration(long? calendarIntegrationId = default(long?), string createdAt = default(string), string email = default(string), string errorStatus = default(string), string provider = default(string))
         {
             this.CalendarIntegrationId = calendarIntegrationId;
             this.CreatedAt = createdAt;
@@ -51,7 +51,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets CalendarIntegrationId
         /// </summary>
         [DataMember(Name="calendar_integration_id", EmitDefaultValue=false)]
-        public int? CalendarIntegrationId { get; set; }
+        public long? CalendarIntegrationId { get; set; }
 
         /// <summary>
         /// Gets or Sets CreatedAt

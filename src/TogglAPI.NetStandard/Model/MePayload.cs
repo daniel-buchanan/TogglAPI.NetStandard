@@ -41,7 +41,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="fullname">User&#39;s full name.</param>
         /// <param name="password">User&#39;s new password (current one must also be provided).</param>
         /// <param name="timezone">User&#39;s timezone.</param>
-        public MePayload(int? beginningOfWeek = default(int?), int? countryId = default(int?), string currentPassword = default(string), int? defaultWorkspaceId = default(int?), string email = default(string), string fullname = default(string), string password = default(string), string timezone = default(string))
+        public MePayload(long? beginningOfWeek = default(long?), long? countryId = default(long?), string currentPassword = default(string), long? defaultWorkspaceId = default(long?), string email = default(string), string fullname = default(string), string password = default(string), string timezone = default(string))
         {
             this.BeginningOfWeek = beginningOfWeek;
             this.CountryId = countryId;
@@ -58,14 +58,14 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>User&#39;s first day of the week. Sunday: 0, Monday:1, etc.</value>
         [DataMember(Name="beginning_of_week", EmitDefaultValue=false)]
-        public int? BeginningOfWeek { get; set; }
+        public long? BeginningOfWeek { get; set; }
 
         /// <summary>
         /// User&#39;s country ID
         /// </summary>
         /// <value>User&#39;s country ID</value>
         [DataMember(Name="country_id", EmitDefaultValue=false)]
-        public int? CountryId { get; set; }
+        public long? CountryId { get; set; }
 
         /// <summary>
         /// User&#39;s current password (used to change the current password)
@@ -79,7 +79,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>User&#39;s default workspace ID</value>
         [DataMember(Name="default_workspace_id", EmitDefaultValue=false)]
-        public int? DefaultWorkspaceId { get; set; }
+        public long? DefaultWorkspaceId { get; set; }
 
         /// <summary>
         /// User&#39;s email address

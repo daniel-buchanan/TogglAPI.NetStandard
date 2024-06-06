@@ -35,7 +35,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <param name="name">name.</param>
         /// <param name="userId">userId.</param>
-        public ModelsUserData(string name = default(string), int? userId = default(int?))
+        public ModelsUserData(string name = default(string), long? userId = default(long?))
         {
             this.Name = name;
             this.UserId = userId;
@@ -51,7 +51,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets UserId
         /// </summary>
         [DataMember(Name="user_id", EmitDefaultValue=false)]
-        public int? UserId { get; set; }
+        public long? UserId { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

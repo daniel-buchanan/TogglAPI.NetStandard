@@ -28,7 +28,7 @@ namespace TogglAPI.NetStandard.Model
     /// UtilsInt64Slice
     /// </summary>
     [DataContract]
-    public partial class UtilsInt64Slice : List<int?>,  IEquatable<UtilsInt64Slice>, IValidatableObject
+    public partial class UtilsInt64Slice : List<long?>,  IEquatable<UtilsInt64Slice>, IValidatableObject
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="UtilsInt64Slice" /> class.

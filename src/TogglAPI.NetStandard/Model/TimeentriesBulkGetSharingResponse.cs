@@ -39,7 +39,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="userId">userId.</param>
         /// <param name="userName">userName.</param>
         /// <param name="workspaceId">workspaceId.</param>
-        public TimeentriesBulkGetSharingResponse(bool? isAccepted = default(bool?), int? timeEntryId = default(int?), int? timeEntryInvitationId = default(int?), int? userId = default(int?), string userName = default(string), int? workspaceId = default(int?))
+        public TimeentriesBulkGetSharingResponse(bool? isAccepted = default(bool?), long? timeEntryId = default(long?), long? timeEntryInvitationId = default(long?), long? userId = default(long?), string userName = default(string), long? workspaceId = default(long?))
         {
             this.IsAccepted = isAccepted;
             this.TimeEntryId = timeEntryId;
@@ -59,19 +59,19 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets TimeEntryId
         /// </summary>
         [DataMember(Name="time_entry_id", EmitDefaultValue=false)]
-        public int? TimeEntryId { get; set; }
+        public long? TimeEntryId { get; set; }
 
         /// <summary>
         /// Gets or Sets TimeEntryInvitationId
         /// </summary>
         [DataMember(Name="time_entry_invitation_id", EmitDefaultValue=false)]
-        public int? TimeEntryInvitationId { get; set; }
+        public long? TimeEntryInvitationId { get; set; }
 
         /// <summary>
         /// Gets or Sets UserId
         /// </summary>
         [DataMember(Name="user_id", EmitDefaultValue=false)]
-        public int? UserId { get; set; }
+        public long? UserId { get; set; }
 
         /// <summary>
         /// Gets or Sets UserName
@@ -83,7 +83,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets WorkspaceId
         /// </summary>
         [DataMember(Name="workspace_id", EmitDefaultValue=false)]
-        public int? WorkspaceId { get; set; }
+        public long? WorkspaceId { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

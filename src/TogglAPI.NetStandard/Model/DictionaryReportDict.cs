@@ -35,7 +35,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <param name="id">id.</param>
         /// <param name="name">name.</param>
-        public DictionaryReportDict(int? id = default(int?), string name = default(string))
+        public DictionaryReportDict(long? id = default(long?), string name = default(string))
         {
             this.Id = id;
             this.Name = name;
@@ -45,7 +45,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Id
         /// </summary>
         [DataMember(Name="id", EmitDefaultValue=false)]
-        public int? Id { get; set; }
+        public long? Id { get; set; }
 
         /// <summary>
         /// Gets or Sets Name

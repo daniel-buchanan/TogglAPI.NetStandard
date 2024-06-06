@@ -58,7 +58,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="timezone">timezone.</param>
         /// <param name="updatedAt">updatedAt.</param>
         /// <param name="workspaces">Workspaces, null if with_related_data was not set to true or if the user does not have any workspaces.</param>
-        public RelatedUserWithRelated(string apiToken = default(string), DateTime? at = default(DateTime?), string authorizationUpdatedAt = default(string), int? beginningOfWeek = default(int?), List<ModelsClient> clients = default(List<ModelsClient>), int? countryId = default(int?), DateTime? createdAt = default(DateTime?), int? defaultWorkspaceId = default(int?), string email = default(string), string fullname = default(string), bool? hasPassword = default(bool?), int? id = default(int?), string imageUrl = default(string), string intercomHash = default(string), List<string> oauthProviders = default(List<string>), string openidEmail = default(string), bool? openidEnabled = default(bool?), ModelsOptions options = default(ModelsOptions), List<ModelsProject> projects = default(List<ModelsProject>), List<ModelsTag> tags = default(List<ModelsTag>), List<ModelsTask> tasks = default(List<ModelsTask>), List<ModelsTimeEntry> timeEntries = default(List<ModelsTimeEntry>), string timezone = default(string), DateTime? updatedAt = default(DateTime?), List<WorkspaceWorkspace> workspaces = default(List<WorkspaceWorkspace>))
+        public RelatedUserWithRelated(string apiToken = default(string), DateTime? at = default(DateTime?), string authorizationUpdatedAt = default(string), long? beginningOfWeek = default(long?), List<ModelsClient> clients = default(List<ModelsClient>), long? countryId = default(long?), DateTime? createdAt = default(DateTime?), long? defaultWorkspaceId = default(long?), string email = default(string), string fullname = default(string), bool? hasPassword = default(bool?), long? id = default(long?), string imageUrl = default(string), string intercomHash = default(string), List<string> oauthProviders = default(List<string>), string openidEmail = default(string), bool? openidEnabled = default(bool?), ModelsOptions options = default(ModelsOptions), List<ModelsProject> projects = default(List<ModelsProject>), List<ModelsTag> tags = default(List<ModelsTag>), List<ModelsTask> tasks = default(List<ModelsTask>), List<ModelsTimeEntry> timeEntries = default(List<ModelsTimeEntry>), string timezone = default(string), DateTime? updatedAt = default(DateTime?), List<WorkspaceWorkspace> workspaces = default(List<WorkspaceWorkspace>))
         {
             this.ApiToken = apiToken;
             this.At = at;
@@ -111,7 +111,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets BeginningOfWeek
         /// </summary>
         [DataMember(Name="beginning_of_week", EmitDefaultValue=false)]
-        public int? BeginningOfWeek { get; set; }
+        public long? BeginningOfWeek { get; set; }
 
         /// <summary>
         /// Clients, null if with_related_data was not set to true or if the user does not have any clients
@@ -124,7 +124,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets CountryId
         /// </summary>
         [DataMember(Name="country_id", EmitDefaultValue=false)]
-        public int? CountryId { get; set; }
+        public long? CountryId { get; set; }
 
         /// <summary>
         /// Gets or Sets CreatedAt
@@ -136,7 +136,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets DefaultWorkspaceId
         /// </summary>
         [DataMember(Name="default_workspace_id", EmitDefaultValue=false)]
-        public int? DefaultWorkspaceId { get; set; }
+        public long? DefaultWorkspaceId { get; set; }
 
         /// <summary>
         /// Gets or Sets Email
@@ -160,7 +160,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Id
         /// </summary>
         [DataMember(Name="id", EmitDefaultValue=false)]
-        public int? Id { get; set; }
+        public long? Id { get; set; }
 
         /// <summary>
         /// Gets or Sets ImageUrl

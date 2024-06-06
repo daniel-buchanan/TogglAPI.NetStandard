@@ -38,7 +38,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="name">name.</param>
         /// <param name="role">role.</param>
         /// <param name="workspaceId">workspaceId.</param>
-        public ModelsOrgUserWorkspace(bool? admin = default(bool?), bool? inactive = default(bool?), string name = default(string), string role = default(string), int? workspaceId = default(int?))
+        public ModelsOrgUserWorkspace(bool? admin = default(bool?), bool? inactive = default(bool?), string name = default(string), string role = default(string), long? workspaceId = default(long?))
         {
             this.Admin = admin;
             this.Inactive = inactive;
@@ -75,7 +75,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets WorkspaceId
         /// </summary>
         [DataMember(Name="workspace_id", EmitDefaultValue=false)]
-        public int? WorkspaceId { get; set; }
+        public long? WorkspaceId { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

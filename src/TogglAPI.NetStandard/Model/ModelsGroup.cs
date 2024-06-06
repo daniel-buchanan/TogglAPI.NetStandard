@@ -38,7 +38,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="name">name.</param>
         /// <param name="permissions">permissions.</param>
         /// <param name="workspaceId">workspaceId.</param>
-        public ModelsGroup(string at = default(string), int? id = default(int?), string name = default(string), string permissions = default(string), int? workspaceId = default(int?))
+        public ModelsGroup(string at = default(string), long? id = default(long?), string name = default(string), string permissions = default(string), long? workspaceId = default(long?))
         {
             this.At = at;
             this.Id = id;
@@ -57,7 +57,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Id
         /// </summary>
         [DataMember(Name="id", EmitDefaultValue=false)]
-        public int? Id { get; set; }
+        public long? Id { get; set; }
 
         /// <summary>
         /// Gets or Sets Name
@@ -75,7 +75,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets WorkspaceId
         /// </summary>
         [DataMember(Name="workspace_id", EmitDefaultValue=false)]
-        public int? WorkspaceId { get; set; }
+        public long? WorkspaceId { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

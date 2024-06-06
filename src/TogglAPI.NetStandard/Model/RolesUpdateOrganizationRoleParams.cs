@@ -35,7 +35,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <param name="description">description.</param>
         /// <param name="permissions">permissions.</param>
-        public RolesUpdateOrganizationRoleParams(string description = default(string), List<int?> permissions = default(List<int?>))
+        public RolesUpdateOrganizationRoleParams(string description = default(string), List<long?> permissions = default(List<long?>))
         {
             this.Description = description;
             this.Permissions = permissions;
@@ -51,7 +51,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Permissions
         /// </summary>
         [DataMember(Name="permissions", EmitDefaultValue=false)]
-        public List<int?> Permissions { get; set; }
+        public List<long?> Permissions { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

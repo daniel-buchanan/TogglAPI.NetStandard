@@ -35,7 +35,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <param name="startDate">startDate.</param>
         /// <param name="timesheetSetupId">timesheetSetupId.</param>
-        public TimesheetsPostTimesheetHoursPayload(string startDate = default(string), int? timesheetSetupId = default(int?))
+        public TimesheetsPostTimesheetHoursPayload(string startDate = default(string), long? timesheetSetupId = default(long?))
         {
             this.StartDate = startDate;
             this.TimesheetSetupId = timesheetSetupId;
@@ -51,7 +51,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets TimesheetSetupId
         /// </summary>
         [DataMember(Name="timesheet_setup_id", EmitDefaultValue=false)]
-        public int? TimesheetSetupId { get; set; }
+        public long? TimesheetSetupId { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

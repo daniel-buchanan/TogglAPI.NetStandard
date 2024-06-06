@@ -38,7 +38,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="fullname">fullname.</param>
         /// <param name="id">id.</param>
         /// <param name="timezone">timezone.</param>
-        public ModelsUser(string apiToken = default(string), string email = default(string), string fullname = default(string), int? id = default(int?), string timezone = default(string))
+        public ModelsUser(string apiToken = default(string), string email = default(string), string fullname = default(string), long? id = default(long?), string timezone = default(string))
         {
             this.ApiToken = apiToken;
             this.Email = email;
@@ -70,7 +70,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Id
         /// </summary>
         [DataMember(Name="id", EmitDefaultValue=false)]
-        public int? Id { get; set; }
+        public long? Id { get; set; }
 
         /// <summary>
         /// Gets or Sets Timezone

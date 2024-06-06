@@ -42,7 +42,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="goalType">goalType (required).</param>
         /// <param name="userId">userId (required).</param>
         /// <param name="workspaceId">workspaceId (required).</param>
-        public GoalsParamsInsight(string cadencePeriod = default(string), ModelsGoalType goalType = default(ModelsGoalType), int? userId = default(int?), int? workspaceId = default(int?))
+        public GoalsParamsInsight(string cadencePeriod = default(string), ModelsGoalType goalType = default(ModelsGoalType), long? userId = default(long?), long? workspaceId = default(long?))
         {
             // to ensure "cadencePeriod" is required (not null)
             if (cadencePeriod == null)
@@ -98,13 +98,13 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets UserId
         /// </summary>
         [DataMember(Name="user_id", EmitDefaultValue=false)]
-        public int? UserId { get; set; }
+        public long? UserId { get; set; }
 
         /// <summary>
         /// Gets or Sets WorkspaceId
         /// </summary>
         [DataMember(Name="workspace_id", EmitDefaultValue=false)]
-        public int? WorkspaceId { get; set; }
+        public long? WorkspaceId { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

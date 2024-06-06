@@ -28,7 +28,7 @@ namespace TogglAPI.NetStandard.Model
     /// ModelsIntArray
     /// </summary>
     [DataContract]
-    public partial class ModelsIntArray : List<int?>,  IEquatable<ModelsIntArray>, IValidatableObject
+    public partial class ModelsIntArray : List<long?>,  IEquatable<ModelsIntArray>, IValidatableObject
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="ModelsIntArray" /> class.

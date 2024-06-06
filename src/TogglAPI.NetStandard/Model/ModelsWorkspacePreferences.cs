@@ -43,7 +43,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="reportLockedAt">Date on which \&quot;Lock Time Entries\&quot; feature was enabled.</param>
         /// <param name="singleSignOn">Whether SSO is enabled for this workspace.</param>
         /// <param name="ssoRequestedAt">Date on which SSO was requested.</param>
-        public ModelsWorkspacePreferences(string annualMasterCampaign2018 = default(string), bool? hideStartEndTimes = default(bool?), string incTosAcceptedAt = default(string), int? incTosAcceptedBy = default(int?), int? initialPricingPlan = default(int?), bool? january2018Campaign = default(bool?), bool? masterSignup = default(bool?), string reportLockedAt = default(string), bool? singleSignOn = default(bool?), string ssoRequestedAt = default(string))
+        public ModelsWorkspacePreferences(string annualMasterCampaign2018 = default(string), bool? hideStartEndTimes = default(bool?), string incTosAcceptedAt = default(string), long? incTosAcceptedBy = default(long?), long? initialPricingPlan = default(long?), bool? january2018Campaign = default(bool?), bool? masterSignup = default(bool?), string reportLockedAt = default(string), bool? singleSignOn = default(bool?), string ssoRequestedAt = default(string))
         {
             this.AnnualMasterCampaign2018 = annualMasterCampaign2018;
             this.HideStartEndTimes = hideStartEndTimes;
@@ -83,14 +83,14 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>User ID who accepted the terms of service</value>
         [DataMember(Name="inc_tos_accepted_by", EmitDefaultValue=false)]
-        public int? IncTosAcceptedBy { get; set; }
+        public long? IncTosAcceptedBy { get; set; }
 
         /// <summary>
         /// Pricing plan ID
         /// </summary>
         /// <value>Pricing plan ID</value>
         [DataMember(Name="initial_pricing_plan", EmitDefaultValue=false)]
-        public int? InitialPricingPlan { get; set; }
+        public long? InitialPricingPlan { get; set; }
 
         /// <summary>
         /// Legacy field

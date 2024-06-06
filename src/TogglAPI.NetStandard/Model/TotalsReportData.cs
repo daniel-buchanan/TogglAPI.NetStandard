@@ -40,7 +40,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="resolution">resolution.</param>
         /// <param name="seconds">seconds.</param>
         /// <param name="trackedDays">trackedDays.</param>
-        public TotalsReportData(int? billableAmountInCents = default(int?), List<TotalsGraph> graph = default(List<TotalsGraph>), int? labourCostInCents = default(int?), List<BaseBillableHourlyRate> rates = default(List<BaseBillableHourlyRate>), string resolution = default(string), int? seconds = default(int?), int? trackedDays = default(int?))
+        public TotalsReportData(long? billableAmountInCents = default(long?), List<TotalsGraph> graph = default(List<TotalsGraph>), long? labourCostInCents = default(long?), List<BaseBillableHourlyRate> rates = default(List<BaseBillableHourlyRate>), string resolution = default(string), long? seconds = default(long?), long? trackedDays = default(long?))
         {
             this.BillableAmountInCents = billableAmountInCents;
             this.Graph = graph;
@@ -55,7 +55,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets BillableAmountInCents
         /// </summary>
         [DataMember(Name="billable_amount_in_cents", EmitDefaultValue=false)]
-        public int? BillableAmountInCents { get; set; }
+        public long? BillableAmountInCents { get; set; }
 
         /// <summary>
         /// Gets or Sets Graph
@@ -67,7 +67,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets LabourCostInCents
         /// </summary>
         [DataMember(Name="labour_cost_in_cents", EmitDefaultValue=false)]
-        public int? LabourCostInCents { get; set; }
+        public long? LabourCostInCents { get; set; }
 
         /// <summary>
         /// Gets or Sets Rates
@@ -85,13 +85,13 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Seconds
         /// </summary>
         [DataMember(Name="seconds", EmitDefaultValue=false)]
-        public int? Seconds { get; set; }
+        public long? Seconds { get; set; }
 
         /// <summary>
         /// Gets or Sets TrackedDays
         /// </summary>
         [DataMember(Name="tracked_days", EmitDefaultValue=false)]
-        public int? TrackedDays { get; set; }
+        public long? TrackedDays { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

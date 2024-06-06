@@ -37,7 +37,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="projectId">projectId.</param>
         /// <param name="trackedSeconds">trackedSeconds.</param>
         /// <param name="userId">userId.</param>
-        public UsersProjectUsersSummaryRow(int? billableSeconds = default(int?), int? projectId = default(int?), int? trackedSeconds = default(int?), int? userId = default(int?))
+        public UsersProjectUsersSummaryRow(long? billableSeconds = default(long?), long? projectId = default(long?), long? trackedSeconds = default(long?), long? userId = default(long?))
         {
             this.BillableSeconds = billableSeconds;
             this.ProjectId = projectId;
@@ -49,25 +49,25 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets BillableSeconds
         /// </summary>
         [DataMember(Name="billable_seconds", EmitDefaultValue=false)]
-        public int? BillableSeconds { get; set; }
+        public long? BillableSeconds { get; set; }
 
         /// <summary>
         /// Gets or Sets ProjectId
         /// </summary>
         [DataMember(Name="project_id", EmitDefaultValue=false)]
-        public int? ProjectId { get; set; }
+        public long? ProjectId { get; set; }
 
         /// <summary>
         /// Gets or Sets TrackedSeconds
         /// </summary>
         [DataMember(Name="tracked_seconds", EmitDefaultValue=false)]
-        public int? TrackedSeconds { get; set; }
+        public long? TrackedSeconds { get; set; }
 
         /// <summary>
         /// Gets or Sets UserId
         /// </summary>
         [DataMember(Name="user_id", EmitDefaultValue=false)]
-        public int? UserId { get; set; }
+        public long? UserId { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

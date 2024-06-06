@@ -38,7 +38,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="organizationId">organizationId.</param>
         /// <param name="senderEmail">senderEmail.</param>
         /// <param name="senderName">senderName.</param>
-        public ModelsInvitation(string code = default(string), string email = default(string), int? organizationId = default(int?), string senderEmail = default(string), string senderName = default(string))
+        public ModelsInvitation(string code = default(string), string email = default(string), long? organizationId = default(long?), string senderEmail = default(string), string senderName = default(string))
         {
             this.Code = code;
             this.Email = email;
@@ -63,7 +63,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets OrganizationId
         /// </summary>
         [DataMember(Name="organization_id", EmitDefaultValue=false)]
-        public int? OrganizationId { get; set; }
+        public long? OrganizationId { get; set; }
 
         /// <summary>
         /// Gets or Sets SenderEmail

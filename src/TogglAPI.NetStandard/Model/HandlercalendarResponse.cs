@@ -34,7 +34,7 @@ namespace TogglAPI.NetStandard.Model
         /// Initializes a new instance of the <see cref="HandlercalendarResponse" /> class.
         /// </summary>
         /// <param name="fetchedEvents">fetchedEvents.</param>
-        public HandlercalendarResponse(int? fetchedEvents = default(int?))
+        public HandlercalendarResponse(long? fetchedEvents = default(long?))
         {
             this.FetchedEvents = fetchedEvents;
         }
@@ -43,7 +43,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets FetchedEvents
         /// </summary>
         [DataMember(Name="fetched_events", EmitDefaultValue=false)]
-        public int? FetchedEvents { get; set; }
+        public long? FetchedEvents { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

@@ -39,7 +39,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="name">name.</param>
         /// <param name="organizationAdmin">organizationAdmin.</param>
         /// <param name="workspaces">workspaces.</param>
-        public UserPayload(string email = default(string), List<int?> groups = default(List<int?>), bool? inactive = default(bool?), string name = default(string), bool? organizationAdmin = default(bool?), List<ModelsOrgUserWorkspace> workspaces = default(List<ModelsOrgUserWorkspace>))
+        public UserPayload(string email = default(string), List<long?> groups = default(List<long?>), bool? inactive = default(bool?), string name = default(string), bool? organizationAdmin = default(bool?), List<ModelsOrgUserWorkspace> workspaces = default(List<ModelsOrgUserWorkspace>))
         {
             this.Email = email;
             this.Groups = groups;
@@ -59,7 +59,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Groups
         /// </summary>
         [DataMember(Name="groups", EmitDefaultValue=false)]
-        public List<int?> Groups { get; set; }
+        public List<long?> Groups { get; set; }
 
         /// <summary>
         /// Gets or Sets Inactive

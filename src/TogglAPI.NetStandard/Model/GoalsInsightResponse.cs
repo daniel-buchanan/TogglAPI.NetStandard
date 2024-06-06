@@ -35,7 +35,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <param name="cadences">cadences.</param>
         /// <param name="value">value.</param>
-        public GoalsInsightResponse(int? cadences = default(int?), int? value = default(int?))
+        public GoalsInsightResponse(long? cadences = default(long?), long? value = default(long?))
         {
             this.Cadences = cadences;
             this.Value = value;
@@ -45,13 +45,13 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Cadences
         /// </summary>
         [DataMember(Name="cadences", EmitDefaultValue=false)]
-        public int? Cadences { get; set; }
+        public long? Cadences { get; set; }
 
         /// <summary>
         /// Gets or Sets Value
         /// </summary>
         [DataMember(Name="value", EmitDefaultValue=false)]
-        public int? Value { get; set; }
+        public long? Value { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

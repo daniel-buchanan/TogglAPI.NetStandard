@@ -37,7 +37,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="joined">joined.</param>
         /// <param name="name">name.</param>
         /// <param name="userId">userId.</param>
-        public ModelsOrganizationUserSimple(string avatarUrl = default(string), bool? joined = default(bool?), string name = default(string), int? userId = default(int?))
+        public ModelsOrganizationUserSimple(string avatarUrl = default(string), bool? joined = default(bool?), string name = default(string), long? userId = default(long?))
         {
             this.AvatarUrl = avatarUrl;
             this.Joined = joined;
@@ -67,7 +67,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets UserId
         /// </summary>
         [DataMember(Name="user_id", EmitDefaultValue=false)]
-        public int? UserId { get; set; }
+        public long? UserId { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

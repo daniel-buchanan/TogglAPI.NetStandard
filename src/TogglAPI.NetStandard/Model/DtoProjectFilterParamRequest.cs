@@ -42,7 +42,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="name">Project name, optional..</param>
         /// <param name="pageSize">PageSize is the number of records returned per page. If unset, the default value of 201 will be used..</param>
         /// <param name="start">Start is used for pagination, optional, default 0. The api will return the next projects page with id &gt;&#x3D; Start..</param>
-        public DtoProjectFilterParamRequest(List<int?> clientIds = default(List<int?>), string currency = default(string), List<int?> ids = default(List<int?>), bool? isActive = default(bool?), bool? isBillable = default(bool?), bool? isPrivate = default(bool?), string name = default(string), int? pageSize = default(int?), int? start = default(int?))
+        public DtoProjectFilterParamRequest(List<long?> clientIds = default(List<long?>), string currency = default(string), List<long?> ids = default(List<long?>), bool? isActive = default(bool?), bool? isBillable = default(bool?), bool? isPrivate = default(bool?), string name = default(string), long? pageSize = default(long?), long? start = default(long?))
         {
             this.ClientIds = clientIds;
             this.Currency = currency;
@@ -60,7 +60,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Client IDs, optional.</value>
         [DataMember(Name="client_ids", EmitDefaultValue=false)]
-        public List<int?> ClientIds { get; set; }
+        public List<long?> ClientIds { get; set; }
 
         /// <summary>
         /// Currency, optional, example \&quot;EUR\&quot;.
@@ -74,7 +74,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Project IDs, optional.</value>
         [DataMember(Name="ids", EmitDefaultValue=false)]
-        public List<int?> Ids { get; set; }
+        public List<long?> Ids { get; set; }
 
         /// <summary>
         /// Whether the wanted projects are archived, optional, default false.
@@ -109,14 +109,14 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>PageSize is the number of records returned per page. If unset, the default value of 201 will be used.</value>
         [DataMember(Name="page_size", EmitDefaultValue=false)]
-        public int? PageSize { get; set; }
+        public long? PageSize { get; set; }
 
         /// <summary>
         /// Start is used for pagination, optional, default 0. The api will return the next projects page with id &gt;&#x3D; Start.
         /// </summary>
         /// <value>Start is used for pagination, optional, default 0. The api will return the next projects page with id &gt;&#x3D; Start.</value>
         [DataMember(Name="start", EmitDefaultValue=false)]
-        public int? Start { get; set; }
+        public long? Start { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

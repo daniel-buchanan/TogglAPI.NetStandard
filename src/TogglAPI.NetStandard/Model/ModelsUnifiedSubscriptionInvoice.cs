@@ -41,7 +41,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="invoiceNumber">invoiceNumber.</param>
         /// <param name="pdfUrl">pdfUrl.</param>
         /// <param name="totalAmount">totalAmount.</param>
-        public ModelsUnifiedSubscriptionInvoice(DateTime? creationDate = default(DateTime?), string currency = default(string), string description = default(string), string hostedUrl = default(string), string id = default(string), string invoiceNumber = default(string), string pdfUrl = default(string), int? totalAmount = default(int?))
+        public ModelsUnifiedSubscriptionInvoice(DateTime? creationDate = default(DateTime?), string currency = default(string), string description = default(string), string hostedUrl = default(string), string id = default(string), string invoiceNumber = default(string), string pdfUrl = default(string), long? totalAmount = default(long?))
         {
             this.CreationDate = creationDate;
             this.Currency = currency;
@@ -99,7 +99,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets TotalAmount
         /// </summary>
         [DataMember(Name="total_amount", EmitDefaultValue=false)]
-        public int? TotalAmount { get; set; }
+        public long? TotalAmount { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

@@ -46,7 +46,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="seconds">seconds.</param>
         /// <param name="userId">userId.</param>
         /// <param name="userName">userName.</param>
-        public WeeklyDataRow(UtilsInt64Slice billableAmountsInCents = default(UtilsInt64Slice), UtilsInt64Slice billableSeconds = default(UtilsInt64Slice), string clientName = default(string), string currency = default(string), int? hourlyRateInCents = default(int?), int? plannedTaskId = default(int?), string projectColor = default(string), string projectHexColor = default(string), int? projectId = default(int?), string projectName = default(string), UtilsInt64Slice seconds = default(UtilsInt64Slice), int? userId = default(int?), string userName = default(string))
+        public WeeklyDataRow(UtilsInt64Slice billableAmountsInCents = default(UtilsInt64Slice), UtilsInt64Slice billableSeconds = default(UtilsInt64Slice), string clientName = default(string), string currency = default(string), long? hourlyRateInCents = default(long?), long? plannedTaskId = default(long?), string projectColor = default(string), string projectHexColor = default(string), long? projectId = default(long?), string projectName = default(string), UtilsInt64Slice seconds = default(UtilsInt64Slice), long? userId = default(long?), string userName = default(string))
         {
             this.BillableAmountsInCents = billableAmountsInCents;
             this.BillableSeconds = billableSeconds;
@@ -92,13 +92,13 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>In cents</value>
         [DataMember(Name="hourly_rate_in_cents", EmitDefaultValue=false)]
-        public int? HourlyRateInCents { get; set; }
+        public long? HourlyRateInCents { get; set; }
 
         /// <summary>
         /// Gets or Sets PlannedTaskId
         /// </summary>
         [DataMember(Name="planned_task_id", EmitDefaultValue=false)]
-        public int? PlannedTaskId { get; set; }
+        public long? PlannedTaskId { get; set; }
 
         /// <summary>
         /// Gets or Sets ProjectColor
@@ -116,7 +116,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets ProjectId
         /// </summary>
         [DataMember(Name="project_id", EmitDefaultValue=false)]
-        public int? ProjectId { get; set; }
+        public long? ProjectId { get; set; }
 
         /// <summary>
         /// Gets or Sets ProjectName
@@ -134,7 +134,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets UserId
         /// </summary>
         [DataMember(Name="user_id", EmitDefaultValue=false)]
-        public int? UserId { get; set; }
+        public long? UserId { get; set; }
 
         /// <summary>
         /// Gets or Sets UserName

@@ -47,7 +47,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="timezone">User&#39;s timezone, if not provided will be UTC.</param>
         /// <param name="tosAccepted">Whether the Terms of Service have been accepted (required).</param>
         /// <param name="workspace">Optional workspace settings, used when creating account not through an invitation.</param>
-        public MePostUser(int? countryId = default(int?), string createdWith = default(string), string email = default(string), string fullName = default(string), string invitationCode = default(string), string password = default(string), string timezone = default(string), bool? tosAccepted = default(bool?), MePostInitialWorkspace workspace = default(MePostInitialWorkspace))
+        public MePostUser(long? countryId = default(long?), string createdWith = default(string), string email = default(string), string fullName = default(string), string invitationCode = default(string), string password = default(string), string timezone = default(string), bool? tosAccepted = default(bool?), MePostInitialWorkspace workspace = default(MePostInitialWorkspace))
         {
             // to ensure "email" is required (not null)
             if (email == null)
@@ -89,7 +89,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>User&#39;s country ID, if not provided will be United States</value>
         [DataMember(Name="country_id", EmitDefaultValue=false)]
-        public int? CountryId { get; set; }
+        public long? CountryId { get; set; }
 
         /// <summary>
         /// Should describe the application/service that is using the API

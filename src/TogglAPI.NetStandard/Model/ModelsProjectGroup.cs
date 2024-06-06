@@ -37,7 +37,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="id">id.</param>
         /// <param name="pid">pid.</param>
         /// <param name="wid">wid.</param>
-        public ModelsProjectGroup(int? groupId = default(int?), int? id = default(int?), int? pid = default(int?), int? wid = default(int?))
+        public ModelsProjectGroup(long? groupId = default(long?), long? id = default(long?), long? pid = default(long?), long? wid = default(long?))
         {
             this.GroupId = groupId;
             this.Id = id;
@@ -49,25 +49,25 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets GroupId
         /// </summary>
         [DataMember(Name="group_id", EmitDefaultValue=false)]
-        public int? GroupId { get; set; }
+        public long? GroupId { get; set; }
 
         /// <summary>
         /// Gets or Sets Id
         /// </summary>
         [DataMember(Name="id", EmitDefaultValue=false)]
-        public int? Id { get; set; }
+        public long? Id { get; set; }
 
         /// <summary>
         /// Gets or Sets Pid
         /// </summary>
         [DataMember(Name="pid", EmitDefaultValue=false)]
-        public int? Pid { get; set; }
+        public long? Pid { get; set; }
 
         /// <summary>
         /// Gets or Sets Wid
         /// </summary>
         [DataMember(Name="wid", EmitDefaultValue=false)]
-        public int? Wid { get; set; }
+        public long? Wid { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

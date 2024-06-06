@@ -41,7 +41,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="name">name.</param>
         /// <param name="percentOff">percentOff.</param>
         /// <param name="valid">valid.</param>
-        public CustomerCoupon(int? amountOff = default(int?), bool? deleted = default(bool?), string duration = default(string), int? durationInMonths = default(int?), string id = default(string), string name = default(string), decimal? percentOff = default(decimal?), bool? valid = default(bool?))
+        public CustomerCoupon(long? amountOff = default(long?), bool? deleted = default(bool?), string duration = default(string), long? durationInMonths = default(long?), string id = default(string), string name = default(string), decimal? percentOff = default(decimal?), bool? valid = default(bool?))
         {
             this.AmountOff = amountOff;
             this.Deleted = deleted;
@@ -57,7 +57,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets AmountOff
         /// </summary>
         [DataMember(Name="amount_off", EmitDefaultValue=false)]
-        public int? AmountOff { get; set; }
+        public long? AmountOff { get; set; }
 
         /// <summary>
         /// Gets or Sets Deleted
@@ -75,7 +75,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets DurationInMonths
         /// </summary>
         [DataMember(Name="duration_in_months", EmitDefaultValue=false)]
-        public int? DurationInMonths { get; set; }
+        public long? DurationInMonths { get; set; }
 
         /// <summary>
         /// Gets or Sets Id

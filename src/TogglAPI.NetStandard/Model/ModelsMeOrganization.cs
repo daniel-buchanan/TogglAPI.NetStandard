@@ -52,7 +52,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="suspendedAt">Whether the organization is currently suspended.</param>
         /// <param name="trialInfo">trialInfo.</param>
         /// <param name="userCount">Number of organization users.</param>
-        public ModelsMeOrganization(bool? admin = default(bool?), DateTime? at = default(DateTime?), DateTime? createdAt = default(DateTime?), int? id = default(int?), bool? isMultiWorkspaceEnabled = default(bool?), bool? isUnified = default(bool?), int? maxDataRetentionDays = default(int?), int? maxWorkspaces = default(int?), string name = default(string), bool? owner = default(bool?), string paymentMethods = default(string), string permissions = default(string), bool? pricingPlanEnterprise = default(bool?), int? pricingPlanId = default(int?), string pricingPlanName = default(string), DateTime? serverDeletedAt = default(DateTime?), string suspendedAt = default(string), ModelsTrialInfo trialInfo = default(ModelsTrialInfo), int? userCount = default(int?))
+        public ModelsMeOrganization(bool? admin = default(bool?), DateTime? at = default(DateTime?), DateTime? createdAt = default(DateTime?), long? id = default(long?), bool? isMultiWorkspaceEnabled = default(bool?), bool? isUnified = default(bool?), long? maxDataRetentionDays = default(long?), long? maxWorkspaces = default(long?), string name = default(string), bool? owner = default(bool?), string paymentMethods = default(string), string permissions = default(string), bool? pricingPlanEnterprise = default(bool?), long? pricingPlanId = default(long?), string pricingPlanName = default(string), DateTime? serverDeletedAt = default(DateTime?), string suspendedAt = default(string), ModelsTrialInfo trialInfo = default(ModelsTrialInfo), long? userCount = default(long?))
         {
             this.Admin = admin;
             this.At = at;
@@ -101,7 +101,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Organization ID</value>
         [DataMember(Name="id", EmitDefaultValue=false)]
-        public int? Id { get; set; }
+        public long? Id { get; set; }
 
         /// <summary>
         /// Is true when the organization option is_multi_workspace_enabled is set
@@ -121,14 +121,14 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>How far back free workspaces in this org can access data.</value>
         [DataMember(Name="max_data_retention_days", EmitDefaultValue=false)]
-        public int? MaxDataRetentionDays { get; set; }
+        public long? MaxDataRetentionDays { get; set; }
 
         /// <summary>
         /// Maximum number of workspaces allowed for the organization
         /// </summary>
         /// <value>Maximum number of workspaces allowed for the organization</value>
         [DataMember(Name="max_workspaces", EmitDefaultValue=false)]
-        public int? MaxWorkspaces { get; set; }
+        public long? MaxWorkspaces { get; set; }
 
         /// <summary>
         /// Organization Name
@@ -169,7 +169,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Organization plan ID</value>
         [DataMember(Name="pricing_plan_id", EmitDefaultValue=false)]
-        public int? PricingPlanId { get; set; }
+        public long? PricingPlanId { get; set; }
 
         /// <summary>
         /// The subscription plan name the org is currently on. Free or any plan name coming from payment provider
@@ -203,7 +203,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Number of organization users</value>
         [DataMember(Name="user_count", EmitDefaultValue=false)]
-        public int? UserCount { get; set; }
+        public long? UserCount { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

@@ -53,7 +53,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="userId">userId.</param>
         /// <param name="wasPublicAt">wasPublicAt.</param>
         /// <param name="workspaceId">workspaceId.</param>
-        public ModelsFavorite(bool? billable = default(bool?), string clientName = default(string), string createdAt = default(string), string deletedAt = default(string), string description = default(string), int? favoriteId = default(int?), string permissions = default(string), bool? projectActive = default(bool?), string projectColor = default(string), int? projectId = default(int?), string projectName = default(string), bool? _public = default(bool?), int? rank = default(int?), string serverDeletedAt = default(string), ModelsIntArray tagIds = default(ModelsIntArray), int? taskId = default(int?), string taskName = default(string), int? userId = default(int?), string wasPublicAt = default(string), int? workspaceId = default(int?))
+        public ModelsFavorite(bool? billable = default(bool?), string clientName = default(string), string createdAt = default(string), string deletedAt = default(string), string description = default(string), long? favoriteId = default(long?), string permissions = default(string), bool? projectActive = default(bool?), string projectColor = default(string), long? projectId = default(long?), string projectName = default(string), bool? _public = default(bool?), long? rank = default(long?), string serverDeletedAt = default(string), ModelsIntArray tagIds = default(ModelsIntArray), long? taskId = default(long?), string taskName = default(string), long? userId = default(long?), string wasPublicAt = default(string), long? workspaceId = default(long?))
         {
             this.Billable = billable;
             this.ClientName = clientName;
@@ -112,7 +112,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets FavoriteId
         /// </summary>
         [DataMember(Name="favorite_id", EmitDefaultValue=false)]
-        public int? FavoriteId { get; set; }
+        public long? FavoriteId { get; set; }
 
         /// <summary>
         /// Gets or Sets Permissions
@@ -136,7 +136,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets ProjectId
         /// </summary>
         [DataMember(Name="project_id", EmitDefaultValue=false)]
-        public int? ProjectId { get; set; }
+        public long? ProjectId { get; set; }
 
         /// <summary>
         /// Gets or Sets ProjectName
@@ -154,7 +154,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Rank
         /// </summary>
         [DataMember(Name="rank", EmitDefaultValue=false)]
-        public int? Rank { get; set; }
+        public long? Rank { get; set; }
 
         /// <summary>
         /// Gets or Sets ServerDeletedAt
@@ -172,7 +172,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets TaskId
         /// </summary>
         [DataMember(Name="task_id", EmitDefaultValue=false)]
-        public int? TaskId { get; set; }
+        public long? TaskId { get; set; }
 
         /// <summary>
         /// Gets or Sets TaskName
@@ -184,7 +184,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets UserId
         /// </summary>
         [DataMember(Name="user_id", EmitDefaultValue=false)]
-        public int? UserId { get; set; }
+        public long? UserId { get; set; }
 
         /// <summary>
         /// Gets or Sets WasPublicAt
@@ -196,7 +196,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets WorkspaceId
         /// </summary>
         [DataMember(Name="workspace_id", EmitDefaultValue=false)]
-        public int? WorkspaceId { get; set; }
+        public long? WorkspaceId { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

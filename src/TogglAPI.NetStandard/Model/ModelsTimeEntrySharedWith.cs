@@ -36,7 +36,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="accepted">accepted.</param>
         /// <param name="userId">userId.</param>
         /// <param name="userName">userName.</param>
-        public ModelsTimeEntrySharedWith(bool? accepted = default(bool?), int? userId = default(int?), string userName = default(string))
+        public ModelsTimeEntrySharedWith(bool? accepted = default(bool?), long? userId = default(long?), string userName = default(string))
         {
             this.Accepted = accepted;
             this.UserId = userId;
@@ -53,7 +53,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets UserId
         /// </summary>
         [DataMember(Name="user_id", EmitDefaultValue=false)]
-        public int? UserId { get; set; }
+        public long? UserId { get; set; }
 
         /// <summary>
         /// Gets or Sets UserName

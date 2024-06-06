@@ -39,7 +39,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="parameterStartDate">Recurring start date.</param>
         /// <param name="period">Period.</param>
         /// <param name="projectStartDate">Project start date.</param>
-        public ModelsRecurringProjectParameters(int? customPeriod = default(int?), int? estimatedSeconds = default(int?), string parameterEndDate = default(string), string parameterStartDate = default(string), string period = default(string), string projectStartDate = default(string))
+        public ModelsRecurringProjectParameters(long? customPeriod = default(long?), long? estimatedSeconds = default(long?), string parameterEndDate = default(string), string parameterStartDate = default(string), string period = default(string), string projectStartDate = default(string))
         {
             this.CustomPeriod = customPeriod;
             this.EstimatedSeconds = estimatedSeconds;
@@ -54,14 +54,14 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Custom period, used when \&quot;period\&quot; field is \&quot;custom\&quot;</value>
         [DataMember(Name="custom_period", EmitDefaultValue=false)]
-        public int? CustomPeriod { get; set; }
+        public long? CustomPeriod { get; set; }
 
         /// <summary>
         /// Estimated seconds
         /// </summary>
         /// <value>Estimated seconds</value>
         [DataMember(Name="estimated_seconds", EmitDefaultValue=false)]
-        public int? EstimatedSeconds { get; set; }
+        public long? EstimatedSeconds { get; set; }
 
         /// <summary>
         /// Recurring end date

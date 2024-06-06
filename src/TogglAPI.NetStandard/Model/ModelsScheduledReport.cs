@@ -42,7 +42,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="reportId">reportId.</param>
         /// <param name="userIds">userIds.</param>
         /// <param name="workspaceId">workspaceId.</param>
-        public ModelsScheduledReport(int? bookmarkId = default(int?), string createdAt = default(string), int? creatorId = default(int?), string deletedAt = default(string), int? frequency = default(int?), List<int?> groupIds = default(List<int?>), int? reportId = default(int?), List<int?> userIds = default(List<int?>), int? workspaceId = default(int?))
+        public ModelsScheduledReport(long? bookmarkId = default(long?), string createdAt = default(string), long? creatorId = default(long?), string deletedAt = default(string), long? frequency = default(long?), List<long?> groupIds = default(List<long?>), long? reportId = default(long?), List<long?> userIds = default(List<long?>), long? workspaceId = default(long?))
         {
             this.BookmarkId = bookmarkId;
             this.CreatedAt = createdAt;
@@ -59,7 +59,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets BookmarkId
         /// </summary>
         [DataMember(Name="bookmark_id", EmitDefaultValue=false)]
-        public int? BookmarkId { get; set; }
+        public long? BookmarkId { get; set; }
 
         /// <summary>
         /// Gets or Sets CreatedAt
@@ -71,7 +71,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets CreatorId
         /// </summary>
         [DataMember(Name="creator_id", EmitDefaultValue=false)]
-        public int? CreatorId { get; set; }
+        public long? CreatorId { get; set; }
 
         /// <summary>
         /// Gets or Sets DeletedAt
@@ -83,31 +83,31 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Frequency
         /// </summary>
         [DataMember(Name="frequency", EmitDefaultValue=false)]
-        public int? Frequency { get; set; }
+        public long? Frequency { get; set; }
 
         /// <summary>
         /// Gets or Sets GroupIds
         /// </summary>
         [DataMember(Name="group_ids", EmitDefaultValue=false)]
-        public List<int?> GroupIds { get; set; }
+        public List<long?> GroupIds { get; set; }
 
         /// <summary>
         /// Gets or Sets ReportId
         /// </summary>
         [DataMember(Name="report_id", EmitDefaultValue=false)]
-        public int? ReportId { get; set; }
+        public long? ReportId { get; set; }
 
         /// <summary>
         /// Gets or Sets UserIds
         /// </summary>
         [DataMember(Name="user_ids", EmitDefaultValue=false)]
-        public List<int?> UserIds { get; set; }
+        public List<long?> UserIds { get; set; }
 
         /// <summary>
         /// Gets or Sets WorkspaceId
         /// </summary>
         [DataMember(Name="workspace_id", EmitDefaultValue=false)]
-        public int? WorkspaceId { get; set; }
+        public long? WorkspaceId { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

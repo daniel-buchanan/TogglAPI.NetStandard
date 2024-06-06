@@ -38,7 +38,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="name">name.</param>
         /// <param name="totalSeconds">totalSeconds.</param>
         /// <param name="userId">userId.</param>
-        public UsersDataTrendsUser(int? billableSeconds = default(int?), int? earnings = default(int?), string name = default(string), int? totalSeconds = default(int?), int? userId = default(int?))
+        public UsersDataTrendsUser(long? billableSeconds = default(long?), long? earnings = default(long?), string name = default(string), long? totalSeconds = default(long?), long? userId = default(long?))
         {
             this.BillableSeconds = billableSeconds;
             this.Earnings = earnings;
@@ -51,13 +51,13 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets BillableSeconds
         /// </summary>
         [DataMember(Name="billable_seconds", EmitDefaultValue=false)]
-        public int? BillableSeconds { get; set; }
+        public long? BillableSeconds { get; set; }
 
         /// <summary>
         /// Gets or Sets Earnings
         /// </summary>
         [DataMember(Name="earnings", EmitDefaultValue=false)]
-        public int? Earnings { get; set; }
+        public long? Earnings { get; set; }
 
         /// <summary>
         /// Gets or Sets Name
@@ -69,13 +69,13 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets TotalSeconds
         /// </summary>
         [DataMember(Name="total_seconds", EmitDefaultValue=false)]
-        public int? TotalSeconds { get; set; }
+        public long? TotalSeconds { get; set; }
 
         /// <summary>
         /// Gets or Sets UserId
         /// </summary>
         [DataMember(Name="user_id", EmitDefaultValue=false)]
-        public int? UserId { get; set; }
+        public long? UserId { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

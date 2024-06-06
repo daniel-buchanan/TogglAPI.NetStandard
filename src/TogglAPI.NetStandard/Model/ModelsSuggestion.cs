@@ -41,7 +41,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="tagIds">tagIds.</param>
         /// <param name="taskId">taskId.</param>
         /// <param name="workspaceId">workspaceId.</param>
-        public ModelsSuggestion(decimal? accuracy = default(decimal?), bool? billable = default(bool?), bool? descriptionMatch = default(bool?), string lastSeen = default(string), int? projectId = default(int?), List<int?> tagIds = default(List<int?>), int? taskId = default(int?), int? workspaceId = default(int?))
+        public ModelsSuggestion(decimal? accuracy = default(decimal?), bool? billable = default(bool?), bool? descriptionMatch = default(bool?), string lastSeen = default(string), long? projectId = default(long?), List<long?> tagIds = default(List<long?>), long? taskId = default(long?), long? workspaceId = default(long?))
         {
             this.Accuracy = accuracy;
             this.Billable = billable;
@@ -81,25 +81,25 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets ProjectId
         /// </summary>
         [DataMember(Name="project_id", EmitDefaultValue=false)]
-        public int? ProjectId { get; set; }
+        public long? ProjectId { get; set; }
 
         /// <summary>
         /// Gets or Sets TagIds
         /// </summary>
         [DataMember(Name="tag_ids", EmitDefaultValue=false)]
-        public List<int?> TagIds { get; set; }
+        public List<long?> TagIds { get; set; }
 
         /// <summary>
         /// Gets or Sets TaskId
         /// </summary>
         [DataMember(Name="task_id", EmitDefaultValue=false)]
-        public int? TaskId { get; set; }
+        public long? TaskId { get; set; }
 
         /// <summary>
         /// Gets or Sets WorkspaceId
         /// </summary>
         [DataMember(Name="workspace_id", EmitDefaultValue=false)]
-        public int? WorkspaceId { get; set; }
+        public long? WorkspaceId { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

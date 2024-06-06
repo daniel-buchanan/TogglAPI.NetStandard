@@ -35,7 +35,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <param name="projects">projects.</param>
         /// <param name="restoreAllProjects">restoreAllProjects.</param>
-        public ProjectRestoreParams(List<int?> projects = default(List<int?>), bool? restoreAllProjects = default(bool?))
+        public ProjectRestoreParams(List<long?> projects = default(List<long?>), bool? restoreAllProjects = default(bool?))
         {
             this.Projects = projects;
             this.RestoreAllProjects = restoreAllProjects;
@@ -45,7 +45,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Projects
         /// </summary>
         [DataMember(Name="projects", EmitDefaultValue=false)]
-        public List<int?> Projects { get; set; }
+        public List<long?> Projects { get; set; }
 
         /// <summary>
         /// Gets or Sets RestoreAllProjects

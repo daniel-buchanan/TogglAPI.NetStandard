@@ -46,7 +46,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="roundingMinutes">roundingMinutes.</param>
         /// <param name="startDate">startDate.</param>
         /// <param name="userIds">userIds.</param>
-        public RequestsEmployeeProfitability(string currency = default(string), string endDate = default(string), UtilsInt64Slice groupIds = default(UtilsInt64Slice), string resolution = default(string), int? rounding = default(int?), int? roundingMinutes = default(int?), string startDate = default(string), UtilsInt64Slice userIds = default(UtilsInt64Slice))
+        public RequestsEmployeeProfitability(string currency = default(string), string endDate = default(string), UtilsInt64Slice groupIds = default(UtilsInt64Slice), string resolution = default(string), long? rounding = default(long?), long? roundingMinutes = default(long?), string startDate = default(string), UtilsInt64Slice userIds = default(UtilsInt64Slice))
         {
             // to ensure "currency" is required (not null)
             if (currency == null)
@@ -94,13 +94,13 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Rounding
         /// </summary>
         [DataMember(Name="rounding", EmitDefaultValue=false)]
-        public int? Rounding { get; set; }
+        public long? Rounding { get; set; }
 
         /// <summary>
         /// Gets or Sets RoundingMinutes
         /// </summary>
         [DataMember(Name="rounding_minutes", EmitDefaultValue=false)]
-        public int? RoundingMinutes { get; set; }
+        public long? RoundingMinutes { get; set; }
 
         /// <summary>
         /// Gets or Sets StartDate

@@ -40,7 +40,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="planId">planId.</param>
         /// <param name="pricePointHandle">pricePointHandle.</param>
         /// <param name="pricingPlanId">pricingPlanId.</param>
-        public ModelsPricingPlan(int? amountInCents = default(int?), string currency = default(string), int? period = default(int?), ModelsPlan plan = default(ModelsPlan), int? planId = default(int?), string pricePointHandle = default(string), int? pricingPlanId = default(int?))
+        public ModelsPricingPlan(long? amountInCents = default(long?), string currency = default(string), long? period = default(long?), ModelsPlan plan = default(ModelsPlan), long? planId = default(long?), string pricePointHandle = default(string), long? pricingPlanId = default(long?))
         {
             this.AmountInCents = amountInCents;
             this.Currency = currency;
@@ -55,7 +55,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets AmountInCents
         /// </summary>
         [DataMember(Name="amount_in_cents", EmitDefaultValue=false)]
-        public int? AmountInCents { get; set; }
+        public long? AmountInCents { get; set; }
 
         /// <summary>
         /// Gets or Sets Currency
@@ -67,7 +67,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Period
         /// </summary>
         [DataMember(Name="period", EmitDefaultValue=false)]
-        public int? Period { get; set; }
+        public long? Period { get; set; }
 
         /// <summary>
         /// Gets or Sets Plan
@@ -79,7 +79,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets PlanId
         /// </summary>
         [DataMember(Name="plan_id", EmitDefaultValue=false)]
-        public int? PlanId { get; set; }
+        public long? PlanId { get; set; }
 
         /// <summary>
         /// Gets or Sets PricePointHandle
@@ -91,7 +91,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets PricingPlanId
         /// </summary>
         [DataMember(Name="pricing_plan_id", EmitDefaultValue=false)]
-        public int? PricingPlanId { get; set; }
+        public long? PricingPlanId { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

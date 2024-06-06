@@ -41,7 +41,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="paidAt">paidAt.</param>
         /// <param name="taxPercentage">taxPercentage.</param>
         /// <param name="totalAmount">totalAmount.</param>
-        public SubscriptionInvoiceInfo(int? amount = default(int?), string createdAt = default(string), int? currencyId = default(int?), string due = default(string), int? id = default(int?), string paidAt = default(string), decimal? taxPercentage = default(decimal?), int? totalAmount = default(int?))
+        public SubscriptionInvoiceInfo(long? amount = default(long?), string createdAt = default(string), long? currencyId = default(long?), string due = default(string), long? id = default(long?), string paidAt = default(string), decimal? taxPercentage = default(decimal?), long? totalAmount = default(long?))
         {
             this.Amount = amount;
             this.CreatedAt = createdAt;
@@ -57,7 +57,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Amount
         /// </summary>
         [DataMember(Name="amount", EmitDefaultValue=false)]
-        public int? Amount { get; set; }
+        public long? Amount { get; set; }
 
         /// <summary>
         /// Gets or Sets CreatedAt
@@ -69,7 +69,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets CurrencyId
         /// </summary>
         [DataMember(Name="currency_id", EmitDefaultValue=false)]
-        public int? CurrencyId { get; set; }
+        public long? CurrencyId { get; set; }
 
         /// <summary>
         /// Gets or Sets Due
@@ -81,7 +81,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Id
         /// </summary>
         [DataMember(Name="id", EmitDefaultValue=false)]
-        public int? Id { get; set; }
+        public long? Id { get; set; }
 
         /// <summary>
         /// Gets or Sets PaidAt
@@ -99,7 +99,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets TotalAmount
         /// </summary>
         [DataMember(Name="total_amount", EmitDefaultValue=false)]
-        public int? TotalAmount { get; set; }
+        public long? TotalAmount { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

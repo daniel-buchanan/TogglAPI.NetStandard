@@ -40,7 +40,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="rateChangeMode">Rate change mode for this project user. Can be \&quot;start-today\&quot;, \&quot;override-current\&quot;, \&quot;override-all\&quot;.</param>
         /// <param name="useLastLabourCost">Whether the last labour cost should be applied or not, default false.</param>
         /// <param name="userId">User ID.</param>
-        public UserPostPayload(int? labourCost = default(int?), bool? manager = default(bool?), int? projectId = default(int?), decimal? rate = default(decimal?), string rateChangeMode = default(string), bool? useLastLabourCost = default(bool?), int? userId = default(int?))
+        public UserPostPayload(long? labourCost = default(long?), bool? manager = default(bool?), long? projectId = default(long?), decimal? rate = default(decimal?), string rateChangeMode = default(string), bool? useLastLabourCost = default(bool?), long? userId = default(long?))
         {
             this.LabourCost = labourCost;
             this.Manager = manager;
@@ -56,7 +56,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Labour cost for this project user</value>
         [DataMember(Name="labour_cost", EmitDefaultValue=false)]
-        public int? LabourCost { get; set; }
+        public long? LabourCost { get; set; }
 
         /// <summary>
         /// Whether the user will be manager of the project
@@ -70,7 +70,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Project ID</value>
         [DataMember(Name="project_id", EmitDefaultValue=false)]
-        public int? ProjectId { get; set; }
+        public long? ProjectId { get; set; }
 
         /// <summary>
         /// Rate for this project user
@@ -98,7 +98,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>User ID</value>
         [DataMember(Name="user_id", EmitDefaultValue=false)]
-        public int? UserId { get; set; }
+        public long? UserId { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

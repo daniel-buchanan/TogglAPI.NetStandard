@@ -38,7 +38,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="organizationId">organizationId.</param>
         /// <param name="permissions">permissions.</param>
         /// <param name="roleId">roleId.</param>
-        public RolesRole(string code = default(string), string description = default(string), int? organizationId = default(int?), List<RolesPermission> permissions = default(List<RolesPermission>), int? roleId = default(int?))
+        public RolesRole(string code = default(string), string description = default(string), long? organizationId = default(long?), List<RolesPermission> permissions = default(List<RolesPermission>), long? roleId = default(long?))
         {
             this.Code = code;
             this.Description = description;
@@ -63,7 +63,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets OrganizationId
         /// </summary>
         [DataMember(Name="organization_id", EmitDefaultValue=false)]
-        public int? OrganizationId { get; set; }
+        public long? OrganizationId { get; set; }
 
         /// <summary>
         /// Gets or Sets Permissions
@@ -75,7 +75,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets RoleId
         /// </summary>
         [DataMember(Name="role_id", EmitDefaultValue=false)]
-        public int? RoleId { get; set; }
+        public long? RoleId { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

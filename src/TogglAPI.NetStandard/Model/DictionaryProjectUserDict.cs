@@ -45,7 +45,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="id">id.</param>
         /// <param name="name">name.</param>
         /// <param name="startDate">startDate.</param>
-        public DictionaryProjectUserDict(int? actualHours = default(int?), int? actualSeconds = default(int?), int? clientId = default(int?), string color = default(string), string currency = default(string), string endDate = default(string), int? estimatedHours = default(int?), int? estimatedSeconds = default(int?), decimal? fixedFee = default(decimal?), int? id = default(int?), string name = default(string), string startDate = default(string))
+        public DictionaryProjectUserDict(long? actualHours = default(long?), long? actualSeconds = default(long?), long? clientId = default(long?), string color = default(string), string currency = default(string), string endDate = default(string), long? estimatedHours = default(long?), long? estimatedSeconds = default(long?), decimal? fixedFee = default(decimal?), long? id = default(long?), string name = default(string), string startDate = default(string))
         {
             this.ActualHours = actualHours;
             this.ActualSeconds = actualSeconds;
@@ -65,19 +65,19 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets ActualHours
         /// </summary>
         [DataMember(Name="actual_hours", EmitDefaultValue=false)]
-        public int? ActualHours { get; set; }
+        public long? ActualHours { get; set; }
 
         /// <summary>
         /// Gets or Sets ActualSeconds
         /// </summary>
         [DataMember(Name="actual_seconds", EmitDefaultValue=false)]
-        public int? ActualSeconds { get; set; }
+        public long? ActualSeconds { get; set; }
 
         /// <summary>
         /// Gets or Sets ClientId
         /// </summary>
         [DataMember(Name="client_id", EmitDefaultValue=false)]
-        public int? ClientId { get; set; }
+        public long? ClientId { get; set; }
 
         /// <summary>
         /// Gets or Sets Color
@@ -101,13 +101,13 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets EstimatedHours
         /// </summary>
         [DataMember(Name="estimated_hours", EmitDefaultValue=false)]
-        public int? EstimatedHours { get; set; }
+        public long? EstimatedHours { get; set; }
 
         /// <summary>
         /// Gets or Sets EstimatedSeconds
         /// </summary>
         [DataMember(Name="estimated_seconds", EmitDefaultValue=false)]
-        public int? EstimatedSeconds { get; set; }
+        public long? EstimatedSeconds { get; set; }
 
         /// <summary>
         /// Gets or Sets FixedFee
@@ -119,7 +119,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Id
         /// </summary>
         [DataMember(Name="id", EmitDefaultValue=false)]
-        public int? Id { get; set; }
+        public long? Id { get; set; }
 
         /// <summary>
         /// Gets or Sets Name

@@ -35,7 +35,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <param name="id">The ID for which the patch operation failed..</param>
         /// <param name="message">The operation failure reason..</param>
-        public TimeentryPatchFailure(int? id = default(int?), string message = default(string))
+        public TimeentryPatchFailure(long? id = default(long?), string message = default(string))
         {
             this.Id = id;
             this.Message = message;
@@ -46,7 +46,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>The ID for which the patch operation failed.</value>
         [DataMember(Name="id", EmitDefaultValue=false)]
-        public int? Id { get; set; }
+        public long? Id { get; set; }
 
         /// <summary>
         /// The operation failure reason.

@@ -35,7 +35,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <param name="projectId">projectId.</param>
         /// <param name="taskId">taskId.</param>
-        public ModelsGoalProjectType(int? projectId = default(int?), int? taskId = default(int?))
+        public ModelsGoalProjectType(long? projectId = default(long?), long? taskId = default(long?))
         {
             this.ProjectId = projectId;
             this.TaskId = taskId;
@@ -45,13 +45,13 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets ProjectId
         /// </summary>
         [DataMember(Name="project_id", EmitDefaultValue=false)]
-        public int? ProjectId { get; set; }
+        public long? ProjectId { get; set; }
 
         /// <summary>
         /// Gets or Sets TaskId
         /// </summary>
         [DataMember(Name="task_id", EmitDefaultValue=false)]
-        public int? TaskId { get; set; }
+        public long? TaskId { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

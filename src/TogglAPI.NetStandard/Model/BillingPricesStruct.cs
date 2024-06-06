@@ -36,7 +36,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="actual">actual.</param>
         /// <param name="_base">_base.</param>
         /// <param name="withTax">withTax.</param>
-        public BillingPricesStruct(int? actual = default(int?), int? _base = default(int?), int? withTax = default(int?))
+        public BillingPricesStruct(long? actual = default(long?), long? _base = default(long?), long? withTax = default(long?))
         {
             this.Actual = actual;
             this.Base = _base;
@@ -47,19 +47,19 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Actual
         /// </summary>
         [DataMember(Name="actual", EmitDefaultValue=false)]
-        public int? Actual { get; set; }
+        public long? Actual { get; set; }
 
         /// <summary>
         /// Gets or Sets Base
         /// </summary>
         [DataMember(Name="base", EmitDefaultValue=false)]
-        public int? Base { get; set; }
+        public long? Base { get; set; }
 
         /// <summary>
         /// Gets or Sets WithTax
         /// </summary>
         [DataMember(Name="with_tax", EmitDefaultValue=false)]
-        public int? WithTax { get; set; }
+        public long? WithTax { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

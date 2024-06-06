@@ -184,7 +184,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="windowsTheme">windowsTheme.</param>
         /// <param name="workoutDefaultProjectId">workoutDefaultProjectId.</param>
         /// <param name="workoutDefaultTagId">workoutDefaultTagId.</param>
-        public ModelsAllPreferences(bool? activityTimelineDisplayActivity = default(bool?), string activityTimelineGroupingInterval = default(string), string activityTimelineGroupingMethod = default(string), string activityTimelineRecordingLevel = default(string), bool? activityTimelineSyncEvents = default(bool?), List<ModelsAlphaFeature> alphaFeatures = default(List<ModelsAlphaFeature>), bool? automaticTagging = default(bool?), bool? autotrackingEnabled = default(bool?), int? beginningOfWeek = default(int?), string calendarSnapDuration = default(string), string calendarSnapInitialLocation = default(string), int? calendarVisibleHoursEnd = default(int?), int? calendarVisibleHoursStart = default(int?), string calendarZoomLevel = default(string), bool? cellSwipeActionsEnabled = default(bool?), string chartsViewType = default(string), bool? collapseDetailedReportEntries = default(bool?), bool? collapseTimeEntries = default(bool?), string dashboardsViewType = default(string), string dateFormat = default(string), string decimalSeparator = default(string), int? defaultProjectId = default(int?), int? defaultTaskId = default(int?), string displayDensity = default(string), string distinctRates = default(string), string durationFormat = default(string), bool? durationFormatOnTimerDurationField = default(bool?), bool? editPopupIntegrationTimer = default(bool?), bool? extensionSendErrorReports = default(bool?), bool? extensionSendUsageStatistics = default(bool?), int? firstSeenBusinessPromo = default(int?), bool? focusAppOnTimeEntryStarted = default(bool?), bool? focusAppOnTimeEntryStopped = default(bool?), bool? hapticFeedbackEnabled = default(bool?), bool? hideKeyboardShortcut = default(bool?), bool? idleDetectionEnabled = default(bool?), int? idleDetectionIntervalInMinutes = default(int?), string inactivityBehavior = default(string), bool? isSummaryTotalViewVisible = default(bool?), bool? keepMiniTimerOnTop = default(bool?), bool? keepWindowOnTop = default(bool?), int? keyboardIncrementTimerPage = default(int?), bool? keyboardShortcutsEnabled = default(bool?), ModelsMacOSAutoTrackingRules macosAutoTrackingRules = default(ModelsMacOSAutoTrackingRules), ModelsKeyboardShortcut macosShowHideTogglKeyboardShortcut = default(ModelsKeyboardShortcut), ModelsKeyboardShortcut macosStopContinueKeyboardShortcut = default(ModelsKeyboardShortcut), string manualEntryMode = default(string), bool? manualMode = default(bool?), bool? manualModeOverlaySeen = default(bool?), string modifyOnStartTimeChange = default(string), string offlineMode = default(string), string pgTimeZoneName = default(string), bool? pomodoroAutoStartBreak = default(bool?), bool? pomodoroAutoStartFocus = default(bool?), int? pomodoroBreakIntervalInMinutes = default(int?), int? pomodoroBreakProjectId = default(int?), bool? pomodoroBreakStartSoundEnabled = default(bool?), int? pomodoroBreakTagId = default(int?), bool? pomodoroCountdownTimer = default(bool?), bool? pomodoroEnabled = default(bool?), int? pomodoroFocusIntervalInMinutes = default(int?), string pomodoroFocusSound = default(string), bool? pomodoroGlobalSoundEnabled = default(bool?), bool? pomodoroIntervalEndSound = default(bool?), int? pomodoroIntervalEndVolume = default(int?), int? pomodoroLongerBreakDurationInMinutes = default(int?), bool? pomodoroPreventScreenLock = default(bool?), int? pomodoroRoundsBeforeLongerBreak = default(int?), bool? pomodoroSessionStartSoundEnabled = default(bool?), bool? pomodoroShowNotifications = default(bool?), bool? pomodoroStopTimerAtIntervalEnd = default(bool?), bool? pomodoroTrackBreaksAsTimeEntries = default(bool?), string projectDashboardActivityMode = default(string), bool? projectShortcutEnabled = default(bool?), bool? recordTimeline = default(bool?), string rememberLastProject = default(string), string reminderDays = default(string), bool? reminderEnabled = default(bool?), int? reminderIntervalInMinutes = default(int?), string reminderPeriod = default(string), int? reminderSnoozingInMinutes = default(int?), bool? reportRounding = default(bool?), string reportRoundingDirection = default(string), int? reportRoundingStepInMinutes = default(int?), bool? reportsHideWeekends = default(bool?), string runningEntryWarning = default(string), bool? runningTimerNotificationEnabled = default(bool?), bool? seenFollowModal = default(bool?), bool? seenFooterPopup = default(bool?), bool? seenProjectDashboardOverlay = default(bool?), bool? seenTogglButtonModal = default(bool?), bool? sendProductEmails = default(bool?), bool? sendTimerNotifications = default(bool?), bool? sendWeeklyReport = default(bool?), bool? showTimeInTitle = default(bool?), bool? showAllEntries = default(bool?), bool? showChangelog = default(bool?), bool? showDescriptionInMenuBar = default(bool?), bool? showDockIcon = default(bool?), bool? showEventsInCalendar = default(bool?), bool? showProjectInMenuBar = default(bool?), bool? showQrScanner = default(bool?), bool? showSecondsInMenuBar = default(bool?), bool? showTimelineInDayView = default(bool?), bool? showTimerInMenuBar = default(bool?), bool? showTodayTotalInMenuBar = default(bool?), bool? showTotalBillableHours = default(bool?), bool? showWeekendOnTimerPage = default(bool?), bool? showWorkoutsInCalendar = default(bool?), string sleepBehaviour = default(string), string smartAlertsOption = default(string), string snowballReportRounding = default(string), string stackTimesOnManualModeAfter = default(string), bool? startAutomatically = default(bool?), string startShortcutMode = default(string), bool? stopAtSpecificTime = default(bool?), bool? stopAutomatically = default(bool?), bool? stopEntryOnShutdown = default(bool?), string stopSpecifiedTime = default(string), bool? stoppedTimerNotificationEnabled = default(bool?), bool? suggestionsEnabled = default(bool?), string summaryReportAmounts = default(string), bool? summaryReportDistinctRates = default(bool?), string summaryReportGrouping = default(string), bool? summaryReportSortAsc = default(bool?), string summaryReportSortField = default(string), string summaryReportSubGrouping = default(string), string summaryTotalMode = default(string), bool? tagsShortcutEnabled = default(bool?), string theme = default(string), string timeEntryDisplayMode = default(string), bool? timeEntryGhostSuggestionsEnabled = default(bool?), bool? timeEntryInvitationsNotificationEnabled = default(bool?), string timeEntryStartStopInputMode = default(string), string timeofdayFormat = default(string), string timerView = default(string), string timerViewMobile = default(string), bool? toSAcceptNeeded = default(bool?), bool? useMiniTimer = default(bool?), string visibleFooter = default(string), bool? webTimeEntryStarted = default(bool?), bool? webTimeEntryStopped = default(bool?), string weeklyReportGrouping = default(string), string weeklyReportValueToShow = default(string), ModelsWindowsAutoTrackingRules windowsAutoTrackingRules = default(ModelsWindowsAutoTrackingRules), ModelsKeyboardShortcut windowsShowHideTogglKeyboardShortcut = default(ModelsKeyboardShortcut), ModelsKeyboardShortcut windowsStopContinueKeyboardShortcut = default(ModelsKeyboardShortcut), ModelsKeyboardShortcut windowsStopStartKeyboardShortcut = default(ModelsKeyboardShortcut), string windowsTheme = default(string), int? workoutDefaultProjectId = default(int?), int? workoutDefaultTagId = default(int?))
+        public ModelsAllPreferences(bool? activityTimelineDisplayActivity = default(bool?), string activityTimelineGroupingInterval = default(string), string activityTimelineGroupingMethod = default(string), string activityTimelineRecordingLevel = default(string), bool? activityTimelineSyncEvents = default(bool?), List<ModelsAlphaFeature> alphaFeatures = default(List<ModelsAlphaFeature>), bool? automaticTagging = default(bool?), bool? autotrackingEnabled = default(bool?), long? beginningOfWeek = default(long?), string calendarSnapDuration = default(string), string calendarSnapInitialLocation = default(string), long? calendarVisibleHoursEnd = default(long?), long? calendarVisibleHoursStart = default(long?), string calendarZoomLevel = default(string), bool? cellSwipeActionsEnabled = default(bool?), string chartsViewType = default(string), bool? collapseDetailedReportEntries = default(bool?), bool? collapseTimeEntries = default(bool?), string dashboardsViewType = default(string), string dateFormat = default(string), string decimalSeparator = default(string), long? defaultProjectId = default(long?), long? defaultTaskId = default(long?), string displayDensity = default(string), string distinctRates = default(string), string durationFormat = default(string), bool? durationFormatOnTimerDurationField = default(bool?), bool? editPopupIntegrationTimer = default(bool?), bool? extensionSendErrorReports = default(bool?), bool? extensionSendUsageStatistics = default(bool?), long? firstSeenBusinessPromo = default(long?), bool? focusAppOnTimeEntryStarted = default(bool?), bool? focusAppOnTimeEntryStopped = default(bool?), bool? hapticFeedbackEnabled = default(bool?), bool? hideKeyboardShortcut = default(bool?), bool? idleDetectionEnabled = default(bool?), long? idleDetectionIntervalInMinutes = default(long?), string inactivityBehavior = default(string), bool? isSummaryTotalViewVisible = default(bool?), bool? keepMiniTimerOnTop = default(bool?), bool? keepWindowOnTop = default(bool?), long? keyboardIncrementTimerPage = default(long?), bool? keyboardShortcutsEnabled = default(bool?), ModelsMacOSAutoTrackingRules macosAutoTrackingRules = default(ModelsMacOSAutoTrackingRules), ModelsKeyboardShortcut macosShowHideTogglKeyboardShortcut = default(ModelsKeyboardShortcut), ModelsKeyboardShortcut macosStopContinueKeyboardShortcut = default(ModelsKeyboardShortcut), string manualEntryMode = default(string), bool? manualMode = default(bool?), bool? manualModeOverlaySeen = default(bool?), string modifyOnStartTimeChange = default(string), string offlineMode = default(string), string pgTimeZoneName = default(string), bool? pomodoroAutoStartBreak = default(bool?), bool? pomodoroAutoStartFocus = default(bool?), long? pomodoroBreakIntervalInMinutes = default(long?), long? pomodoroBreakProjectId = default(long?), bool? pomodoroBreakStartSoundEnabled = default(bool?), long? pomodoroBreakTagId = default(long?), bool? pomodoroCountdownTimer = default(bool?), bool? pomodoroEnabled = default(bool?), long? pomodoroFocusIntervalInMinutes = default(long?), string pomodoroFocusSound = default(string), bool? pomodoroGlobalSoundEnabled = default(bool?), bool? pomodoroIntervalEndSound = default(bool?), long? pomodoroIntervalEndVolume = default(long?), long? pomodoroLongerBreakDurationInMinutes = default(long?), bool? pomodoroPreventScreenLock = default(bool?), long? pomodoroRoundsBeforeLongerBreak = default(long?), bool? pomodoroSessionStartSoundEnabled = default(bool?), bool? pomodoroShowNotifications = default(bool?), bool? pomodoroStopTimerAtIntervalEnd = default(bool?), bool? pomodoroTrackBreaksAsTimeEntries = default(bool?), string projectDashboardActivityMode = default(string), bool? projectShortcutEnabled = default(bool?), bool? recordTimeline = default(bool?), string rememberLastProject = default(string), string reminderDays = default(string), bool? reminderEnabled = default(bool?), long? reminderIntervalInMinutes = default(long?), string reminderPeriod = default(string), long? reminderSnoozingInMinutes = default(long?), bool? reportRounding = default(bool?), string reportRoundingDirection = default(string), long? reportRoundingStepInMinutes = default(long?), bool? reportsHideWeekends = default(bool?), string runningEntryWarning = default(string), bool? runningTimerNotificationEnabled = default(bool?), bool? seenFollowModal = default(bool?), bool? seenFooterPopup = default(bool?), bool? seenProjectDashboardOverlay = default(bool?), bool? seenTogglButtonModal = default(bool?), bool? sendProductEmails = default(bool?), bool? sendTimerNotifications = default(bool?), bool? sendWeeklyReport = default(bool?), bool? showTimeInTitle = default(bool?), bool? showAllEntries = default(bool?), bool? showChangelog = default(bool?), bool? showDescriptionInMenuBar = default(bool?), bool? showDockIcon = default(bool?), bool? showEventsInCalendar = default(bool?), bool? showProjectInMenuBar = default(bool?), bool? showQrScanner = default(bool?), bool? showSecondsInMenuBar = default(bool?), bool? showTimelineInDayView = default(bool?), bool? showTimerInMenuBar = default(bool?), bool? showTodayTotalInMenuBar = default(bool?), bool? showTotalBillableHours = default(bool?), bool? showWeekendOnTimerPage = default(bool?), bool? showWorkoutsInCalendar = default(bool?), string sleepBehaviour = default(string), string smartAlertsOption = default(string), string snowballReportRounding = default(string), string stackTimesOnManualModeAfter = default(string), bool? startAutomatically = default(bool?), string startShortcutMode = default(string), bool? stopAtSpecificTime = default(bool?), bool? stopAutomatically = default(bool?), bool? stopEntryOnShutdown = default(bool?), string stopSpecifiedTime = default(string), bool? stoppedTimerNotificationEnabled = default(bool?), bool? suggestionsEnabled = default(bool?), string summaryReportAmounts = default(string), bool? summaryReportDistinctRates = default(bool?), string summaryReportGrouping = default(string), bool? summaryReportSortAsc = default(bool?), string summaryReportSortField = default(string), string summaryReportSubGrouping = default(string), string summaryTotalMode = default(string), bool? tagsShortcutEnabled = default(bool?), string theme = default(string), string timeEntryDisplayMode = default(string), bool? timeEntryGhostSuggestionsEnabled = default(bool?), bool? timeEntryInvitationsNotificationEnabled = default(bool?), string timeEntryStartStopInputMode = default(string), string timeofdayFormat = default(string), string timerView = default(string), string timerViewMobile = default(string), bool? toSAcceptNeeded = default(bool?), bool? useMiniTimer = default(bool?), string visibleFooter = default(string), bool? webTimeEntryStarted = default(bool?), bool? webTimeEntryStopped = default(bool?), string weeklyReportGrouping = default(string), string weeklyReportValueToShow = default(string), ModelsWindowsAutoTrackingRules windowsAutoTrackingRules = default(ModelsWindowsAutoTrackingRules), ModelsKeyboardShortcut windowsShowHideTogglKeyboardShortcut = default(ModelsKeyboardShortcut), ModelsKeyboardShortcut windowsStopContinueKeyboardShortcut = default(ModelsKeyboardShortcut), ModelsKeyboardShortcut windowsStopStartKeyboardShortcut = default(ModelsKeyboardShortcut), string windowsTheme = default(string), long? workoutDefaultProjectId = default(long?), long? workoutDefaultTagId = default(long?))
         {
             this.ActivityTimelineDisplayActivity = activityTimelineDisplayActivity;
             this.ActivityTimelineGroupingInterval = activityTimelineGroupingInterval;
@@ -393,7 +393,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>will be omitted if empty</value>
         [DataMember(Name="beginningOfWeek", EmitDefaultValue=false)]
-        public int? BeginningOfWeek { get; set; }
+        public long? BeginningOfWeek { get; set; }
 
         /// <summary>
         /// Gets or Sets CalendarSnapDuration
@@ -411,13 +411,13 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets CalendarVisibleHoursEnd
         /// </summary>
         [DataMember(Name="calendar_visible_hours_end", EmitDefaultValue=false)]
-        public int? CalendarVisibleHoursEnd { get; set; }
+        public long? CalendarVisibleHoursEnd { get; set; }
 
         /// <summary>
         /// Gets or Sets CalendarVisibleHoursStart
         /// </summary>
         [DataMember(Name="calendar_visible_hours_start", EmitDefaultValue=false)]
-        public int? CalendarVisibleHoursStart { get; set; }
+        public long? CalendarVisibleHoursStart { get; set; }
 
         /// <summary>
         /// Gets or Sets CalendarZoomLevel
@@ -474,13 +474,13 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets DefaultProjectId
         /// </summary>
         [DataMember(Name="default_project_id", EmitDefaultValue=false)]
-        public int? DefaultProjectId { get; set; }
+        public long? DefaultProjectId { get; set; }
 
         /// <summary>
         /// Gets or Sets DefaultTaskId
         /// </summary>
         [DataMember(Name="default_task_id", EmitDefaultValue=false)]
-        public int? DefaultTaskId { get; set; }
+        public long? DefaultTaskId { get; set; }
 
         /// <summary>
         /// will be omitted if empty
@@ -531,7 +531,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>will be omitted if empty</value>
         [DataMember(Name="firstSeenBusinessPromo", EmitDefaultValue=false)]
-        public int? FirstSeenBusinessPromo { get; set; }
+        public long? FirstSeenBusinessPromo { get; set; }
 
         /// <summary>
         /// Gets or Sets FocusAppOnTimeEntryStarted
@@ -568,7 +568,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets IdleDetectionIntervalInMinutes
         /// </summary>
         [DataMember(Name="idle_detection_interval_in_minutes", EmitDefaultValue=false)]
-        public int? IdleDetectionIntervalInMinutes { get; set; }
+        public long? IdleDetectionIntervalInMinutes { get; set; }
 
         /// <summary>
         /// Gets or Sets InactivityBehavior
@@ -598,7 +598,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets KeyboardIncrementTimerPage
         /// </summary>
         [DataMember(Name="keyboard_increment_timer_page", EmitDefaultValue=false)]
-        public int? KeyboardIncrementTimerPage { get; set; }
+        public long? KeyboardIncrementTimerPage { get; set; }
 
         /// <summary>
         /// will be omitted if empty
@@ -681,13 +681,13 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets PomodoroBreakIntervalInMinutes
         /// </summary>
         [DataMember(Name="pomodoro_break_interval_in_minutes", EmitDefaultValue=false)]
-        public int? PomodoroBreakIntervalInMinutes { get; set; }
+        public long? PomodoroBreakIntervalInMinutes { get; set; }
 
         /// <summary>
         /// Gets or Sets PomodoroBreakProjectId
         /// </summary>
         [DataMember(Name="pomodoro_break_project_id", EmitDefaultValue=false)]
-        public int? PomodoroBreakProjectId { get; set; }
+        public long? PomodoroBreakProjectId { get; set; }
 
         /// <summary>
         /// Gets or Sets PomodoroBreakStartSoundEnabled
@@ -699,7 +699,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets PomodoroBreakTagId
         /// </summary>
         [DataMember(Name="pomodoro_break_tag_id", EmitDefaultValue=false)]
-        public int? PomodoroBreakTagId { get; set; }
+        public long? PomodoroBreakTagId { get; set; }
 
         /// <summary>
         /// Gets or Sets PomodoroCountdownTimer
@@ -717,7 +717,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets PomodoroFocusIntervalInMinutes
         /// </summary>
         [DataMember(Name="pomodoro_focus_interval_in_minutes", EmitDefaultValue=false)]
-        public int? PomodoroFocusIntervalInMinutes { get; set; }
+        public long? PomodoroFocusIntervalInMinutes { get; set; }
 
         /// <summary>
         /// Gets or Sets PomodoroFocusSound
@@ -741,13 +741,13 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets PomodoroIntervalEndVolume
         /// </summary>
         [DataMember(Name="pomodoro_interval_end_volume", EmitDefaultValue=false)]
-        public int? PomodoroIntervalEndVolume { get; set; }
+        public long? PomodoroIntervalEndVolume { get; set; }
 
         /// <summary>
         /// Gets or Sets PomodoroLongerBreakDurationInMinutes
         /// </summary>
         [DataMember(Name="pomodoro_longer_break_duration_in_minutes", EmitDefaultValue=false)]
-        public int? PomodoroLongerBreakDurationInMinutes { get; set; }
+        public long? PomodoroLongerBreakDurationInMinutes { get; set; }
 
         /// <summary>
         /// Gets or Sets PomodoroPreventScreenLock
@@ -759,7 +759,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets PomodoroRoundsBeforeLongerBreak
         /// </summary>
         [DataMember(Name="pomodoro_rounds_before_longer_break", EmitDefaultValue=false)]
-        public int? PomodoroRoundsBeforeLongerBreak { get; set; }
+        public long? PomodoroRoundsBeforeLongerBreak { get; set; }
 
         /// <summary>
         /// Gets or Sets PomodoroSessionStartSoundEnabled
@@ -826,7 +826,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets ReminderIntervalInMinutes
         /// </summary>
         [DataMember(Name="reminder_interval_in_minutes", EmitDefaultValue=false)]
-        public int? ReminderIntervalInMinutes { get; set; }
+        public long? ReminderIntervalInMinutes { get; set; }
 
         /// <summary>
         /// Gets or Sets ReminderPeriod
@@ -838,7 +838,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets ReminderSnoozingInMinutes
         /// </summary>
         [DataMember(Name="reminder_snoozing_in_minutes", EmitDefaultValue=false)]
-        public int? ReminderSnoozingInMinutes { get; set; }
+        public long? ReminderSnoozingInMinutes { get; set; }
 
         /// <summary>
         /// will be omitted if empty
@@ -859,7 +859,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>will be omitted if empty</value>
         [DataMember(Name="reportRoundingStepInMinutes", EmitDefaultValue=false)]
-        public int? ReportRoundingStepInMinutes { get; set; }
+        public long? ReportRoundingStepInMinutes { get; set; }
 
         /// <summary>
         /// will be omitted if empty
@@ -1280,13 +1280,13 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets WorkoutDefaultProjectId
         /// </summary>
         [DataMember(Name="workout_default_project_id", EmitDefaultValue=false)]
-        public int? WorkoutDefaultProjectId { get; set; }
+        public long? WorkoutDefaultProjectId { get; set; }
 
         /// <summary>
         /// Gets or Sets WorkoutDefaultTagId
         /// </summary>
         [DataMember(Name="workout_default_tag_id", EmitDefaultValue=false)]
-        public int? WorkoutDefaultTagId { get; set; }
+        public long? WorkoutDefaultTagId { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

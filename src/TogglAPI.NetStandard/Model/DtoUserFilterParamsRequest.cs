@@ -37,7 +37,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="admin">Whether the wanted users are admins, optional, default false..</param>
         /// <param name="ids">User IDs, optional..</param>
         /// <param name="start">start.</param>
-        public DtoUserFilterParamsRequest(bool? active = default(bool?), bool? admin = default(bool?), List<int?> ids = default(List<int?>), int? start = default(int?))
+        public DtoUserFilterParamsRequest(bool? active = default(bool?), bool? admin = default(bool?), List<long?> ids = default(List<long?>), long? start = default(long?))
         {
             this.Active = active;
             this.Admin = admin;
@@ -64,13 +64,13 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>User IDs, optional.</value>
         [DataMember(Name="ids", EmitDefaultValue=false)]
-        public List<int?> Ids { get; set; }
+        public List<long?> Ids { get; set; }
 
         /// <summary>
         /// Gets or Sets Start
         /// </summary>
         [DataMember(Name="start", EmitDefaultValue=false)]
-        public int? Start { get; set; }
+        public long? Start { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

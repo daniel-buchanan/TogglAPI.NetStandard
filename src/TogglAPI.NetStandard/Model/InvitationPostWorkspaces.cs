@@ -36,7 +36,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="admin">admin.</param>
         /// <param name="role">role.</param>
         /// <param name="workspaceId">workspaceId.</param>
-        public InvitationPostWorkspaces(bool? admin = default(bool?), string role = default(string), int? workspaceId = default(int?))
+        public InvitationPostWorkspaces(bool? admin = default(bool?), string role = default(string), long? workspaceId = default(long?))
         {
             this.Admin = admin;
             this.Role = role;
@@ -59,7 +59,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets WorkspaceId
         /// </summary>
         [DataMember(Name="workspace_id", EmitDefaultValue=false)]
-        public int? WorkspaceId { get; set; }
+        public long? WorkspaceId { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

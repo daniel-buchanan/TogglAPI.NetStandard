@@ -40,7 +40,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="organizationId">organizationId.</param>
         /// <param name="organizationUserId">organizationUserId.</param>
         /// <param name="userId">userId.</param>
-        public ModelsOrganizationOwner(string avatarUrl = default(string), string email = default(string), int? id = default(int?), string name = default(string), int? organizationId = default(int?), int? organizationUserId = default(int?), int? userId = default(int?))
+        public ModelsOrganizationOwner(string avatarUrl = default(string), string email = default(string), long? id = default(long?), string name = default(string), long? organizationId = default(long?), long? organizationUserId = default(long?), long? userId = default(long?))
         {
             this.AvatarUrl = avatarUrl;
             this.Email = email;
@@ -67,7 +67,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Id
         /// </summary>
         [DataMember(Name="id", EmitDefaultValue=false)]
-        public int? Id { get; set; }
+        public long? Id { get; set; }
 
         /// <summary>
         /// Gets or Sets Name
@@ -79,19 +79,19 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets OrganizationId
         /// </summary>
         [DataMember(Name="organization_id", EmitDefaultValue=false)]
-        public int? OrganizationId { get; set; }
+        public long? OrganizationId { get; set; }
 
         /// <summary>
         /// Gets or Sets OrganizationUserId
         /// </summary>
         [DataMember(Name="organization_user_id", EmitDefaultValue=false)]
-        public int? OrganizationUserId { get; set; }
+        public long? OrganizationUserId { get; set; }
 
         /// <summary>
         /// Gets or Sets UserId
         /// </summary>
         [DataMember(Name="user_id", EmitDefaultValue=false)]
-        public int? UserId { get; set; }
+        public long? UserId { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

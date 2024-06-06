@@ -35,7 +35,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <param name="groupId">Group ID.</param>
         /// <param name="projectId">Project ID.</param>
-        public GroupProjectGroupPayload(int? groupId = default(int?), int? projectId = default(int?))
+        public GroupProjectGroupPayload(long? groupId = default(long?), long? projectId = default(long?))
         {
             this.GroupId = groupId;
             this.ProjectId = projectId;
@@ -46,14 +46,14 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Group ID</value>
         [DataMember(Name="group_id", EmitDefaultValue=false)]
-        public int? GroupId { get; set; }
+        public long? GroupId { get; set; }
 
         /// <summary>
         /// Project ID
         /// </summary>
         /// <value>Project ID</value>
         [DataMember(Name="project_id", EmitDefaultValue=false)]
-        public int? ProjectId { get; set; }
+        public long? ProjectId { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

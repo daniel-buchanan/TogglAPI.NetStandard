@@ -34,7 +34,7 @@ namespace TogglAPI.NetStandard.Model
         /// Initializes a new instance of the <see cref="UserPatchParams" /> class.
         /// </summary>
         /// <param name="delete">Organization user IDs to be deleted.</param>
-        public UserPatchParams(List<int?> delete = default(List<int?>))
+        public UserPatchParams(List<long?> delete = default(List<long?>))
         {
             this.Delete = delete;
         }
@@ -44,7 +44,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Organization user IDs to be deleted</value>
         [DataMember(Name="delete", EmitDefaultValue=false)]
-        public List<int?> Delete { get; set; }
+        public List<long?> Delete { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

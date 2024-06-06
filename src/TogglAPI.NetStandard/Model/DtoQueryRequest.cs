@@ -49,7 +49,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="preferences">preferences.</param>
         /// <param name="transformations">transformations.</param>
         /// <param name="v3QueryParams">v3QueryParams.</param>
-        public DtoQueryRequest(List<DtoAggFilterRequest> aggregationFilters = default(List<DtoAggFilterRequest>), List<DtoAggregationRequest> aggregations = default(List<DtoAggregationRequest>), List<DtoAttributeRequest> attributes = default(List<DtoAttributeRequest>), List<DtoFilterRequest> filters = default(List<DtoFilterRequest>), List<DtoGroupingRequest> groupings = default(List<DtoGroupingRequest>), int? limit = default(int?), List<DtoOrdinationRequest> ordinations = default(List<DtoOrdinationRequest>), DtoPeriodRequest period = default(DtoPeriodRequest), Dictionary<string, object> preferences = default(Dictionary<string, object>), List<DtoTransformationRequest> transformations = default(List<DtoTransformationRequest>), string v3QueryParams = default(string))
+        public DtoQueryRequest(List<DtoAggFilterRequest> aggregationFilters = default(List<DtoAggFilterRequest>), List<DtoAggregationRequest> aggregations = default(List<DtoAggregationRequest>), List<DtoAttributeRequest> attributes = default(List<DtoAttributeRequest>), List<DtoFilterRequest> filters = default(List<DtoFilterRequest>), List<DtoGroupingRequest> groupings = default(List<DtoGroupingRequest>), long? limit = default(long?), List<DtoOrdinationRequest> ordinations = default(List<DtoOrdinationRequest>), DtoPeriodRequest period = default(DtoPeriodRequest), Dictionary<string, object> preferences = default(Dictionary<string, object>), List<DtoTransformationRequest> transformations = default(List<DtoTransformationRequest>), string v3QueryParams = default(string))
         {
             // to ensure "period" is required (not null)
             if (period == null)
@@ -106,7 +106,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Limit
         /// </summary>
         [DataMember(Name="limit", EmitDefaultValue=false)]
-        public int? Limit { get; set; }
+        public long? Limit { get; set; }
 
         /// <summary>
         /// Gets or Sets Ordinations

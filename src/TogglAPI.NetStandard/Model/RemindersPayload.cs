@@ -37,7 +37,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="groupIds">Group IDs to send the reminder to, can be omitted if user_ids is provided.</param>
         /// <param name="threshold">Threshold is the number of hours after which the reminder will be sent.</param>
         /// <param name="userIds">User IDs to send the reminder to, can be omitted if group_ids is provided.</param>
-        public RemindersPayload(int? frequency = default(int?), List<int?> groupIds = default(List<int?>), decimal? threshold = default(decimal?), List<int?> userIds = default(List<int?>))
+        public RemindersPayload(long? frequency = default(long?), List<long?> groupIds = default(List<long?>), decimal? threshold = default(decimal?), List<long?> userIds = default(List<long?>))
         {
             this.Frequency = frequency;
             this.GroupIds = groupIds;
@@ -50,14 +50,14 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Frequency of the reminder in days, should be either 1 or 7</value>
         [DataMember(Name="frequency", EmitDefaultValue=false)]
-        public int? Frequency { get; set; }
+        public long? Frequency { get; set; }
 
         /// <summary>
         /// Group IDs to send the reminder to, can be omitted if user_ids is provided
         /// </summary>
         /// <value>Group IDs to send the reminder to, can be omitted if user_ids is provided</value>
         [DataMember(Name="group_ids", EmitDefaultValue=false)]
-        public List<int?> GroupIds { get; set; }
+        public List<long?> GroupIds { get; set; }
 
         /// <summary>
         /// Threshold is the number of hours after which the reminder will be sent
@@ -71,7 +71,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>User IDs to send the reminder to, can be omitted if group_ids is provided</value>
         [DataMember(Name="user_ids", EmitDefaultValue=false)]
-        public List<int?> UserIds { get; set; }
+        public List<long?> UserIds { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

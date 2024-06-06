@@ -51,7 +51,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="workspaceAddress">workspaceAddress.</param>
         /// <param name="workspaceId">workspaceId.</param>
         /// <param name="workspaceLogo">workspaceLogo.</param>
-        public ModelsUserInvoice(string billingAddress = default(string), string createdAt = default(string), string currency = default(string), string date = default(string), string deletedAt = default(string), string documentId = default(string), string dueDate = default(string), List<ModelsUserInvoiceItem> items = default(List<ModelsUserInvoiceItem>), string message = default(string), string paymentTerms = default(string), string purchaseNumber = default(string), List<ModelsUserInvoiceTax> taxes = default(List<ModelsUserInvoiceTax>), string updatedAt = default(string), int? userId = default(int?), int? userInvoiceId = default(int?), string workspaceAddress = default(string), int? workspaceId = default(int?), string workspaceLogo = default(string))
+        public ModelsUserInvoice(string billingAddress = default(string), string createdAt = default(string), string currency = default(string), string date = default(string), string deletedAt = default(string), string documentId = default(string), string dueDate = default(string), List<ModelsUserInvoiceItem> items = default(List<ModelsUserInvoiceItem>), string message = default(string), string paymentTerms = default(string), string purchaseNumber = default(string), List<ModelsUserInvoiceTax> taxes = default(List<ModelsUserInvoiceTax>), string updatedAt = default(string), long? userId = default(long?), long? userInvoiceId = default(long?), string workspaceAddress = default(string), long? workspaceId = default(long?), string workspaceLogo = default(string))
         {
             this.BillingAddress = billingAddress;
             this.CreatedAt = createdAt;
@@ -155,13 +155,13 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets UserId
         /// </summary>
         [DataMember(Name="user_id", EmitDefaultValue=false)]
-        public int? UserId { get; set; }
+        public long? UserId { get; set; }
 
         /// <summary>
         /// Gets or Sets UserInvoiceId
         /// </summary>
         [DataMember(Name="user_invoice_id", EmitDefaultValue=false)]
-        public int? UserInvoiceId { get; set; }
+        public long? UserInvoiceId { get; set; }
 
         /// <summary>
         /// Gets or Sets WorkspaceAddress
@@ -173,7 +173,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets WorkspaceId
         /// </summary>
         [DataMember(Name="workspace_id", EmitDefaultValue=false)]
-        public int? WorkspaceId { get; set; }
+        public long? WorkspaceId { get; set; }
 
         /// <summary>
         /// Gets or Sets WorkspaceLogo

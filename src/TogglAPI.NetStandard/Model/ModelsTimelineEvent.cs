@@ -40,7 +40,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="idle">idle.</param>
         /// <param name="startTime">startTime.</param>
         /// <param name="title">title.</param>
-        public ModelsTimelineEvent(string desktopId = default(string), int? endTime = default(int?), string filename = default(string), int? id = default(int?), bool? idle = default(bool?), int? startTime = default(int?), string title = default(string))
+        public ModelsTimelineEvent(string desktopId = default(string), long? endTime = default(long?), string filename = default(string), long? id = default(long?), bool? idle = default(bool?), long? startTime = default(long?), string title = default(string))
         {
             this.DesktopId = desktopId;
             this.EndTime = endTime;
@@ -61,7 +61,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets EndTime
         /// </summary>
         [DataMember(Name="end_time", EmitDefaultValue=false)]
-        public int? EndTime { get; set; }
+        public long? EndTime { get; set; }
 
         /// <summary>
         /// Gets or Sets Filename
@@ -73,7 +73,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Id
         /// </summary>
         [DataMember(Name="id", EmitDefaultValue=false)]
-        public int? Id { get; set; }
+        public long? Id { get; set; }
 
         /// <summary>
         /// Gets or Sets Idle
@@ -85,7 +85,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets StartTime
         /// </summary>
         [DataMember(Name="start_time", EmitDefaultValue=false)]
-        public int? StartTime { get; set; }
+        public long? StartTime { get; set; }
 
         /// <summary>
         /// Gets or Sets Title

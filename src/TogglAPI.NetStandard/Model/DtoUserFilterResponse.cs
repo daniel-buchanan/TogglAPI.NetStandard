@@ -36,7 +36,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="deletedAt">deletedAt.</param>
         /// <param name="id">id.</param>
         /// <param name="name">name.</param>
-        public DtoUserFilterResponse(string deletedAt = default(string), int? id = default(int?), string name = default(string))
+        public DtoUserFilterResponse(string deletedAt = default(string), long? id = default(long?), string name = default(string))
         {
             this.DeletedAt = deletedAt;
             this.Id = id;
@@ -53,7 +53,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Id
         /// </summary>
         [DataMember(Name="id", EmitDefaultValue=false)]
-        public int? Id { get; set; }
+        public long? Id { get; set; }
 
         /// <summary>
         /// Gets or Sets Name

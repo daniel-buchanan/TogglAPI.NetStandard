@@ -39,7 +39,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="organizationId">organizationId.</param>
         /// <param name="recipientId">recipientId.</param>
         /// <param name="senderId">senderId.</param>
-        public InvitationInfo(string email = default(string), int? invitationId = default(int?), string inviteUrl = default(string), int? organizationId = default(int?), int? recipientId = default(int?), int? senderId = default(int?))
+        public InvitationInfo(string email = default(string), long? invitationId = default(long?), string inviteUrl = default(string), long? organizationId = default(long?), long? recipientId = default(long?), long? senderId = default(long?))
         {
             this.Email = email;
             this.InvitationId = invitationId;
@@ -59,7 +59,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets InvitationId
         /// </summary>
         [DataMember(Name="invitation_id", EmitDefaultValue=false)]
-        public int? InvitationId { get; set; }
+        public long? InvitationId { get; set; }
 
         /// <summary>
         /// Gets or Sets InviteUrl
@@ -71,19 +71,19 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets OrganizationId
         /// </summary>
         [DataMember(Name="organization_id", EmitDefaultValue=false)]
-        public int? OrganizationId { get; set; }
+        public long? OrganizationId { get; set; }
 
         /// <summary>
         /// Gets or Sets RecipientId
         /// </summary>
         [DataMember(Name="recipient_id", EmitDefaultValue=false)]
-        public int? RecipientId { get; set; }
+        public long? RecipientId { get; set; }
 
         /// <summary>
         /// Gets or Sets SenderId
         /// </summary>
         [DataMember(Name="sender_id", EmitDefaultValue=false)]
-        public int? SenderId { get; set; }
+        public long? SenderId { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

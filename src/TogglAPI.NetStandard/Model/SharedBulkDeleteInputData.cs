@@ -34,7 +34,7 @@ namespace TogglAPI.NetStandard.Model
         /// Initializes a new instance of the <see cref="SharedBulkDeleteInputData" /> class.
         /// </summary>
         /// <param name="ids">ids.</param>
-        public SharedBulkDeleteInputData(List<int?> ids = default(List<int?>))
+        public SharedBulkDeleteInputData(List<long?> ids = default(List<long?>))
         {
             this.Ids = ids;
         }
@@ -43,7 +43,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Ids
         /// </summary>
         [DataMember(Name="ids", EmitDefaultValue=false)]
-        public List<int?> Ids { get; set; }
+        public List<long?> Ids { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

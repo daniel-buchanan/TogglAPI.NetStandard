@@ -40,7 +40,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="creatorName">creatorName.</param>
         /// <param name="expiryDate">expiryDate.</param>
         /// <param name="holderName">holderName.</param>
-        public ModelsCardDetails(string addedAt = default(string), string cardNumber = default(string), string cardType = default(string), int? creatorId = default(int?), string creatorName = default(string), string expiryDate = default(string), string holderName = default(string))
+        public ModelsCardDetails(string addedAt = default(string), string cardNumber = default(string), string cardType = default(string), long? creatorId = default(long?), string creatorName = default(string), string expiryDate = default(string), string holderName = default(string))
         {
             this.AddedAt = addedAt;
             this.CardNumber = cardNumber;
@@ -73,7 +73,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets CreatorId
         /// </summary>
         [DataMember(Name="creator_id", EmitDefaultValue=false)]
-        public int? CreatorId { get; set; }
+        public long? CreatorId { get; set; }
 
         /// <summary>
         /// Gets or Sets CreatorName

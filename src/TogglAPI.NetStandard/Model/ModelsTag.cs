@@ -40,7 +40,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="name">Tag name.</param>
         /// <param name="permissions">permissions.</param>
         /// <param name="workspaceId">Workspace ID.</param>
-        public ModelsTag(string at = default(string), int? creatorId = default(int?), DateTime? deletedAt = default(DateTime?), int? id = default(int?), string name = default(string), string permissions = default(string), int? workspaceId = default(int?))
+        public ModelsTag(string at = default(string), long? creatorId = default(long?), DateTime? deletedAt = default(DateTime?), long? id = default(long?), string name = default(string), string permissions = default(string), long? workspaceId = default(long?))
         {
             this.At = at;
             this.CreatorId = creatorId;
@@ -63,7 +63,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>CreatorID the user who created the tag</value>
         [DataMember(Name="creator_id", EmitDefaultValue=false)]
-        public int? CreatorId { get; set; }
+        public long? CreatorId { get; set; }
 
         /// <summary>
         /// When was deleted
@@ -77,7 +77,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Tag ID</value>
         [DataMember(Name="id", EmitDefaultValue=false)]
-        public int? Id { get; set; }
+        public long? Id { get; set; }
 
         /// <summary>
         /// Tag name
@@ -97,7 +97,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Workspace ID</value>
         [DataMember(Name="workspace_id", EmitDefaultValue=false)]
-        public int? WorkspaceId { get; set; }
+        public long? WorkspaceId { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

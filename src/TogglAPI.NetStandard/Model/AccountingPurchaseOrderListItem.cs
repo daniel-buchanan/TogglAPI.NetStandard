@@ -36,7 +36,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="createdAt">createdAt.</param>
         /// <param name="dueDate">dueDate.</param>
         /// <param name="id">id.</param>
-        public AccountingPurchaseOrderListItem(string createdAt = default(string), string dueDate = default(string), int? id = default(int?))
+        public AccountingPurchaseOrderListItem(string createdAt = default(string), string dueDate = default(string), long? id = default(long?))
         {
             this.CreatedAt = createdAt;
             this.DueDate = dueDate;
@@ -59,7 +59,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Id
         /// </summary>
         [DataMember(Name="id", EmitDefaultValue=false)]
-        public int? Id { get; set; }
+        public long? Id { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

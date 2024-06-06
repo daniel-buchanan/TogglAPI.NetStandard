@@ -34,7 +34,7 @@ namespace TogglAPI.NetStandard.Model
         /// Initializes a new instance of the <see cref="HandlercalendarPostDetailsSuggestionRequest" /> class.
         /// </summary>
         /// <param name="eventIds">eventIds.</param>
-        public HandlercalendarPostDetailsSuggestionRequest(List<int?> eventIds = default(List<int?>))
+        public HandlercalendarPostDetailsSuggestionRequest(List<long?> eventIds = default(List<long?>))
         {
             this.EventIds = eventIds;
         }
@@ -43,7 +43,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets EventIds
         /// </summary>
         [DataMember(Name="event_ids", EmitDefaultValue=false)]
-        public List<int?> EventIds { get; set; }
+        public List<long?> EventIds { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

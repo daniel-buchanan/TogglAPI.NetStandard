@@ -35,7 +35,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <param name="failure">List of found errors.</param>
         /// <param name="success">List of org user IDs that were successfully patched.</param>
-        public UserOutput(List<UserFailure> failure = default(List<UserFailure>), List<int?> success = default(List<int?>))
+        public UserOutput(List<UserFailure> failure = default(List<UserFailure>), List<long?> success = default(List<long?>))
         {
             this.Failure = failure;
             this.Success = success;
@@ -53,7 +53,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>List of org user IDs that were successfully patched</value>
         [DataMember(Name="success", EmitDefaultValue=false)]
-        public List<int?> Success { get; set; }
+        public List<long?> Success { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

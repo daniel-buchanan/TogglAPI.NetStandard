@@ -42,7 +42,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="startWithoutConfirmation">startWithoutConfirmation.</param>
         /// <param name="taskId">taskId.</param>
         /// <param name="type">type.</param>
-        public ModelsWindowsAutoTracking(string description = default(string), bool? enabled = default(bool?), string id = default(string), ModelsWindowsAutoTrackingParameter parameters = default(ModelsWindowsAutoTrackingParameter), int? projectId = default(int?), bool? skipWhenTimerIsRunning = default(bool?), bool? startWithoutConfirmation = default(bool?), int? taskId = default(int?), int? type = default(int?))
+        public ModelsWindowsAutoTracking(string description = default(string), bool? enabled = default(bool?), string id = default(string), ModelsWindowsAutoTrackingParameter parameters = default(ModelsWindowsAutoTrackingParameter), long? projectId = default(long?), bool? skipWhenTimerIsRunning = default(bool?), bool? startWithoutConfirmation = default(bool?), long? taskId = default(long?), long? type = default(long?))
         {
             this.Description = description;
             this.Enabled = enabled;
@@ -83,7 +83,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets ProjectId
         /// </summary>
         [DataMember(Name="project_id", EmitDefaultValue=false)]
-        public int? ProjectId { get; set; }
+        public long? ProjectId { get; set; }
 
         /// <summary>
         /// Gets or Sets SkipWhenTimerIsRunning
@@ -101,13 +101,13 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets TaskId
         /// </summary>
         [DataMember(Name="task_id", EmitDefaultValue=false)]
-        public int? TaskId { get; set; }
+        public long? TaskId { get; set; }
 
         /// <summary>
         /// Gets or Sets Type
         /// </summary>
         [DataMember(Name="type", EmitDefaultValue=false)]
-        public int? Type { get; set; }
+        public long? Type { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

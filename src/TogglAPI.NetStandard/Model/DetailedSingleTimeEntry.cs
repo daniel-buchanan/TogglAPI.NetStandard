@@ -38,7 +38,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="seconds">seconds.</param>
         /// <param name="start">start.</param>
         /// <param name="stop">stop.</param>
-        public DetailedSingleTimeEntry(string at = default(string), int? id = default(int?), int? seconds = default(int?), string start = default(string), string stop = default(string))
+        public DetailedSingleTimeEntry(string at = default(string), long? id = default(long?), long? seconds = default(long?), string start = default(string), string stop = default(string))
         {
             this.At = at;
             this.Id = id;
@@ -57,13 +57,13 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Id
         /// </summary>
         [DataMember(Name="id", EmitDefaultValue=false)]
-        public int? Id { get; set; }
+        public long? Id { get; set; }
 
         /// <summary>
         /// Gets or Sets Seconds
         /// </summary>
         [DataMember(Name="seconds", EmitDefaultValue=false)]
-        public int? Seconds { get; set; }
+        public long? Seconds { get; set; }
 
         /// <summary>
         /// Gets or Sets Start

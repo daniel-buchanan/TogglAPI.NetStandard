@@ -39,7 +39,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="trial">Whether the organization&#39;s subscription is currently on trial.</param>
         /// <param name="trialAvailable">When a trial is available for this organization.</param>
         /// <param name="trialEndDate">When the trial ends.</param>
-        public ModelsTrialInfo(bool? canHaveTrial = default(bool?), int? lastPricingPlanId = default(int?), string nextPaymentDate = default(string), bool? trial = default(bool?), bool? trialAvailable = default(bool?), string trialEndDate = default(string))
+        public ModelsTrialInfo(bool? canHaveTrial = default(bool?), long? lastPricingPlanId = default(long?), string nextPaymentDate = default(string), bool? trial = default(bool?), bool? trialAvailable = default(bool?), string trialEndDate = default(string))
         {
             this.CanHaveTrial = canHaveTrial;
             this.LastPricingPlanId = lastPricingPlanId;
@@ -61,7 +61,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>What was the previous plan before the trial</value>
         [DataMember(Name="last_pricing_plan_id", EmitDefaultValue=false)]
-        public int? LastPricingPlanId { get; set; }
+        public long? LastPricingPlanId { get; set; }
 
         /// <summary>
         /// When the trial payment is due

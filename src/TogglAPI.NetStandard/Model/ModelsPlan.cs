@@ -38,7 +38,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="name">name.</param>
         /// <param name="pricingPlans">pricingPlans.</param>
         /// <param name="productHandle">productHandle.</param>
-        public ModelsPlan(int? id = default(int?), int? maxUserCount = default(int?), string name = default(string), List<ModelsPricingPlan> pricingPlans = default(List<ModelsPricingPlan>), string productHandle = default(string))
+        public ModelsPlan(long? id = default(long?), long? maxUserCount = default(long?), string name = default(string), List<ModelsPricingPlan> pricingPlans = default(List<ModelsPricingPlan>), string productHandle = default(string))
         {
             this.Id = id;
             this.MaxUserCount = maxUserCount;
@@ -51,13 +51,13 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Id
         /// </summary>
         [DataMember(Name="id", EmitDefaultValue=false)]
-        public int? Id { get; set; }
+        public long? Id { get; set; }
 
         /// <summary>
         /// Gets or Sets MaxUserCount
         /// </summary>
         [DataMember(Name="max_user_count", EmitDefaultValue=false)]
-        public int? MaxUserCount { get; set; }
+        public long? MaxUserCount { get; set; }
 
         /// <summary>
         /// Gets or Sets Name

@@ -38,7 +38,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="defaultWorkspaceId">defaultWorkspaceId.</param>
         /// <param name="remindTracking">The following fields are deprecated but we need to keep them for backward compatibility with previous versions of mobile apps.</param>
         /// <param name="selected">selected.</param>
-        public HandlercalendarPatchCalendar(int? defaultPlannedTaskId = default(int?), int? defaultProjectId = default(int?), int? defaultWorkspaceId = default(int?), bool? remindTracking = default(bool?), bool? selected = default(bool?))
+        public HandlercalendarPatchCalendar(long? defaultPlannedTaskId = default(long?), long? defaultProjectId = default(long?), long? defaultWorkspaceId = default(long?), bool? remindTracking = default(bool?), bool? selected = default(bool?))
         {
             this.DefaultPlannedTaskId = defaultPlannedTaskId;
             this.DefaultProjectId = defaultProjectId;
@@ -51,19 +51,19 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets DefaultPlannedTaskId
         /// </summary>
         [DataMember(Name="default_planned_task_id", EmitDefaultValue=false)]
-        public int? DefaultPlannedTaskId { get; set; }
+        public long? DefaultPlannedTaskId { get; set; }
 
         /// <summary>
         /// Gets or Sets DefaultProjectId
         /// </summary>
         [DataMember(Name="default_project_id", EmitDefaultValue=false)]
-        public int? DefaultProjectId { get; set; }
+        public long? DefaultProjectId { get; set; }
 
         /// <summary>
         /// Gets or Sets DefaultWorkspaceId
         /// </summary>
         [DataMember(Name="default_workspace_id", EmitDefaultValue=false)]
-        public int? DefaultWorkspaceId { get; set; }
+        public long? DefaultWorkspaceId { get; set; }
 
         /// <summary>
         /// The following fields are deprecated but we need to keep them for backward compatibility with previous versions of mobile apps

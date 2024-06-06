@@ -39,7 +39,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="estimatedSeconds">estimatedSeconds.</param>
         /// <param name="id">id.</param>
         /// <param name="trackedSeconds">trackedSeconds.</param>
-        public StatusProjectStatus(int? billableAmount = default(int?), int? billableSeconds = default(int?), string currency = default(string), int? estimatedSeconds = default(int?), int? id = default(int?), int? trackedSeconds = default(int?))
+        public StatusProjectStatus(long? billableAmount = default(long?), long? billableSeconds = default(long?), string currency = default(string), long? estimatedSeconds = default(long?), long? id = default(long?), long? trackedSeconds = default(long?))
         {
             this.BillableAmount = billableAmount;
             this.BillableSeconds = billableSeconds;
@@ -53,13 +53,13 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets BillableAmount
         /// </summary>
         [DataMember(Name="billable_amount", EmitDefaultValue=false)]
-        public int? BillableAmount { get; set; }
+        public long? BillableAmount { get; set; }
 
         /// <summary>
         /// Gets or Sets BillableSeconds
         /// </summary>
         [DataMember(Name="billable_seconds", EmitDefaultValue=false)]
-        public int? BillableSeconds { get; set; }
+        public long? BillableSeconds { get; set; }
 
         /// <summary>
         /// Gets or Sets Currency
@@ -71,19 +71,19 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets EstimatedSeconds
         /// </summary>
         [DataMember(Name="estimated_seconds", EmitDefaultValue=false)]
-        public int? EstimatedSeconds { get; set; }
+        public long? EstimatedSeconds { get; set; }
 
         /// <summary>
         /// Gets or Sets Id
         /// </summary>
         [DataMember(Name="id", EmitDefaultValue=false)]
-        public int? Id { get; set; }
+        public long? Id { get; set; }
 
         /// <summary>
         /// Gets or Sets TrackedSeconds
         /// </summary>
         [DataMember(Name="tracked_seconds", EmitDefaultValue=false)]
-        public int? TrackedSeconds { get; set; }
+        public long? TrackedSeconds { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

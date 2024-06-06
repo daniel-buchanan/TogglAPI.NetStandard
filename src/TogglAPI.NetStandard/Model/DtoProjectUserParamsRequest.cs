@@ -36,7 +36,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="clientIds">Client IDs, optional..</param>
         /// <param name="projectIds">Project IDs, optional..</param>
         /// <param name="startId">startId.</param>
-        public DtoProjectUserParamsRequest(List<int?> clientIds = default(List<int?>), List<int?> projectIds = default(List<int?>), int? startId = default(int?))
+        public DtoProjectUserParamsRequest(List<long?> clientIds = default(List<long?>), List<long?> projectIds = default(List<long?>), long? startId = default(long?))
         {
             this.ClientIds = clientIds;
             this.ProjectIds = projectIds;
@@ -48,20 +48,20 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Client IDs, optional.</value>
         [DataMember(Name="client_ids", EmitDefaultValue=false)]
-        public List<int?> ClientIds { get; set; }
+        public List<long?> ClientIds { get; set; }
 
         /// <summary>
         /// Project IDs, optional.
         /// </summary>
         /// <value>Project IDs, optional.</value>
         [DataMember(Name="project_ids", EmitDefaultValue=false)]
-        public List<int?> ProjectIds { get; set; }
+        public List<long?> ProjectIds { get; set; }
 
         /// <summary>
         /// Gets or Sets StartId
         /// </summary>
         [DataMember(Name="start_id", EmitDefaultValue=false)]
-        public int? StartId { get; set; }
+        public long? StartId { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

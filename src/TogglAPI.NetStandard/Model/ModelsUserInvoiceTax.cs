@@ -36,7 +36,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="amount">amount.</param>
         /// <param name="name">name.</param>
         /// <param name="taxId">taxId.</param>
-        public ModelsUserInvoiceTax(decimal? amount = default(decimal?), string name = default(string), int? taxId = default(int?))
+        public ModelsUserInvoiceTax(decimal? amount = default(decimal?), string name = default(string), long? taxId = default(long?))
         {
             this.Amount = amount;
             this.Name = name;
@@ -59,7 +59,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets TaxId
         /// </summary>
         [DataMember(Name="tax_id", EmitDefaultValue=false)]
-        public int? TaxId { get; set; }
+        public long? TaxId { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

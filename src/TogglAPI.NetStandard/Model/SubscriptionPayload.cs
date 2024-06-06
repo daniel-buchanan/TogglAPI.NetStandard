@@ -42,7 +42,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="incTermsAccepted">True if user accepted ToS for the Toggl Inc company. Ignored if company is not customer of Toggl INC..</param>
         /// <param name="masterSignup">True if user want to sign up to the Master program..</param>
         /// <param name="pricingPlanId">Numeric ID of the pricing plan. (required).</param>
-        public SubscriptionPayload(SubscriptionContactDetailRequest contactDetails = default(SubscriptionContactDetailRequest), bool? incTermsAccepted = default(bool?), bool? masterSignup = default(bool?), int? pricingPlanId = default(int?))
+        public SubscriptionPayload(SubscriptionContactDetailRequest contactDetails = default(SubscriptionContactDetailRequest), bool? incTermsAccepted = default(bool?), bool? masterSignup = default(bool?), long? pricingPlanId = default(long?))
         {
             // to ensure "pricingPlanId" is required (not null)
             if (pricingPlanId == null)
@@ -83,7 +83,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Numeric ID of the pricing plan.</value>
         [DataMember(Name="pricing_plan_id", EmitDefaultValue=false)]
-        public int? PricingPlanId { get; set; }
+        public long? PricingPlanId { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

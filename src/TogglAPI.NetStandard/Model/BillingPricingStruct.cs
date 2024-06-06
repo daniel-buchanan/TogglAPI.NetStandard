@@ -41,7 +41,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="taxPercentage">taxPercentage.</param>
         /// <param name="taxType">taxType.</param>
         /// <param name="userCount">userCount.</param>
-        public BillingPricingStruct(int? currencyId = default(int?), int? discountPercentage = default(int?), string discountTo = default(string), List<BillingFancyPlan> plans = default(List<BillingFancyPlan>), bool? taxIncluded = default(bool?), decimal? taxPercentage = default(decimal?), string taxType = default(string), int? userCount = default(int?))
+        public BillingPricingStruct(long? currencyId = default(long?), long? discountPercentage = default(long?), string discountTo = default(string), List<BillingFancyPlan> plans = default(List<BillingFancyPlan>), bool? taxIncluded = default(bool?), decimal? taxPercentage = default(decimal?), string taxType = default(string), long? userCount = default(long?))
         {
             this.CurrencyId = currencyId;
             this.DiscountPercentage = discountPercentage;
@@ -57,13 +57,13 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets CurrencyId
         /// </summary>
         [DataMember(Name="currency_id", EmitDefaultValue=false)]
-        public int? CurrencyId { get; set; }
+        public long? CurrencyId { get; set; }
 
         /// <summary>
         /// Gets or Sets DiscountPercentage
         /// </summary>
         [DataMember(Name="discount_percentage", EmitDefaultValue=false)]
-        public int? DiscountPercentage { get; set; }
+        public long? DiscountPercentage { get; set; }
 
         /// <summary>
         /// Gets or Sets DiscountTo
@@ -99,7 +99,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets UserCount
         /// </summary>
         [DataMember(Name="user_count", EmitDefaultValue=false)]
-        public int? UserCount { get; set; }
+        public long? UserCount { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

@@ -41,7 +41,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="rounding">rounding.</param>
         /// <param name="roundingMinutes">roundingMinutes.</param>
         /// <param name="startDate">startDate.</param>
-        public BaseDataTrendsPost(bool? billable = default(bool?), string currency = default(string), string endDate = default(string), UtilsInt64Slice ids = default(UtilsInt64Slice), string resolution = default(string), int? rounding = default(int?), int? roundingMinutes = default(int?), string startDate = default(string))
+        public BaseDataTrendsPost(bool? billable = default(bool?), string currency = default(string), string endDate = default(string), UtilsInt64Slice ids = default(UtilsInt64Slice), string resolution = default(string), long? rounding = default(long?), long? roundingMinutes = default(long?), string startDate = default(string))
         {
             this.Billable = billable;
             this.Currency = currency;
@@ -87,13 +87,13 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Rounding
         /// </summary>
         [DataMember(Name="rounding", EmitDefaultValue=false)]
-        public int? Rounding { get; set; }
+        public long? Rounding { get; set; }
 
         /// <summary>
         /// Gets or Sets RoundingMinutes
         /// </summary>
         [DataMember(Name="rounding_minutes", EmitDefaultValue=false)]
-        public int? RoundingMinutes { get; set; }
+        public long? RoundingMinutes { get; set; }
 
         /// <summary>
         /// Gets or Sets StartDate

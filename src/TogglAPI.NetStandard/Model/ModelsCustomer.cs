@@ -45,7 +45,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="organizationId">organizationId.</param>
         /// <param name="paymentDetail">paymentDetail.</param>
         /// <param name="purchaseOrderEnabled">purchaseOrderEnabled.</param>
-        public ModelsCustomer(int? balanceInCents = default(int?), string balanceUpdatedAt = default(string), ModelsCompany company = default(ModelsCompany), int? companyId = default(int?), ModelsContactDetail contactDetail = default(ModelsContactDetail), string createdAt = default(string), int? currencyId = default(int?), int? customerId = default(int?), string deletedAt = default(string), int? organizationId = default(int?), ModelsPaymentDetail paymentDetail = default(ModelsPaymentDetail), bool? purchaseOrderEnabled = default(bool?))
+        public ModelsCustomer(long? balanceInCents = default(long?), string balanceUpdatedAt = default(string), ModelsCompany company = default(ModelsCompany), long? companyId = default(long?), ModelsContactDetail contactDetail = default(ModelsContactDetail), string createdAt = default(string), long? currencyId = default(long?), long? customerId = default(long?), string deletedAt = default(string), long? organizationId = default(long?), ModelsPaymentDetail paymentDetail = default(ModelsPaymentDetail), bool? purchaseOrderEnabled = default(bool?))
         {
             this.BalanceInCents = balanceInCents;
             this.BalanceUpdatedAt = balanceUpdatedAt;
@@ -66,7 +66,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>DEPRECATED</value>
         [DataMember(Name="balance_in_cents", EmitDefaultValue=false)]
-        public int? BalanceInCents { get; set; }
+        public long? BalanceInCents { get; set; }
 
         /// <summary>
         /// DEPRECATED
@@ -85,7 +85,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets CompanyId
         /// </summary>
         [DataMember(Name="company_id", EmitDefaultValue=false)]
-        public int? CompanyId { get; set; }
+        public long? CompanyId { get; set; }
 
         /// <summary>
         /// Gets or Sets ContactDetail
@@ -103,13 +103,13 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets CurrencyId
         /// </summary>
         [DataMember(Name="currency_id", EmitDefaultValue=false)]
-        public int? CurrencyId { get; set; }
+        public long? CurrencyId { get; set; }
 
         /// <summary>
         /// Gets or Sets CustomerId
         /// </summary>
         [DataMember(Name="customer_id", EmitDefaultValue=false)]
-        public int? CustomerId { get; set; }
+        public long? CustomerId { get; set; }
 
         /// <summary>
         /// Gets or Sets DeletedAt
@@ -121,7 +121,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets OrganizationId
         /// </summary>
         [DataMember(Name="organization_id", EmitDefaultValue=false)]
-        public int? OrganizationId { get; set; }
+        public long? OrganizationId { get; set; }
 
         /// <summary>
         /// Gets or Sets PaymentDetail

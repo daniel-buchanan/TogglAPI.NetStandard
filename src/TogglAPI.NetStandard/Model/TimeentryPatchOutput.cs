@@ -35,7 +35,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <param name="failure">failure.</param>
         /// <param name="success">The IDs for which the patch was succesful..</param>
-        public TimeentryPatchOutput(List<TimeentryPatchFailure> failure = default(List<TimeentryPatchFailure>), List<int?> success = default(List<int?>))
+        public TimeentryPatchOutput(List<TimeentryPatchFailure> failure = default(List<TimeentryPatchFailure>), List<long?> success = default(List<long?>))
         {
             this.Failure = failure;
             this.Success = success;
@@ -52,7 +52,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>The IDs for which the patch was succesful.</value>
         [DataMember(Name="success", EmitDefaultValue=false)]
-        public List<int?> Success { get; set; }
+        public List<long?> Success { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

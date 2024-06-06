@@ -48,7 +48,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="reportsCollapse">Whether reports should be collapsed by default, optional, only for existing WS, will be true initially.</param>
         /// <param name="rounding">Default rounding, premium feature, optional, only for existing WS.</param>
         /// <param name="roundingMinutes">Default rounding in minutes, premium feature, optional, only for existing WS.</param>
-        public WorkspacePayload(List<int?> admins = default(List<int?>), string defaultCurrency = default(string), decimal? defaultHourlyRate = default(decimal?), int? initialPricingPlan = default(int?), string name = default(string), bool? onlyAdminsMayCreateProjects = default(bool?), bool? onlyAdminsMayCreateTags = default(bool?), bool? onlyAdminsSeeBillableRates = default(bool?), bool? onlyAdminsSeeTeamDashboard = default(bool?), bool? projectsBillableByDefault = default(bool?), bool? projectsPrivateByDefault = default(bool?), string rateChangeMode = default(string), bool? reportsCollapse = default(bool?), int? rounding = default(int?), int? roundingMinutes = default(int?))
+        public WorkspacePayload(List<long?> admins = default(List<long?>), string defaultCurrency = default(string), decimal? defaultHourlyRate = default(decimal?), long? initialPricingPlan = default(long?), string name = default(string), bool? onlyAdminsMayCreateProjects = default(bool?), bool? onlyAdminsMayCreateTags = default(bool?), bool? onlyAdminsSeeBillableRates = default(bool?), bool? onlyAdminsSeeTeamDashboard = default(bool?), bool? projectsBillableByDefault = default(bool?), bool? projectsPrivateByDefault = default(bool?), string rateChangeMode = default(string), bool? reportsCollapse = default(bool?), long? rounding = default(long?), long? roundingMinutes = default(long?))
         {
             this.Admins = admins;
             this.DefaultCurrency = defaultCurrency;
@@ -72,7 +72,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>List of admins, optional</value>
         [DataMember(Name="admins", EmitDefaultValue=false)]
-        public List<int?> Admins { get; set; }
+        public List<long?> Admins { get; set; }
 
         /// <summary>
         /// Default currency, premium feature, optional, only for existing WS, will be &#39;USD&#39; initially
@@ -93,7 +93,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>The subscription plan for the workspace, deprecated</value>
         [DataMember(Name="initial_pricing_plan", EmitDefaultValue=false)]
-        public int? InitialPricingPlan { get; set; }
+        public long? InitialPricingPlan { get; set; }
 
         /// <summary>
         /// Workspace name
@@ -163,14 +163,14 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Default rounding, premium feature, optional, only for existing WS</value>
         [DataMember(Name="rounding", EmitDefaultValue=false)]
-        public int? Rounding { get; set; }
+        public long? Rounding { get; set; }
 
         /// <summary>
         /// Default rounding in minutes, premium feature, optional, only for existing WS
         /// </summary>
         /// <value>Default rounding in minutes, premium feature, optional, only for existing WS</value>
         [DataMember(Name="rounding_minutes", EmitDefaultValue=false)]
-        public int? RoundingMinutes { get; set; }
+        public long? RoundingMinutes { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

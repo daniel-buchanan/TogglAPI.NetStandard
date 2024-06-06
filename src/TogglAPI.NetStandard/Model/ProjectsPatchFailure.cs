@@ -35,7 +35,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <param name="id">id.</param>
         /// <param name="message">message.</param>
-        public ProjectsPatchFailure(int? id = default(int?), string message = default(string))
+        public ProjectsPatchFailure(long? id = default(long?), string message = default(string))
         {
             this.Id = id;
             this.Message = message;
@@ -45,7 +45,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Id
         /// </summary>
         [DataMember(Name="id", EmitDefaultValue=false)]
-        public int? Id { get; set; }
+        public long? Id { get; set; }
 
         /// <summary>
         /// Gets or Sets Message

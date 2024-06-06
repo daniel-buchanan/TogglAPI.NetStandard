@@ -39,7 +39,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="projectId">Project ID.</param>
         /// <param name="userId">Creator ID, if omitted will use requester user ID.</param>
         /// <param name="workspaceId">Workspace ID.</param>
-        public TaskPayload(bool? active = default(bool?), int? estimatedSeconds = default(int?), string name = default(string), int? projectId = default(int?), int? userId = default(int?), int? workspaceId = default(int?))
+        public TaskPayload(bool? active = default(bool?), long? estimatedSeconds = default(long?), string name = default(string), long? projectId = default(long?), long? userId = default(long?), long? workspaceId = default(long?))
         {
             this.Active = active;
             this.EstimatedSeconds = estimatedSeconds;
@@ -61,7 +61,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Task estimation in seconds</value>
         [DataMember(Name="estimated_seconds", EmitDefaultValue=false)]
-        public int? EstimatedSeconds { get; set; }
+        public long? EstimatedSeconds { get; set; }
 
         /// <summary>
         /// Name
@@ -75,21 +75,21 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Project ID</value>
         [DataMember(Name="project_id", EmitDefaultValue=false)]
-        public int? ProjectId { get; set; }
+        public long? ProjectId { get; set; }
 
         /// <summary>
         /// Creator ID, if omitted will use requester user ID
         /// </summary>
         /// <value>Creator ID, if omitted will use requester user ID</value>
         [DataMember(Name="user_id", EmitDefaultValue=false)]
-        public int? UserId { get; set; }
+        public long? UserId { get; set; }
 
         /// <summary>
         /// Workspace ID
         /// </summary>
         /// <value>Workspace ID</value>
         [DataMember(Name="workspace_id", EmitDefaultValue=false)]
-        public int? WorkspaceId { get; set; }
+        public long? WorkspaceId { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

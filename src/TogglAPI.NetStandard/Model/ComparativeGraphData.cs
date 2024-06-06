@@ -35,7 +35,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <param name="date">date.</param>
         /// <param name="totalSeconds">totalSeconds.</param>
-        public ComparativeGraphData(string date = default(string), int? totalSeconds = default(int?))
+        public ComparativeGraphData(string date = default(string), long? totalSeconds = default(long?))
         {
             this.Date = date;
             this.TotalSeconds = totalSeconds;
@@ -51,7 +51,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets TotalSeconds
         /// </summary>
         [DataMember(Name="total_seconds", EmitDefaultValue=false)]
-        public int? TotalSeconds { get; set; }
+        public long? TotalSeconds { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

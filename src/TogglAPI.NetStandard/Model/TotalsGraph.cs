@@ -37,7 +37,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="byRate">byRate.</param>
         /// <param name="labourCostInCents">labourCostInCents.</param>
         /// <param name="seconds">seconds.</param>
-        public TotalsGraph(int? billableAmountInCents = default(int?), Dictionary<string, int?> byRate = default(Dictionary<string, int?>), int? labourCostInCents = default(int?), int? seconds = default(int?))
+        public TotalsGraph(long? billableAmountInCents = default(long?), Dictionary<string, long?> byRate = default(Dictionary<string, long?>), long? labourCostInCents = default(long?), long? seconds = default(long?))
         {
             this.BillableAmountInCents = billableAmountInCents;
             this.ByRate = byRate;
@@ -49,25 +49,25 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets BillableAmountInCents
         /// </summary>
         [DataMember(Name="billable_amount_in_cents", EmitDefaultValue=false)]
-        public int? BillableAmountInCents { get; set; }
+        public long? BillableAmountInCents { get; set; }
 
         /// <summary>
         /// Gets or Sets ByRate
         /// </summary>
         [DataMember(Name="by_rate", EmitDefaultValue=false)]
-        public Dictionary<string, int?> ByRate { get; set; }
+        public Dictionary<string, long?> ByRate { get; set; }
 
         /// <summary>
         /// Gets or Sets LabourCostInCents
         /// </summary>
         [DataMember(Name="labour_cost_in_cents", EmitDefaultValue=false)]
-        public int? LabourCostInCents { get; set; }
+        public long? LabourCostInCents { get; set; }
 
         /// <summary>
         /// Gets or Sets Seconds
         /// </summary>
         [DataMember(Name="seconds", EmitDefaultValue=false)]
-        public int? Seconds { get; set; }
+        public long? Seconds { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

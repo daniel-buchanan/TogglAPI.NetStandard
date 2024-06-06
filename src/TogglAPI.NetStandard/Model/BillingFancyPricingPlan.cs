@@ -42,7 +42,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="pricesMonth">pricesMonth.</param>
         /// <param name="pricesPeriod">pricesPeriod.</param>
         /// <param name="pricingPlanId">pricingPlanId.</param>
-        public BillingFancyPricingPlan(int? actualPriceInUsdCents = default(int?), ModelsCampaign campaign = default(ModelsCampaign), int? listPriceInUsdCents = default(int?), string name = default(string), int? period = default(int?), string pricePointHandle = default(string), BillingPricesStruct pricesMonth = default(BillingPricesStruct), BillingPricesStruct pricesPeriod = default(BillingPricesStruct), int? pricingPlanId = default(int?))
+        public BillingFancyPricingPlan(long? actualPriceInUsdCents = default(long?), ModelsCampaign campaign = default(ModelsCampaign), long? listPriceInUsdCents = default(long?), string name = default(string), long? period = default(long?), string pricePointHandle = default(string), BillingPricesStruct pricesMonth = default(BillingPricesStruct), BillingPricesStruct pricesPeriod = default(BillingPricesStruct), long? pricingPlanId = default(long?))
         {
             this.ActualPriceInUsdCents = actualPriceInUsdCents;
             this.Campaign = campaign;
@@ -59,7 +59,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets ActualPriceInUsdCents
         /// </summary>
         [DataMember(Name="actual_price_in_usd_cents", EmitDefaultValue=false)]
-        public int? ActualPriceInUsdCents { get; set; }
+        public long? ActualPriceInUsdCents { get; set; }
 
         /// <summary>
         /// Gets or Sets Campaign
@@ -71,7 +71,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets ListPriceInUsdCents
         /// </summary>
         [DataMember(Name="list_price_in_usd_cents", EmitDefaultValue=false)]
-        public int? ListPriceInUsdCents { get; set; }
+        public long? ListPriceInUsdCents { get; set; }
 
         /// <summary>
         /// Gets or Sets Name
@@ -83,7 +83,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Period
         /// </summary>
         [DataMember(Name="period", EmitDefaultValue=false)]
-        public int? Period { get; set; }
+        public long? Period { get; set; }
 
         /// <summary>
         /// Gets or Sets PricePointHandle
@@ -107,7 +107,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets PricingPlanId
         /// </summary>
         [DataMember(Name="pricing_plan_id", EmitDefaultValue=false)]
-        public int? PricingPlanId { get; set; }
+        public long? PricingPlanId { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

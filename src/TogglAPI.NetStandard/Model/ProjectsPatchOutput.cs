@@ -35,7 +35,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <param name="failure">failure.</param>
         /// <param name="success">success.</param>
-        public ProjectsPatchOutput(List<ProjectsPatchFailure> failure = default(List<ProjectsPatchFailure>), List<int?> success = default(List<int?>))
+        public ProjectsPatchOutput(List<ProjectsPatchFailure> failure = default(List<ProjectsPatchFailure>), List<long?> success = default(List<long?>))
         {
             this.Failure = failure;
             this.Success = success;
@@ -51,7 +51,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Success
         /// </summary>
         [DataMember(Name="success", EmitDefaultValue=false)]
-        public List<int?> Success { get; set; }
+        public List<long?> Success { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

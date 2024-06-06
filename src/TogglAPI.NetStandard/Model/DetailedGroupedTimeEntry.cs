@@ -52,7 +52,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="timeEntries">timeEntries.</param>
         /// <param name="userId">userId.</param>
         /// <param name="username">username.</param>
-        public DetailedGroupedTimeEntry(bool? billable = default(bool?), int? billableAmountInCents = default(int?), string clientName = default(string), string currency = default(string), string description = default(string), string email = default(string), int? hourlyRateInCents = default(int?), string projectColor = default(string), string projectHex = default(string), int? projectId = default(int?), string projectName = default(string), int? rowNumber = default(int?), List<int?> tagIds = default(List<int?>), List<string> tagNames = default(List<string>), int? taskId = default(int?), string taskName = default(string), List<DetailedSingleTimeEntry> timeEntries = default(List<DetailedSingleTimeEntry>), int? userId = default(int?), string username = default(string))
+        public DetailedGroupedTimeEntry(bool? billable = default(bool?), long? billableAmountInCents = default(long?), string clientName = default(string), string currency = default(string), string description = default(string), string email = default(string), long? hourlyRateInCents = default(long?), string projectColor = default(string), string projectHex = default(string), long? projectId = default(long?), string projectName = default(string), long? rowNumber = default(long?), List<long?> tagIds = default(List<long?>), List<string> tagNames = default(List<string>), long? taskId = default(long?), string taskName = default(string), List<DetailedSingleTimeEntry> timeEntries = default(List<DetailedSingleTimeEntry>), long? userId = default(long?), string username = default(string))
         {
             this.Billable = billable;
             this.BillableAmountInCents = billableAmountInCents;
@@ -85,7 +85,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets BillableAmountInCents
         /// </summary>
         [DataMember(Name="billable_amount_in_cents", EmitDefaultValue=false)]
-        public int? BillableAmountInCents { get; set; }
+        public long? BillableAmountInCents { get; set; }
 
         /// <summary>
         /// Gets or Sets ClientName
@@ -115,7 +115,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets HourlyRateInCents
         /// </summary>
         [DataMember(Name="hourly_rate_in_cents", EmitDefaultValue=false)]
-        public int? HourlyRateInCents { get; set; }
+        public long? HourlyRateInCents { get; set; }
 
         /// <summary>
         /// Gets or Sets ProjectColor
@@ -133,7 +133,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets ProjectId
         /// </summary>
         [DataMember(Name="project_id", EmitDefaultValue=false)]
-        public int? ProjectId { get; set; }
+        public long? ProjectId { get; set; }
 
         /// <summary>
         /// Gets or Sets ProjectName
@@ -145,13 +145,13 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets RowNumber
         /// </summary>
         [DataMember(Name="row_number", EmitDefaultValue=false)]
-        public int? RowNumber { get; set; }
+        public long? RowNumber { get; set; }
 
         /// <summary>
         /// Gets or Sets TagIds
         /// </summary>
         [DataMember(Name="tag_ids", EmitDefaultValue=false)]
-        public List<int?> TagIds { get; set; }
+        public List<long?> TagIds { get; set; }
 
         /// <summary>
         /// Gets or Sets TagNames
@@ -163,7 +163,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets TaskId
         /// </summary>
         [DataMember(Name="task_id", EmitDefaultValue=false)]
-        public int? TaskId { get; set; }
+        public long? TaskId { get; set; }
 
         /// <summary>
         /// Gets or Sets TaskName
@@ -181,7 +181,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets UserId
         /// </summary>
         [DataMember(Name="user_id", EmitDefaultValue=false)]
-        public int? UserId { get; set; }
+        public long? UserId { get; set; }
 
         /// <summary>
         /// Gets or Sets Username

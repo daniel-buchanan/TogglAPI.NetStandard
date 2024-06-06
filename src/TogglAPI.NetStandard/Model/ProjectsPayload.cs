@@ -34,7 +34,7 @@ namespace TogglAPI.NetStandard.Model
         /// Initializes a new instance of the <see cref="ProjectsPayload" /> class.
         /// </summary>
         /// <param name="projectIds">projectIds.</param>
-        public ProjectsPayload(List<int?> projectIds = default(List<int?>))
+        public ProjectsPayload(List<long?> projectIds = default(List<long?>))
         {
             this.ProjectIds = projectIds;
         }
@@ -43,7 +43,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets ProjectIds
         /// </summary>
         [DataMember(Name="project_ids", EmitDefaultValue=false)]
-        public List<int?> ProjectIds { get; set; }
+        public List<long?> ProjectIds { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

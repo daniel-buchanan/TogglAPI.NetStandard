@@ -37,7 +37,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="joined">joined.</param>
         /// <param name="operation">operation.</param>
         /// <param name="userId">userId.</param>
-        public UserAssignmentsPayload(int? groupId = default(int?), bool? joined = default(bool?), string operation = default(string), int? userId = default(int?))
+        public UserAssignmentsPayload(long? groupId = default(long?), bool? joined = default(bool?), string operation = default(string), long? userId = default(long?))
         {
             this.GroupId = groupId;
             this.Joined = joined;
@@ -49,7 +49,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets GroupId
         /// </summary>
         [DataMember(Name="group_id", EmitDefaultValue=false)]
-        public int? GroupId { get; set; }
+        public long? GroupId { get; set; }
 
         /// <summary>
         /// Gets or Sets Joined
@@ -67,7 +67,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets UserId
         /// </summary>
         [DataMember(Name="user_id", EmitDefaultValue=false)]
-        public int? UserId { get; set; }
+        public long? UserId { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

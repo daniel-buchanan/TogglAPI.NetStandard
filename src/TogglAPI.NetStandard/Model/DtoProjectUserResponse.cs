@@ -40,7 +40,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="manager">manager.</param>
         /// <param name="projectId">projectId.</param>
         /// <param name="userId">userId.</param>
-        public DtoProjectUserResponse(int? groupId = default(int?), decimal? hourlyRate = default(decimal?), int? id = default(int?), int? labourCost = default(int?), bool? manager = default(bool?), int? projectId = default(int?), int? userId = default(int?))
+        public DtoProjectUserResponse(long? groupId = default(long?), decimal? hourlyRate = default(decimal?), long? id = default(long?), long? labourCost = default(long?), bool? manager = default(bool?), long? projectId = default(long?), long? userId = default(long?))
         {
             this.GroupId = groupId;
             this.HourlyRate = hourlyRate;
@@ -55,7 +55,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets GroupId
         /// </summary>
         [DataMember(Name="group_id", EmitDefaultValue=false)]
-        public int? GroupId { get; set; }
+        public long? GroupId { get; set; }
 
         /// <summary>
         /// Gets or Sets HourlyRate
@@ -67,13 +67,13 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Id
         /// </summary>
         [DataMember(Name="id", EmitDefaultValue=false)]
-        public int? Id { get; set; }
+        public long? Id { get; set; }
 
         /// <summary>
         /// Gets or Sets LabourCost
         /// </summary>
         [DataMember(Name="labour_cost", EmitDefaultValue=false)]
-        public int? LabourCost { get; set; }
+        public long? LabourCost { get; set; }
 
         /// <summary>
         /// Gets or Sets Manager
@@ -85,13 +85,13 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets ProjectId
         /// </summary>
         [DataMember(Name="project_id", EmitDefaultValue=false)]
-        public int? ProjectId { get; set; }
+        public long? ProjectId { get; set; }
 
         /// <summary>
         /// Gets or Sets UserId
         /// </summary>
         [DataMember(Name="user_id", EmitDefaultValue=false)]
-        public int? UserId { get; set; }
+        public long? UserId { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

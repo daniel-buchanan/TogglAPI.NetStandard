@@ -44,7 +44,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="workspaceId">workspaceId.</param>
         /// <param name="workspaceName">workspaceName.</param>
         /// <param name="workspaceUserId">workspaceUserId.</param>
-        public ModelsOrgUserWorkspaceDetails(bool? admin = default(bool?), decimal? cost = default(decimal?), string defaultCurrency = default(string), List<ModelsGroupDict> groups = default(List<ModelsGroupDict>), bool? inactive = default(bool?), decimal? rate = default(decimal?), string role = default(string), decimal? workingHours = default(decimal?), int? workspaceId = default(int?), string workspaceName = default(string), int? workspaceUserId = default(int?))
+        public ModelsOrgUserWorkspaceDetails(bool? admin = default(bool?), decimal? cost = default(decimal?), string defaultCurrency = default(string), List<ModelsGroupDict> groups = default(List<ModelsGroupDict>), bool? inactive = default(bool?), decimal? rate = default(decimal?), string role = default(string), decimal? workingHours = default(decimal?), long? workspaceId = default(long?), string workspaceName = default(string), long? workspaceUserId = default(long?))
         {
             this.Admin = admin;
             this.Cost = cost;
@@ -111,7 +111,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets WorkspaceId
         /// </summary>
         [DataMember(Name="workspace_id", EmitDefaultValue=false)]
-        public int? WorkspaceId { get; set; }
+        public long? WorkspaceId { get; set; }
 
         /// <summary>
         /// Gets or Sets WorkspaceName
@@ -123,7 +123,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets WorkspaceUserId
         /// </summary>
         [DataMember(Name="workspace_user_id", EmitDefaultValue=false)]
-        public int? WorkspaceUserId { get; set; }
+        public long? WorkspaceUserId { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

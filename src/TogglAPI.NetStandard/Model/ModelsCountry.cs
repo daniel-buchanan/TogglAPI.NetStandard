@@ -40,7 +40,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="vatApplicable">vatApplicable.</param>
         /// <param name="vatPercentage">vatPercentage.</param>
         /// <param name="vatRegex">vatRegex.</param>
-        public ModelsCountry(string countryCode = default(string), int? defaultCurrencyId = default(int?), int? id = default(int?), string name = default(string), bool? vatApplicable = default(bool?), decimal? vatPercentage = default(decimal?), string vatRegex = default(string))
+        public ModelsCountry(string countryCode = default(string), long? defaultCurrencyId = default(long?), long? id = default(long?), string name = default(string), bool? vatApplicable = default(bool?), decimal? vatPercentage = default(decimal?), string vatRegex = default(string))
         {
             this.CountryCode = countryCode;
             this.DefaultCurrencyId = defaultCurrencyId;
@@ -61,13 +61,13 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets DefaultCurrencyId
         /// </summary>
         [DataMember(Name="default_currency_id", EmitDefaultValue=false)]
-        public int? DefaultCurrencyId { get; set; }
+        public long? DefaultCurrencyId { get; set; }
 
         /// <summary>
         /// Gets or Sets Id
         /// </summary>
         [DataMember(Name="id", EmitDefaultValue=false)]
-        public int? Id { get; set; }
+        public long? Id { get; set; }
 
         /// <summary>
         /// Gets or Sets Name

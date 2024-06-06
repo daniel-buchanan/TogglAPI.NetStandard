@@ -37,7 +37,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="manager">Whether the user will be manager of the project.</param>
         /// <param name="rate">Rate for this project user.</param>
         /// <param name="rateChangeMode">Rate change mode for this project user. Can be \&quot;start-today\&quot;, \&quot;override-current\&quot;, \&quot;override-all\&quot;.</param>
-        public UserPutPayload(int? labourCost = default(int?), bool? manager = default(bool?), decimal? rate = default(decimal?), string rateChangeMode = default(string))
+        public UserPutPayload(long? labourCost = default(long?), bool? manager = default(bool?), decimal? rate = default(decimal?), string rateChangeMode = default(string))
         {
             this.LabourCost = labourCost;
             this.Manager = manager;
@@ -50,7 +50,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Labour cost for this project user</value>
         [DataMember(Name="labour_cost", EmitDefaultValue=false)]
-        public int? LabourCost { get; set; }
+        public long? LabourCost { get; set; }
 
         /// <summary>
         /// Whether the user will be manager of the project

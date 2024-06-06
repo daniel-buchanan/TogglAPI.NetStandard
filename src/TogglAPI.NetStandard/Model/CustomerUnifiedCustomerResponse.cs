@@ -46,7 +46,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="taxNumber">taxNumber.</param>
         /// <param name="togglUserEmail">togglUserEmail.</param>
         /// <param name="togglUserId">togglUserId.</param>
-        public CustomerUnifiedCustomerResponse(string addressLine = default(string), string countryId = default(string), string currency = default(string), string customerName = default(string), CustomerPaymentMethod defaultPaymentMethod = default(CustomerPaymentMethod), CustomerDiscountResponse discount = default(CustomerDiscountResponse), string id = default(string), string postalCode = default(string), string site = default(string), string state = default(string), string taxNumber = default(string), string togglUserEmail = default(string), int? togglUserId = default(int?))
+        public CustomerUnifiedCustomerResponse(string addressLine = default(string), string countryId = default(string), string currency = default(string), string customerName = default(string), CustomerPaymentMethod defaultPaymentMethod = default(CustomerPaymentMethod), CustomerDiscountResponse discount = default(CustomerDiscountResponse), string id = default(string), string postalCode = default(string), string site = default(string), string state = default(string), string taxNumber = default(string), string togglUserEmail = default(string), long? togglUserId = default(long?))
         {
             this.AddressLine = addressLine;
             this.CountryId = countryId;
@@ -139,7 +139,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets TogglUserId
         /// </summary>
         [DataMember(Name="toggl_user_id", EmitDefaultValue=false)]
-        public int? TogglUserId { get; set; }
+        public long? TogglUserId { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

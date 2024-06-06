@@ -52,7 +52,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="uid">uid.</param>
         /// <param name="wid">wid.</param>
         /// <param name="workingHoursInMinutes">workingHoursInMinutes.</param>
-        public ModelsWorkspaceUser(bool? active = default(bool?), bool? admin = default(bool?), string at = default(string), string avatarFileName = default(string), string email = default(string), UtilsInt64Slice groupIds = default(UtilsInt64Slice), int? id = default(int?), bool? inactive = default(bool?), string invitationCode = default(string), string inviteUrl = default(string), int? labourCost = default(int?), string name = default(string), decimal? rate = default(decimal?), string rateLastUpdated = default(string), string role = default(string), string timezone = default(string), int? uid = default(int?), int? wid = default(int?), int? workingHoursInMinutes = default(int?))
+        public ModelsWorkspaceUser(bool? active = default(bool?), bool? admin = default(bool?), string at = default(string), string avatarFileName = default(string), string email = default(string), UtilsInt64Slice groupIds = default(UtilsInt64Slice), long? id = default(long?), bool? inactive = default(bool?), string invitationCode = default(string), string inviteUrl = default(string), long? labourCost = default(long?), string name = default(string), decimal? rate = default(decimal?), string rateLastUpdated = default(string), string role = default(string), string timezone = default(string), long? uid = default(long?), long? wid = default(long?), long? workingHoursInMinutes = default(long?))
         {
             this.Active = active;
             this.Admin = admin;
@@ -115,7 +115,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Id
         /// </summary>
         [DataMember(Name="id", EmitDefaultValue=false)]
-        public int? Id { get; set; }
+        public long? Id { get; set; }
 
         /// <summary>
         /// Gets or Sets Inactive
@@ -139,7 +139,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets LabourCost
         /// </summary>
         [DataMember(Name="labour_cost", EmitDefaultValue=false)]
-        public int? LabourCost { get; set; }
+        public long? LabourCost { get; set; }
 
         /// <summary>
         /// Gets or Sets Name
@@ -175,19 +175,19 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Uid
         /// </summary>
         [DataMember(Name="uid", EmitDefaultValue=false)]
-        public int? Uid { get; set; }
+        public long? Uid { get; set; }
 
         /// <summary>
         /// Gets or Sets Wid
         /// </summary>
         [DataMember(Name="wid", EmitDefaultValue=false)]
-        public int? Wid { get; set; }
+        public long? Wid { get; set; }
 
         /// <summary>
         /// Gets or Sets WorkingHoursInMinutes
         /// </summary>
         [DataMember(Name="working_hours_in_minutes", EmitDefaultValue=false)]
-        public int? WorkingHoursInMinutes { get; set; }
+        public long? WorkingHoursInMinutes { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

@@ -37,7 +37,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="frequency">frequency.</param>
         /// <param name="groupIds">groupIds.</param>
         /// <param name="userIds">userIds.</param>
-        public ScheduledPayload(int? bookmarkId = default(int?), int? frequency = default(int?), List<int?> groupIds = default(List<int?>), List<int?> userIds = default(List<int?>))
+        public ScheduledPayload(long? bookmarkId = default(long?), long? frequency = default(long?), List<long?> groupIds = default(List<long?>), List<long?> userIds = default(List<long?>))
         {
             this.BookmarkId = bookmarkId;
             this.Frequency = frequency;
@@ -49,25 +49,25 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets BookmarkId
         /// </summary>
         [DataMember(Name="bookmark_id", EmitDefaultValue=false)]
-        public int? BookmarkId { get; set; }
+        public long? BookmarkId { get; set; }
 
         /// <summary>
         /// Gets or Sets Frequency
         /// </summary>
         [DataMember(Name="frequency", EmitDefaultValue=false)]
-        public int? Frequency { get; set; }
+        public long? Frequency { get; set; }
 
         /// <summary>
         /// Gets or Sets GroupIds
         /// </summary>
         [DataMember(Name="group_ids", EmitDefaultValue=false)]
-        public List<int?> GroupIds { get; set; }
+        public List<long?> GroupIds { get; set; }
 
         /// <summary>
         /// Gets or Sets UserIds
         /// </summary>
         [DataMember(Name="user_ids", EmitDefaultValue=false)]
-        public List<int?> UserIds { get; set; }
+        public List<long?> UserIds { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

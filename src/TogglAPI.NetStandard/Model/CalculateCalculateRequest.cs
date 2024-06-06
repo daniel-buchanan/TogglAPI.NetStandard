@@ -41,7 +41,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="period">Can be only 1 or 12 (required).</param>
         /// <param name="pricingPlanId">pricingPlanId (required).</param>
         /// <param name="userCount">userCount (required).</param>
-        public CalculateCalculateRequest(int? period = default(int?), int? pricingPlanId = default(int?), int? userCount = default(int?))
+        public CalculateCalculateRequest(long? period = default(long?), long? pricingPlanId = default(long?), long? userCount = default(long?))
         {
             // to ensure "period" is required (not null)
             if (period == null)
@@ -77,19 +77,19 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Can be only 1 or 12</value>
         [DataMember(Name="period", EmitDefaultValue=false)]
-        public int? Period { get; set; }
+        public long? Period { get; set; }
 
         /// <summary>
         /// Gets or Sets PricingPlanId
         /// </summary>
         [DataMember(Name="pricing_plan_id", EmitDefaultValue=false)]
-        public int? PricingPlanId { get; set; }
+        public long? PricingPlanId { get; set; }
 
         /// <summary>
         /// Gets or Sets UserCount
         /// </summary>
         [DataMember(Name="user_count", EmitDefaultValue=false)]
-        public int? UserCount { get; set; }
+        public long? UserCount { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

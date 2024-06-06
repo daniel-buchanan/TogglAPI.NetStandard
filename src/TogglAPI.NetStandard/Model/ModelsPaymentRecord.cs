@@ -42,7 +42,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="recordType">recordType.</param>
         /// <param name="totalAmount">totalAmount.</param>
         /// <param name="uid">uid.</param>
-        public ModelsPaymentRecord(DateTime? creationDate = default(DateTime?), string currency = default(string), int? currencyId = default(int?), string description = default(string), int? id = default(int?), int? initialId = default(int?), string recordType = default(string), int? totalAmount = default(int?), string uid = default(string))
+        public ModelsPaymentRecord(DateTime? creationDate = default(DateTime?), string currency = default(string), long? currencyId = default(long?), string description = default(string), long? id = default(long?), long? initialId = default(long?), string recordType = default(string), long? totalAmount = default(long?), string uid = default(string))
         {
             this.CreationDate = creationDate;
             this.Currency = currency;
@@ -72,7 +72,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets CurrencyId
         /// </summary>
         [DataMember(Name="currency_id", EmitDefaultValue=false)]
-        public int? CurrencyId { get; set; }
+        public long? CurrencyId { get; set; }
 
         /// <summary>
         /// Gets or Sets Description
@@ -84,13 +84,13 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Id
         /// </summary>
         [DataMember(Name="id", EmitDefaultValue=false)]
-        public int? Id { get; set; }
+        public long? Id { get; set; }
 
         /// <summary>
         /// Gets or Sets InitialId
         /// </summary>
         [DataMember(Name="initial_id", EmitDefaultValue=false)]
-        public int? InitialId { get; set; }
+        public long? InitialId { get; set; }
 
         /// <summary>
         /// Gets or Sets RecordType
@@ -102,7 +102,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets TotalAmount
         /// </summary>
         [DataMember(Name="total_amount", EmitDefaultValue=false)]
-        public int? TotalAmount { get; set; }
+        public long? TotalAmount { get; set; }
 
         /// <summary>
         /// Gets or Sets Uid

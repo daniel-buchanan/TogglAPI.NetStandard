@@ -39,7 +39,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="id">id.</param>
         /// <param name="labourCost">labourCost.</param>
         /// <param name="name">name.</param>
-        public DictionaryReportUserDict(string avatarUrl = default(string), string email = default(string), string groupIds = default(string), int? id = default(int?), int? labourCost = default(int?), string name = default(string))
+        public DictionaryReportUserDict(string avatarUrl = default(string), string email = default(string), string groupIds = default(string), long? id = default(long?), long? labourCost = default(long?), string name = default(string))
         {
             this.AvatarUrl = avatarUrl;
             this.Email = email;
@@ -71,13 +71,13 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Id
         /// </summary>
         [DataMember(Name="id", EmitDefaultValue=false)]
-        public int? Id { get; set; }
+        public long? Id { get; set; }
 
         /// <summary>
         /// Gets or Sets LabourCost
         /// </summary>
         [DataMember(Name="labour_cost", EmitDefaultValue=false)]
-        public int? LabourCost { get; set; }
+        public long? LabourCost { get; set; }
 
         /// <summary>
         /// Gets or Sets Name

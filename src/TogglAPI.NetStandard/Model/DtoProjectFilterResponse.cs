@@ -40,7 +40,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="currency">currency.</param>
         /// <param name="id">id.</param>
         /// <param name="name">name.</param>
-        public DtoProjectFilterResponse(bool? active = default(bool?), bool? billable = default(bool?), int? clientId = default(int?), string color = default(string), string currency = default(string), int? id = default(int?), string name = default(string))
+        public DtoProjectFilterResponse(bool? active = default(bool?), bool? billable = default(bool?), long? clientId = default(long?), string color = default(string), string currency = default(string), long? id = default(long?), string name = default(string))
         {
             this.Active = active;
             this.Billable = billable;
@@ -67,7 +67,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets ClientId
         /// </summary>
         [DataMember(Name="client_id", EmitDefaultValue=false)]
-        public int? ClientId { get; set; }
+        public long? ClientId { get; set; }
 
         /// <summary>
         /// Gets or Sets Color
@@ -85,7 +85,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Id
         /// </summary>
         [DataMember(Name="id", EmitDefaultValue=false)]
-        public int? Id { get; set; }
+        public long? Id { get; set; }
 
         /// <summary>
         /// Gets or Sets Name

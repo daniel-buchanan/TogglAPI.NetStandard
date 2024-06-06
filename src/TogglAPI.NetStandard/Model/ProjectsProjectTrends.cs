@@ -38,7 +38,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="projectId">projectId.</param>
         /// <param name="start">start.</param>
         /// <param name="userIds">userIds.</param>
-        public ProjectsProjectTrends(List<int?> currentPeriodSeconds = default(List<int?>), List<int?> previousPeriodSeconds = default(List<int?>), int? projectId = default(int?), string start = default(string), List<int?> userIds = default(List<int?>))
+        public ProjectsProjectTrends(List<long?> currentPeriodSeconds = default(List<long?>), List<long?> previousPeriodSeconds = default(List<long?>), long? projectId = default(long?), string start = default(string), List<long?> userIds = default(List<long?>))
         {
             this.CurrentPeriodSeconds = currentPeriodSeconds;
             this.PreviousPeriodSeconds = previousPeriodSeconds;
@@ -51,19 +51,19 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets CurrentPeriodSeconds
         /// </summary>
         [DataMember(Name="current_period_seconds", EmitDefaultValue=false)]
-        public List<int?> CurrentPeriodSeconds { get; set; }
+        public List<long?> CurrentPeriodSeconds { get; set; }
 
         /// <summary>
         /// Gets or Sets PreviousPeriodSeconds
         /// </summary>
         [DataMember(Name="previous_period_seconds", EmitDefaultValue=false)]
-        public List<int?> PreviousPeriodSeconds { get; set; }
+        public List<long?> PreviousPeriodSeconds { get; set; }
 
         /// <summary>
         /// Gets or Sets ProjectId
         /// </summary>
         [DataMember(Name="project_id", EmitDefaultValue=false)]
-        public int? ProjectId { get; set; }
+        public long? ProjectId { get; set; }
 
         /// <summary>
         /// Gets or Sets Start
@@ -75,7 +75,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets UserIds
         /// </summary>
         [DataMember(Name="user_ids", EmitDefaultValue=false)]
-        public List<int?> UserIds { get; set; }
+        public List<long?> UserIds { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

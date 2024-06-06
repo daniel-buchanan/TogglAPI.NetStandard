@@ -37,7 +37,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="page">page.</param>
         /// <param name="perPage">perPage.</param>
         /// <param name="totalCount">totalCount.</param>
-        public TimesheetsGetPaginatedResponse(List<TimesheetsAPITimesheet> data = default(List<TimesheetsAPITimesheet>), int? page = default(int?), int? perPage = default(int?), int? totalCount = default(int?))
+        public TimesheetsGetPaginatedResponse(List<TimesheetsAPITimesheet> data = default(List<TimesheetsAPITimesheet>), long? page = default(long?), long? perPage = default(long?), long? totalCount = default(long?))
         {
             this.Data = data;
             this.Page = page;
@@ -55,19 +55,19 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Page
         /// </summary>
         [DataMember(Name="page", EmitDefaultValue=false)]
-        public int? Page { get; set; }
+        public long? Page { get; set; }
 
         /// <summary>
         /// Gets or Sets PerPage
         /// </summary>
         [DataMember(Name="per_page", EmitDefaultValue=false)]
-        public int? PerPage { get; set; }
+        public long? PerPage { get; set; }
 
         /// <summary>
         /// Gets or Sets TotalCount
         /// </summary>
         [DataMember(Name="total_count", EmitDefaultValue=false)]
-        public int? TotalCount { get; set; }
+        public long? TotalCount { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

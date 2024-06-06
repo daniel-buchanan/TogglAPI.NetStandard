@@ -35,7 +35,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <param name="id">Organization user ID.</param>
         /// <param name="message">Found error message.</param>
-        public UserFailure(int? id = default(int?), string message = default(string))
+        public UserFailure(long? id = default(long?), string message = default(string))
         {
             this.Id = id;
             this.Message = message;
@@ -46,7 +46,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Organization user ID</value>
         [DataMember(Name="id", EmitDefaultValue=false)]
-        public int? Id { get; set; }
+        public long? Id { get; set; }
 
         /// <summary>
         /// Found error message

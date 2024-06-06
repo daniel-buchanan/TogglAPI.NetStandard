@@ -35,7 +35,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <param name="timeEntryId">timeEntryId.</param>
         /// <param name="workspaceId">workspaceId.</param>
-        public TimeentriesBulkGetSharingRequest(int? timeEntryId = default(int?), int? workspaceId = default(int?))
+        public TimeentriesBulkGetSharingRequest(long? timeEntryId = default(long?), long? workspaceId = default(long?))
         {
             this.TimeEntryId = timeEntryId;
             this.WorkspaceId = workspaceId;
@@ -45,13 +45,13 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets TimeEntryId
         /// </summary>
         [DataMember(Name="time_entry_id", EmitDefaultValue=false)]
-        public int? TimeEntryId { get; set; }
+        public long? TimeEntryId { get; set; }
 
         /// <summary>
         /// Gets or Sets WorkspaceId
         /// </summary>
         [DataMember(Name="workspace_id", EmitDefaultValue=false)]
-        public int? WorkspaceId { get; set; }
+        public long? WorkspaceId { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

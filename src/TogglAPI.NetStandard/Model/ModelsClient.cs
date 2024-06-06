@@ -42,7 +42,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="permissions">List of authorization permissions for this client..</param>
         /// <param name="serverDeletedAt">When was deleted, null if not deleted.</param>
         /// <param name="wid">Workspace ID.</param>
-        public ModelsClient(bool? archived = default(bool?), string at = default(string), int? creatorId = default(int?), int? id = default(int?), string name = default(string), string notes = default(string), string permissions = default(string), string serverDeletedAt = default(string), int? wid = default(int?))
+        public ModelsClient(bool? archived = default(bool?), string at = default(string), long? creatorId = default(long?), long? id = default(long?), string name = default(string), string notes = default(string), string permissions = default(string), string serverDeletedAt = default(string), long? wid = default(long?))
         {
             this.Archived = archived;
             this.At = at;
@@ -74,14 +74,14 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>CreatorID is the ID of the user who created the client</value>
         [DataMember(Name="creator_id", EmitDefaultValue=false)]
-        public int? CreatorId { get; set; }
+        public long? CreatorId { get; set; }
 
         /// <summary>
         /// Client ID
         /// </summary>
         /// <value>Client ID</value>
         [DataMember(Name="id", EmitDefaultValue=false)]
-        public int? Id { get; set; }
+        public long? Id { get; set; }
 
         /// <summary>
         /// Name of the client
@@ -115,7 +115,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Workspace ID</value>
         [DataMember(Name="wid", EmitDefaultValue=false)]
-        public int? Wid { get; set; }
+        public long? Wid { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

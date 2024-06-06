@@ -54,7 +54,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="startDate">Start date of a project timeframe.</param>
         /// <param name="template">Project is template, optional, premium feature.</param>
         /// <param name="templateId">Template ID, optional.</param>
-        public ProjectPayload(bool? active = default(bool?), bool? autoEstimates = default(bool?), bool? billable = default(bool?), int? cid = default(int?), int? clientId = default(int?), string clientName = default(string), string color = default(string), string currency = default(string), string endDate = default(string), int? estimatedHours = default(int?), decimal? fixedFee = default(decimal?), bool? isPrivate = default(bool?), bool? isShared = default(bool?), string name = default(string), decimal? rate = default(decimal?), string rateChangeMode = default(string), bool? recurring = default(bool?), ProjectRecurringParameters recurringParameters = default(ProjectRecurringParameters), string startDate = default(string), bool? template = default(bool?), int? templateId = default(int?))
+        public ProjectPayload(bool? active = default(bool?), bool? autoEstimates = default(bool?), bool? billable = default(bool?), long? cid = default(long?), long? clientId = default(long?), string clientName = default(string), string color = default(string), string currency = default(string), string endDate = default(string), long? estimatedHours = default(long?), decimal? fixedFee = default(decimal?), bool? isPrivate = default(bool?), bool? isShared = default(bool?), string name = default(string), decimal? rate = default(decimal?), string rateChangeMode = default(string), bool? recurring = default(bool?), ProjectRecurringParameters recurringParameters = default(ProjectRecurringParameters), string startDate = default(string), bool? template = default(bool?), long? templateId = default(long?))
         {
             this.Active = active;
             this.AutoEstimates = autoEstimates;
@@ -105,14 +105,14 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Client ID, legacy</value>
         [DataMember(Name="cid", EmitDefaultValue=false)]
-        public int? Cid { get; set; }
+        public long? Cid { get; set; }
 
         /// <summary>
         /// Client ID, optional
         /// </summary>
         /// <value>Client ID, optional</value>
         [DataMember(Name="client_id", EmitDefaultValue=false)]
-        public int? ClientId { get; set; }
+        public long? ClientId { get; set; }
 
         /// <summary>
         /// Client name, optional
@@ -147,7 +147,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Estimated hours, optional, premium feature</value>
         [DataMember(Name="estimated_hours", EmitDefaultValue=false)]
-        public int? EstimatedHours { get; set; }
+        public long? EstimatedHours { get; set; }
 
         /// <summary>
         /// Project fixed fee, optional, premium feature
@@ -224,7 +224,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Template ID, optional</value>
         [DataMember(Name="template_id", EmitDefaultValue=false)]
-        public int? TemplateId { get; set; }
+        public long? TemplateId { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

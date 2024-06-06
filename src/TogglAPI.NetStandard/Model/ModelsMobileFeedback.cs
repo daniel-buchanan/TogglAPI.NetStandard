@@ -40,7 +40,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="intercomEnabled">intercomEnabled.</param>
         /// <param name="message">message.</param>
         /// <param name="userID">userID.</param>
-        public ModelsMobileFeedback(List<int?> attachment = default(List<int?>), string attachmentName = default(string), List<ModelsMobileFeedbackData> data = default(List<ModelsMobileFeedbackData>), string email = default(string), bool? intercomEnabled = default(bool?), string message = default(string), int? userID = default(int?))
+        public ModelsMobileFeedback(List<long?> attachment = default(List<long?>), string attachmentName = default(string), List<ModelsMobileFeedbackData> data = default(List<ModelsMobileFeedbackData>), string email = default(string), bool? intercomEnabled = default(bool?), string message = default(string), long? userID = default(long?))
         {
             this.Attachment = attachment;
             this.AttachmentName = attachmentName;
@@ -55,7 +55,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Attachment
         /// </summary>
         [DataMember(Name="attachment", EmitDefaultValue=false)]
-        public List<int?> Attachment { get; set; }
+        public List<long?> Attachment { get; set; }
 
         /// <summary>
         /// Gets or Sets AttachmentName
@@ -91,7 +91,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets UserID
         /// </summary>
         [DataMember(Name="userID", EmitDefaultValue=false)]
-        public int? UserID { get; set; }
+        public long? UserID { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

@@ -41,7 +41,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="projectIds">projectIds.</param>
         /// <param name="start">start.</param>
         /// <param name="userIds">userIds.</param>
-        public TasksTasksPost(bool? active = default(bool?), List<int?> ids = default(List<int?>), string name = default(string), int? pageSize = default(int?), bool? projectActive = default(bool?), List<int?> projectIds = default(List<int?>), int? start = default(int?), List<int?> userIds = default(List<int?>))
+        public TasksTasksPost(bool? active = default(bool?), List<long?> ids = default(List<long?>), string name = default(string), long? pageSize = default(long?), bool? projectActive = default(bool?), List<long?> projectIds = default(List<long?>), long? start = default(long?), List<long?> userIds = default(List<long?>))
         {
             this.Active = active;
             this.Ids = ids;
@@ -63,7 +63,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Ids
         /// </summary>
         [DataMember(Name="ids", EmitDefaultValue=false)]
-        public List<int?> Ids { get; set; }
+        public List<long?> Ids { get; set; }
 
         /// <summary>
         /// Gets or Sets Name
@@ -75,7 +75,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets PageSize
         /// </summary>
         [DataMember(Name="page_size", EmitDefaultValue=false)]
-        public int? PageSize { get; set; }
+        public long? PageSize { get; set; }
 
         /// <summary>
         /// Gets or Sets ProjectActive
@@ -87,19 +87,19 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets ProjectIds
         /// </summary>
         [DataMember(Name="project_ids", EmitDefaultValue=false)]
-        public List<int?> ProjectIds { get; set; }
+        public List<long?> ProjectIds { get; set; }
 
         /// <summary>
         /// Gets or Sets Start
         /// </summary>
         [DataMember(Name="start", EmitDefaultValue=false)]
-        public int? Start { get; set; }
+        public long? Start { get; set; }
 
         /// <summary>
         /// Gets or Sets UserIds
         /// </summary>
         [DataMember(Name="user_ids", EmitDefaultValue=false)]
-        public List<int?> UserIds { get; set; }
+        public List<long?> UserIds { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

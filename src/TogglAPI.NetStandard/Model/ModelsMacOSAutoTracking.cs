@@ -37,7 +37,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="keyword">keyword.</param>
         /// <param name="projectId">projectId.</param>
         /// <param name="taskId">taskId.</param>
-        public ModelsMacOSAutoTracking(string id = default(string), string keyword = default(string), int? projectId = default(int?), int? taskId = default(int?))
+        public ModelsMacOSAutoTracking(string id = default(string), string keyword = default(string), long? projectId = default(long?), long? taskId = default(long?))
         {
             this.Id = id;
             this.Keyword = keyword;
@@ -61,13 +61,13 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets ProjectId
         /// </summary>
         [DataMember(Name="project_id", EmitDefaultValue=false)]
-        public int? ProjectId { get; set; }
+        public long? ProjectId { get; set; }
 
         /// <summary>
         /// Gets or Sets TaskId
         /// </summary>
         [DataMember(Name="task_id", EmitDefaultValue=false)]
-        public int? TaskId { get; set; }
+        public long? TaskId { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

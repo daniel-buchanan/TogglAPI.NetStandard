@@ -35,7 +35,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <param name="groupId">groupId.</param>
         /// <param name="name">name.</param>
-        public ModelsGroupDict(int? groupId = default(int?), string name = default(string))
+        public ModelsGroupDict(long? groupId = default(long?), string name = default(string))
         {
             this.GroupId = groupId;
             this.Name = name;
@@ -45,7 +45,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets GroupId
         /// </summary>
         [DataMember(Name="group_id", EmitDefaultValue=false)]
-        public int? GroupId { get; set; }
+        public long? GroupId { get; set; }
 
         /// <summary>
         /// Gets or Sets Name

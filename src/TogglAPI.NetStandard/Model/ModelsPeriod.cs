@@ -40,7 +40,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="subscriptionPeriodId">subscriptionPeriodId.</param>
         /// <param name="trial">trial.</param>
         /// <param name="userCount">userCount.</param>
-        public ModelsPeriod(string createdAt = default(string), string finishedOn = default(string), string startedOn = default(string), int? subscriptionId = default(int?), int? subscriptionPeriodId = default(int?), bool? trial = default(bool?), int? userCount = default(int?))
+        public ModelsPeriod(string createdAt = default(string), string finishedOn = default(string), string startedOn = default(string), long? subscriptionId = default(long?), long? subscriptionPeriodId = default(long?), bool? trial = default(bool?), long? userCount = default(long?))
         {
             this.CreatedAt = createdAt;
             this.FinishedOn = finishedOn;
@@ -73,13 +73,13 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets SubscriptionId
         /// </summary>
         [DataMember(Name="subscription_id", EmitDefaultValue=false)]
-        public int? SubscriptionId { get; set; }
+        public long? SubscriptionId { get; set; }
 
         /// <summary>
         /// Gets or Sets SubscriptionPeriodId
         /// </summary>
         [DataMember(Name="subscription_period_id", EmitDefaultValue=false)]
-        public int? SubscriptionPeriodId { get; set; }
+        public long? SubscriptionPeriodId { get; set; }
 
         /// <summary>
         /// Gets or Sets Trial
@@ -91,7 +91,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets UserCount
         /// </summary>
         [DataMember(Name="user_count", EmitDefaultValue=false)]
-        public int? UserCount { get; set; }
+        public long? UserCount { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

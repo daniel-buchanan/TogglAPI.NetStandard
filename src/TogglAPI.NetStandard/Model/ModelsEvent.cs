@@ -45,7 +45,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="startTime">startTime.</param>
         /// <param name="title">title.</param>
         /// <param name="updated">updated.</param>
-        public ModelsEvent(bool? allDay = default(bool?), string background = default(string), int? calendarEventId = default(int?), int? calendarId = default(int?), string endTime = default(string), string externalId = default(string), string foreground = default(string), string htmlLink = default(string), string icalUid = default(string), string startTime = default(string), string title = default(string), string updated = default(string))
+        public ModelsEvent(bool? allDay = default(bool?), string background = default(string), long? calendarEventId = default(long?), long? calendarId = default(long?), string endTime = default(string), string externalId = default(string), string foreground = default(string), string htmlLink = default(string), string icalUid = default(string), string startTime = default(string), string title = default(string), string updated = default(string))
         {
             this.AllDay = allDay;
             this.Background = background;
@@ -77,13 +77,13 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets CalendarEventId
         /// </summary>
         [DataMember(Name="calendar_event_id", EmitDefaultValue=false)]
-        public int? CalendarEventId { get; set; }
+        public long? CalendarEventId { get; set; }
 
         /// <summary>
         /// Gets or Sets CalendarId
         /// </summary>
         [DataMember(Name="calendar_id", EmitDefaultValue=false)]
-        public int? CalendarId { get; set; }
+        public long? CalendarId { get; set; }
 
         /// <summary>
         /// Gets or Sets EndTime

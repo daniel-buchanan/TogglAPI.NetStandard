@@ -40,7 +40,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="threshold">Threshold is the number of hours after which the reminder will be sent.</param>
         /// <param name="userIds">User IDs to send the reminder to.</param>
         /// <param name="workspaceId">Workspace ID.</param>
-        public ModelsTrackReminder(string createdAt = default(string), int? frequency = default(int?), List<int?> groupIds = default(List<int?>), int? reminderId = default(int?), int? threshold = default(int?), List<int?> userIds = default(List<int?>), int? workspaceId = default(int?))
+        public ModelsTrackReminder(string createdAt = default(string), long? frequency = default(long?), List<long?> groupIds = default(List<long?>), long? reminderId = default(long?), long? threshold = default(long?), List<long?> userIds = default(List<long?>), long? workspaceId = default(long?))
         {
             this.CreatedAt = createdAt;
             this.Frequency = frequency;
@@ -63,42 +63,42 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Frequency of the reminder in days, should be either 1 or 7</value>
         [DataMember(Name="frequency", EmitDefaultValue=false)]
-        public int? Frequency { get; set; }
+        public long? Frequency { get; set; }
 
         /// <summary>
         /// Groups IDs to send the reminder to
         /// </summary>
         /// <value>Groups IDs to send the reminder to</value>
         [DataMember(Name="group_ids", EmitDefaultValue=false)]
-        public List<int?> GroupIds { get; set; }
+        public List<long?> GroupIds { get; set; }
 
         /// <summary>
         /// Reminder ID
         /// </summary>
         /// <value>Reminder ID</value>
         [DataMember(Name="reminder_id", EmitDefaultValue=false)]
-        public int? ReminderId { get; set; }
+        public long? ReminderId { get; set; }
 
         /// <summary>
         /// Threshold is the number of hours after which the reminder will be sent
         /// </summary>
         /// <value>Threshold is the number of hours after which the reminder will be sent</value>
         [DataMember(Name="threshold", EmitDefaultValue=false)]
-        public int? Threshold { get; set; }
+        public long? Threshold { get; set; }
 
         /// <summary>
         /// User IDs to send the reminder to
         /// </summary>
         /// <value>User IDs to send the reminder to</value>
         [DataMember(Name="user_ids", EmitDefaultValue=false)]
-        public List<int?> UserIds { get; set; }
+        public List<long?> UserIds { get; set; }
 
         /// <summary>
         /// Workspace ID
         /// </summary>
         /// <value>Workspace ID</value>
         [DataMember(Name="workspace_id", EmitDefaultValue=false)]
-        public int? WorkspaceId { get; set; }
+        public long? WorkspaceId { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

@@ -46,7 +46,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="thresholdType">thresholdType.</param>
         /// <param name="thresholds">using pq types is a workaround to enable reading postgres arrays into go types we should wrap these pq types to avoid polluting our domain.</param>
         /// <param name="wid">wid.</param>
-        public ModelsAlert(List<ModelsAlertError> errors = default(List<ModelsAlertError>), int? id = default(int?), int? objectType = default(int?), int? projectId = default(int?), string receiverGroups = default(string), string receiverRoles = default(string), string receiverUsers = default(string), int? receivers = default(int?), string sourceKind = default(string), int? threshold = default(int?), string thresholdType = default(string), string thresholds = default(string), int? wid = default(int?))
+        public ModelsAlert(List<ModelsAlertError> errors = default(List<ModelsAlertError>), long? id = default(long?), long? objectType = default(long?), long? projectId = default(long?), string receiverGroups = default(string), string receiverRoles = default(string), string receiverUsers = default(string), long? receivers = default(long?), string sourceKind = default(string), long? threshold = default(long?), string thresholdType = default(string), string thresholds = default(string), long? wid = default(long?))
         {
             this.Errors = errors;
             this.Id = id;
@@ -73,19 +73,19 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Id
         /// </summary>
         [DataMember(Name="id", EmitDefaultValue=false)]
-        public int? Id { get; set; }
+        public long? Id { get; set; }
 
         /// <summary>
         /// Gets or Sets ObjectType
         /// </summary>
         [DataMember(Name="object_type", EmitDefaultValue=false)]
-        public int? ObjectType { get; set; }
+        public long? ObjectType { get; set; }
 
         /// <summary>
         /// Gets or Sets ProjectId
         /// </summary>
         [DataMember(Name="project_id", EmitDefaultValue=false)]
-        public int? ProjectId { get; set; }
+        public long? ProjectId { get; set; }
 
         /// <summary>
         /// Gets or Sets ReceiverGroups
@@ -109,7 +109,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Receivers
         /// </summary>
         [DataMember(Name="receivers", EmitDefaultValue=false)]
-        public int? Receivers { get; set; }
+        public long? Receivers { get; set; }
 
         /// <summary>
         /// Gets or Sets SourceKind
@@ -121,7 +121,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Threshold
         /// </summary>
         [DataMember(Name="threshold", EmitDefaultValue=false)]
-        public int? Threshold { get; set; }
+        public long? Threshold { get; set; }
 
         /// <summary>
         /// Gets or Sets ThresholdType
@@ -140,7 +140,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Wid
         /// </summary>
         [DataMember(Name="wid", EmitDefaultValue=false)]
-        public int? Wid { get; set; }
+        public long? Wid { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

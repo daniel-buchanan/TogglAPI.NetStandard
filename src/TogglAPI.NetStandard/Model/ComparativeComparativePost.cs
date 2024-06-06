@@ -45,7 +45,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="tagIds">tagIds.</param>
         /// <param name="taskIds">taskIds.</param>
         /// <param name="userIds">userIds.</param>
-        public ComparativeComparativePost(bool? billable = default(bool?), List<int?> clientIds = default(List<int?>), string endDate = default(string), List<int?> groupIds = default(List<int?>), List<int?> projectIds = default(List<int?>), string resolution = default(string), int? rounding = default(int?), int? roundingMinutes = default(int?), string startDate = default(string), List<int?> tagIds = default(List<int?>), List<int?> taskIds = default(List<int?>), List<int?> userIds = default(List<int?>))
+        public ComparativeComparativePost(bool? billable = default(bool?), List<long?> clientIds = default(List<long?>), string endDate = default(string), List<long?> groupIds = default(List<long?>), List<long?> projectIds = default(List<long?>), string resolution = default(string), long? rounding = default(long?), long? roundingMinutes = default(long?), string startDate = default(string), List<long?> tagIds = default(List<long?>), List<long?> taskIds = default(List<long?>), List<long?> userIds = default(List<long?>))
         {
             this.Billable = billable;
             this.ClientIds = clientIds;
@@ -71,7 +71,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets ClientIds
         /// </summary>
         [DataMember(Name="client_ids", EmitDefaultValue=false)]
-        public List<int?> ClientIds { get; set; }
+        public List<long?> ClientIds { get; set; }
 
         /// <summary>
         /// Gets or Sets EndDate
@@ -83,13 +83,13 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets GroupIds
         /// </summary>
         [DataMember(Name="group_ids", EmitDefaultValue=false)]
-        public List<int?> GroupIds { get; set; }
+        public List<long?> GroupIds { get; set; }
 
         /// <summary>
         /// Gets or Sets ProjectIds
         /// </summary>
         [DataMember(Name="project_ids", EmitDefaultValue=false)]
-        public List<int?> ProjectIds { get; set; }
+        public List<long?> ProjectIds { get; set; }
 
         /// <summary>
         /// Gets or Sets Resolution
@@ -101,13 +101,13 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Rounding
         /// </summary>
         [DataMember(Name="rounding", EmitDefaultValue=false)]
-        public int? Rounding { get; set; }
+        public long? Rounding { get; set; }
 
         /// <summary>
         /// Gets or Sets RoundingMinutes
         /// </summary>
         [DataMember(Name="rounding_minutes", EmitDefaultValue=false)]
-        public int? RoundingMinutes { get; set; }
+        public long? RoundingMinutes { get; set; }
 
         /// <summary>
         /// Gets or Sets StartDate
@@ -119,19 +119,19 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets TagIds
         /// </summary>
         [DataMember(Name="tag_ids", EmitDefaultValue=false)]
-        public List<int?> TagIds { get; set; }
+        public List<long?> TagIds { get; set; }
 
         /// <summary>
         /// Gets or Sets TaskIds
         /// </summary>
         [DataMember(Name="task_ids", EmitDefaultValue=false)]
-        public List<int?> TaskIds { get; set; }
+        public List<long?> TaskIds { get; set; }
 
         /// <summary>
         /// Gets or Sets UserIds
         /// </summary>
         [DataMember(Name="user_ids", EmitDefaultValue=false)]
-        public List<int?> UserIds { get; set; }
+        public List<long?> UserIds { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

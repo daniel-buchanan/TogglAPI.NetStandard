@@ -35,7 +35,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <param name="key">key.</param>
         /// <param name="modifiers">modifiers.</param>
-        public ModelsKeyboardShortcut(int? key = default(int?), int? modifiers = default(int?))
+        public ModelsKeyboardShortcut(long? key = default(long?), long? modifiers = default(long?))
         {
             this.Key = key;
             this.Modifiers = modifiers;
@@ -45,13 +45,13 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Key
         /// </summary>
         [DataMember(Name="key", EmitDefaultValue=false)]
-        public int? Key { get; set; }
+        public long? Key { get; set; }
 
         /// <summary>
         /// Gets or Sets Modifiers
         /// </summary>
         [DataMember(Name="modifiers", EmitDefaultValue=false)]
-        public int? Modifiers { get; set; }
+        public long? Modifiers { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

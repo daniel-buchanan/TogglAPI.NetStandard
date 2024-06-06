@@ -36,7 +36,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="ids">Client IDs for filtering..</param>
         /// <param name="name">Client name for filtering..</param>
         /// <param name="start">Start is the client ID cursor for pagination..</param>
-        public DtoClientFilterParamsRequest(List<int?> ids = default(List<int?>), string name = default(string), int? start = default(int?))
+        public DtoClientFilterParamsRequest(List<long?> ids = default(List<long?>), string name = default(string), long? start = default(long?))
         {
             this.Ids = ids;
             this.Name = name;
@@ -48,7 +48,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Client IDs for filtering.</value>
         [DataMember(Name="ids", EmitDefaultValue=false)]
-        public List<int?> Ids { get; set; }
+        public List<long?> Ids { get; set; }
 
         /// <summary>
         /// Client name for filtering.
@@ -62,7 +62,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Start is the client ID cursor for pagination.</value>
         [DataMember(Name="start", EmitDefaultValue=false)]
-        public int? Start { get; set; }
+        public long? Start { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

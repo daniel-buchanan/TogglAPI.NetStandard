@@ -39,7 +39,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="paymentType">paymentType.</param>
         /// <param name="reference">reference.</param>
         /// <param name="userId">userId.</param>
-        public ModelsPaymentDetail(string createdAt = default(string), string currency = default(string), int? customerId = default(int?), string paymentType = default(string), string reference = default(string), int? userId = default(int?))
+        public ModelsPaymentDetail(string createdAt = default(string), string currency = default(string), long? customerId = default(long?), string paymentType = default(string), string reference = default(string), long? userId = default(long?))
         {
             this.CreatedAt = createdAt;
             this.Currency = currency;
@@ -65,7 +65,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets CustomerId
         /// </summary>
         [DataMember(Name="customer_id", EmitDefaultValue=false)]
-        public int? CustomerId { get; set; }
+        public long? CustomerId { get; set; }
 
         /// <summary>
         /// Gets or Sets PaymentType
@@ -83,7 +83,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets UserId
         /// </summary>
         [DataMember(Name="user_id", EmitDefaultValue=false)]
-        public int? UserId { get; set; }
+        public long? UserId { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

@@ -37,7 +37,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="description">description.</param>
         /// <param name="itemId">itemId.</param>
         /// <param name="quantity">quantity.</param>
-        public ModelsUserInvoiceItem(decimal? amount = default(decimal?), string description = default(string), int? itemId = default(int?), decimal? quantity = default(decimal?))
+        public ModelsUserInvoiceItem(decimal? amount = default(decimal?), string description = default(string), long? itemId = default(long?), decimal? quantity = default(decimal?))
         {
             this.Amount = amount;
             this.Description = description;
@@ -61,7 +61,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets ItemId
         /// </summary>
         [DataMember(Name="item_id", EmitDefaultValue=false)]
-        public int? ItemId { get; set; }
+        public long? ItemId { get; set; }
 
         /// <summary>
         /// Gets or Sets Quantity

@@ -36,7 +36,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="enabled">enabled.</param>
         /// <param name="featureId">featureId.</param>
         /// <param name="name">name.</param>
-        public MeFeature(bool? enabled = default(bool?), int? featureId = default(int?), string name = default(string))
+        public MeFeature(bool? enabled = default(bool?), long? featureId = default(long?), string name = default(string))
         {
             this.Enabled = enabled;
             this.FeatureId = featureId;
@@ -53,7 +53,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets FeatureId
         /// </summary>
         [DataMember(Name="feature_id", EmitDefaultValue=false)]
-        public int? FeatureId { get; set; }
+        public long? FeatureId { get; set; }
 
         /// <summary>
         /// Gets or Sets Name

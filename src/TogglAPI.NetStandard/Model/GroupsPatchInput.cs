@@ -36,7 +36,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="op">op.</param>
         /// <param name="path">path.</param>
         /// <param name="value">value.</param>
-        public GroupsPatchInput(string op = default(string), string path = default(string), List<int?> value = default(List<int?>))
+        public GroupsPatchInput(string op = default(string), string path = default(string), List<long?> value = default(List<long?>))
         {
             this.Op = op;
             this.Path = path;
@@ -59,7 +59,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Value
         /// </summary>
         [DataMember(Name="value", EmitDefaultValue=false)]
-        public List<int?> Value { get; set; }
+        public List<long?> Value { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

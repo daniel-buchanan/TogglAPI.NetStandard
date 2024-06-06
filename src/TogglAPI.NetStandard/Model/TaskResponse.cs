@@ -39,7 +39,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="sortField">sortField.</param>
         /// <param name="sortOrder">sortOrder.</param>
         /// <param name="totalCount">totalCount.</param>
-        public TaskResponse(List<TaskWithTotal> data = default(List<TaskWithTotal>), int? page = default(int?), int? perPage = default(int?), string sortField = default(string), string sortOrder = default(string), int? totalCount = default(int?))
+        public TaskResponse(List<TaskWithTotal> data = default(List<TaskWithTotal>), long? page = default(long?), long? perPage = default(long?), string sortField = default(string), string sortOrder = default(string), long? totalCount = default(long?))
         {
             this.Data = data;
             this.Page = page;
@@ -59,13 +59,13 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Page
         /// </summary>
         [DataMember(Name="page", EmitDefaultValue=false)]
-        public int? Page { get; set; }
+        public long? Page { get; set; }
 
         /// <summary>
         /// Gets or Sets PerPage
         /// </summary>
         [DataMember(Name="per_page", EmitDefaultValue=false)]
-        public int? PerPage { get; set; }
+        public long? PerPage { get; set; }
 
         /// <summary>
         /// Gets or Sets SortField
@@ -83,7 +83,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets TotalCount
         /// </summary>
         [DataMember(Name="total_count", EmitDefaultValue=false)]
-        public int? TotalCount { get; set; }
+        public long? TotalCount { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

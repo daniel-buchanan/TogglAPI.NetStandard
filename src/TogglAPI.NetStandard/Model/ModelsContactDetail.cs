@@ -50,7 +50,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="vatNumberValid">DEPRECATED.</param>
         /// <param name="vatNumberValidatedAt">DEPRECATED.</param>
         /// <param name="zipCode">zipCode.</param>
-        public ModelsContactDetail(string companyAddress = default(string), string companyCity = default(string), string companyName = default(string), int? contactDetailId = default(int?), string contactEmail = default(string), string contactPerson = default(string), int? countryId = default(int?), int? countrySubdivisionId = default(int?), string createdAt = default(string), int? customerId = default(int?), bool? isEuResident = default(bool?), string updatedAt = default(string), int? userId = default(int?), string vatNumber = default(string), bool? vatNumberValid = default(bool?), string vatNumberValidatedAt = default(string), string zipCode = default(string))
+        public ModelsContactDetail(string companyAddress = default(string), string companyCity = default(string), string companyName = default(string), long? contactDetailId = default(long?), string contactEmail = default(string), string contactPerson = default(string), long? countryId = default(long?), long? countrySubdivisionId = default(long?), string createdAt = default(string), long? customerId = default(long?), bool? isEuResident = default(bool?), string updatedAt = default(string), long? userId = default(long?), string vatNumber = default(string), bool? vatNumberValid = default(bool?), string vatNumberValidatedAt = default(string), string zipCode = default(string))
         {
             this.CompanyAddress = companyAddress;
             this.CompanyCity = companyCity;
@@ -93,7 +93,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets ContactDetailId
         /// </summary>
         [DataMember(Name="contact_detail_id", EmitDefaultValue=false)]
-        public int? ContactDetailId { get; set; }
+        public long? ContactDetailId { get; set; }
 
         /// <summary>
         /// Gets or Sets ContactEmail
@@ -111,13 +111,13 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets CountryId
         /// </summary>
         [DataMember(Name="country_id", EmitDefaultValue=false)]
-        public int? CountryId { get; set; }
+        public long? CountryId { get; set; }
 
         /// <summary>
         /// Gets or Sets CountrySubdivisionId
         /// </summary>
         [DataMember(Name="country_subdivision_id", EmitDefaultValue=false)]
-        public int? CountrySubdivisionId { get; set; }
+        public long? CountrySubdivisionId { get; set; }
 
         /// <summary>
         /// Gets or Sets CreatedAt
@@ -129,7 +129,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets CustomerId
         /// </summary>
         [DataMember(Name="customer_id", EmitDefaultValue=false)]
-        public int? CustomerId { get; set; }
+        public long? CustomerId { get; set; }
 
         /// <summary>
         /// Gets or Sets IsEuResident
@@ -147,7 +147,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets UserId
         /// </summary>
         [DataMember(Name="user_id", EmitDefaultValue=false)]
-        public int? UserId { get; set; }
+        public long? UserId { get; set; }
 
         /// <summary>
         /// Gets or Sets VatNumber

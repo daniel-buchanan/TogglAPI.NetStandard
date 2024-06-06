@@ -50,7 +50,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="source">source.</param>
         /// <param name="type">type.</param>
         /// <param name="updatedAt">updatedAt.</param>
-        public DtoGetResponse(string createdAt = default(string), int? createdBy = default(int?), string creatorName = default(string), string description = default(string), int? id = default(int?), DtoLinkResponse link = default(DtoLinkResponse), bool? locked = default(bool?), string name = default(string), int? organizationId = default(int?), List<DtoResourcePermissionResponse> permissions = default(List<DtoResourcePermissionResponse>), bool? pinned = default(bool?), string plan = default(string), Dictionary<string, object> preferences = default(Dictionary<string, object>), DtoQueryResponse query = default(DtoQueryResponse), string source = default(string), string type = default(string), string updatedAt = default(string))
+        public DtoGetResponse(string createdAt = default(string), long? createdBy = default(long?), string creatorName = default(string), string description = default(string), long? id = default(long?), DtoLinkResponse link = default(DtoLinkResponse), bool? locked = default(bool?), string name = default(string), long? organizationId = default(long?), List<DtoResourcePermissionResponse> permissions = default(List<DtoResourcePermissionResponse>), bool? pinned = default(bool?), string plan = default(string), Dictionary<string, object> preferences = default(Dictionary<string, object>), DtoQueryResponse query = default(DtoQueryResponse), string source = default(string), string type = default(string), string updatedAt = default(string))
         {
             this.CreatedAt = createdAt;
             this.CreatedBy = createdBy;
@@ -81,7 +81,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets CreatedBy
         /// </summary>
         [DataMember(Name="created_by", EmitDefaultValue=false)]
-        public int? CreatedBy { get; set; }
+        public long? CreatedBy { get; set; }
 
         /// <summary>
         /// Gets or Sets CreatorName
@@ -99,7 +99,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Id
         /// </summary>
         [DataMember(Name="id", EmitDefaultValue=false)]
-        public int? Id { get; set; }
+        public long? Id { get; set; }
 
         /// <summary>
         /// Gets or Sets Link
@@ -123,7 +123,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets OrganizationId
         /// </summary>
         [DataMember(Name="organization_id", EmitDefaultValue=false)]
-        public int? OrganizationId { get; set; }
+        public long? OrganizationId { get; set; }
 
         /// <summary>
         /// Gets or Sets Permissions

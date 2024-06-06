@@ -35,7 +35,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <param name="active">Whether the wanted projects statuses are archived, optional, default false..</param>
         /// <param name="ids">Project IDs..</param>
-        public StatusStatusPost(bool? active = default(bool?), List<int?> ids = default(List<int?>))
+        public StatusStatusPost(bool? active = default(bool?), List<long?> ids = default(List<long?>))
         {
             this.Active = active;
             this.Ids = ids;
@@ -53,7 +53,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Project IDs.</value>
         [DataMember(Name="ids", EmitDefaultValue=false)]
-        public List<int?> Ids { get; set; }
+        public List<long?> Ids { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

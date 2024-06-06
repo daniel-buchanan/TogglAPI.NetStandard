@@ -45,7 +45,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="tagIds">tagIds.</param>
         /// <param name="targetSeconds">targetSeconds.</param>
         /// <param name="userId">userId.</param>
-        public HandlergoalsCreatePayload(bool? billable = default(bool?), string comparison = default(string), string endDate = default(string), int? icon = default(int?), string name = default(string), List<int?> plannedTaskIds = default(List<int?>), List<int?> projectIds = default(List<int?>), string recurrence = default(string), string startDate = default(string), List<int?> tagIds = default(List<int?>), int? targetSeconds = default(int?), int? userId = default(int?))
+        public HandlergoalsCreatePayload(bool? billable = default(bool?), string comparison = default(string), string endDate = default(string), long? icon = default(long?), string name = default(string), List<long?> plannedTaskIds = default(List<long?>), List<long?> projectIds = default(List<long?>), string recurrence = default(string), string startDate = default(string), List<long?> tagIds = default(List<long?>), long? targetSeconds = default(long?), long? userId = default(long?))
         {
             this.Billable = billable;
             this.Comparison = comparison;
@@ -83,7 +83,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Icon
         /// </summary>
         [DataMember(Name="icon", EmitDefaultValue=false)]
-        public int? Icon { get; set; }
+        public long? Icon { get; set; }
 
         /// <summary>
         /// Gets or Sets Name
@@ -95,13 +95,13 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets PlannedTaskIds
         /// </summary>
         [DataMember(Name="planned_task_ids", EmitDefaultValue=false)]
-        public List<int?> PlannedTaskIds { get; set; }
+        public List<long?> PlannedTaskIds { get; set; }
 
         /// <summary>
         /// Gets or Sets ProjectIds
         /// </summary>
         [DataMember(Name="project_ids", EmitDefaultValue=false)]
-        public List<int?> ProjectIds { get; set; }
+        public List<long?> ProjectIds { get; set; }
 
         /// <summary>
         /// Gets or Sets Recurrence
@@ -119,19 +119,19 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets TagIds
         /// </summary>
         [DataMember(Name="tag_ids", EmitDefaultValue=false)]
-        public List<int?> TagIds { get; set; }
+        public List<long?> TagIds { get; set; }
 
         /// <summary>
         /// Gets or Sets TargetSeconds
         /// </summary>
         [DataMember(Name="target_seconds", EmitDefaultValue=false)]
-        public int? TargetSeconds { get; set; }
+        public long? TargetSeconds { get; set; }
 
         /// <summary>
         /// Gets or Sets UserId
         /// </summary>
         [DataMember(Name="user_id", EmitDefaultValue=false)]
-        public int? UserId { get; set; }
+        public long? UserId { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

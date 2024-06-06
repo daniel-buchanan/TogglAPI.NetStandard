@@ -68,7 +68,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="suspendedAt">Timestamp of suspension.</param>
         /// <param name="teConstraints">Time entry constraints setting.</param>
         /// <param name="workingHoursInMinutes">Working hours in minutes.</param>
-        public WorkspaceWorkspace(bool? admin = default(bool?), string apiToken = default(string), string at = default(string), bool? businessWs = default(bool?), ModelsCsvUpload csvUpload = default(ModelsCsvUpload), string defaultCurrency = default(string), decimal? defaultHourlyRate = default(decimal?), bool? hideStartEndTimes = default(bool?), bool? icalEnabled = default(bool?), string icalUrl = default(string), int? id = default(int?), string lastModified = default(string), string logoUrl = default(string), int? maxDataRetentionDays = default(int?), string name = default(string), bool? onlyAdminsMayCreateProjects = default(bool?), bool? onlyAdminsMayCreateTags = default(bool?), bool? onlyAdminsSeeBillableRates = default(bool?), bool? onlyAdminsSeeTeamDashboard = default(bool?), int? organizationId = default(int?), string permissions = default(string), bool? premium = default(bool?), int? profile = default(int?), bool? projectsBillableByDefault = default(bool?), bool? projectsPrivateByDefault = default(bool?), string rateLastUpdated = default(string), bool? reportsCollapse = default(bool?), string role = default(string), int? rounding = default(int?), int? roundingMinutes = default(int?), DateTime? serverDeletedAt = default(DateTime?), ModelsSubscription subscription = default(ModelsSubscription), DateTime? suspendedAt = default(DateTime?), ModelsTimeEntryConstraints teConstraints = default(ModelsTimeEntryConstraints), int? workingHoursInMinutes = default(int?))
+        public WorkspaceWorkspace(bool? admin = default(bool?), string apiToken = default(string), string at = default(string), bool? businessWs = default(bool?), ModelsCsvUpload csvUpload = default(ModelsCsvUpload), string defaultCurrency = default(string), decimal? defaultHourlyRate = default(decimal?), bool? hideStartEndTimes = default(bool?), bool? icalEnabled = default(bool?), string icalUrl = default(string), long? id = default(long?), string lastModified = default(string), string logoUrl = default(string), long? maxDataRetentionDays = default(long?), string name = default(string), bool? onlyAdminsMayCreateProjects = default(bool?), bool? onlyAdminsMayCreateTags = default(bool?), bool? onlyAdminsSeeBillableRates = default(bool?), bool? onlyAdminsSeeTeamDashboard = default(bool?), long? organizationId = default(long?), string permissions = default(string), bool? premium = default(bool?), long? profile = default(long?), bool? projectsBillableByDefault = default(bool?), bool? projectsPrivateByDefault = default(bool?), string rateLastUpdated = default(string), bool? reportsCollapse = default(bool?), string role = default(string), long? rounding = default(long?), long? roundingMinutes = default(long?), DateTime? serverDeletedAt = default(DateTime?), ModelsSubscription subscription = default(ModelsSubscription), DateTime? suspendedAt = default(DateTime?), ModelsTimeEntryConstraints teConstraints = default(ModelsTimeEntryConstraints), long? workingHoursInMinutes = default(long?))
         {
             this.Admin = admin;
             this.ApiToken = apiToken;
@@ -181,7 +181,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Identifier of the workspace</value>
         [DataMember(Name="id", EmitDefaultValue=false)]
-        public int? Id { get; set; }
+        public long? Id { get; set; }
 
         /// <summary>
         /// Last modification of data in the workspace
@@ -202,7 +202,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>How far back free workspaces can access data.</value>
         [DataMember(Name="max_data_retention_days", EmitDefaultValue=false)]
-        public int? MaxDataRetentionDays { get; set; }
+        public long? MaxDataRetentionDays { get; set; }
 
         /// <summary>
         /// Name of the workspace
@@ -244,7 +244,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Identifier of the organization</value>
         [DataMember(Name="organization_id", EmitDefaultValue=false)]
-        public int? OrganizationId { get; set; }
+        public long? OrganizationId { get; set; }
 
         /// <summary>
         /// Permissions list
@@ -265,7 +265,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>deprecated</value>
         [DataMember(Name="profile", EmitDefaultValue=false)]
-        public int? Profile { get; set; }
+        public long? Profile { get; set; }
 
         /// <summary>
         /// New projects billable by default
@@ -307,14 +307,14 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Default rounding, premium feature, optional, only for existing WS. 0 - nearest, 1 - round up, -1 - round down</value>
         [DataMember(Name="rounding", EmitDefaultValue=false)]
-        public int? Rounding { get; set; }
+        public long? Rounding { get; set; }
 
         /// <summary>
         /// Default rounding in minutes, premium feature, optional, only for existing WS
         /// </summary>
         /// <value>Default rounding in minutes, premium feature, optional, only for existing WS</value>
         [DataMember(Name="rounding_minutes", EmitDefaultValue=false)]
-        public int? RoundingMinutes { get; set; }
+        public long? RoundingMinutes { get; set; }
 
         /// <summary>
         /// Timestamp of deletion
@@ -349,7 +349,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Working hours in minutes</value>
         [DataMember(Name="working_hours_in_minutes", EmitDefaultValue=false)]
-        public int? WorkingHoursInMinutes { get; set; }
+        public long? WorkingHoursInMinutes { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

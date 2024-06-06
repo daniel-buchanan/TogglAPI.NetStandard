@@ -38,7 +38,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="name">name.</param>
         /// <param name="projectId">projectId.</param>
         /// <param name="trackedSeconds">trackedSeconds.</param>
-        public DictionaryTaskDict(int? estimatedSeconds = default(int?), int? id = default(int?), string name = default(string), int? projectId = default(int?), int? trackedSeconds = default(int?))
+        public DictionaryTaskDict(long? estimatedSeconds = default(long?), long? id = default(long?), string name = default(string), long? projectId = default(long?), long? trackedSeconds = default(long?))
         {
             this.EstimatedSeconds = estimatedSeconds;
             this.Id = id;
@@ -51,13 +51,13 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets EstimatedSeconds
         /// </summary>
         [DataMember(Name="estimated_seconds", EmitDefaultValue=false)]
-        public int? EstimatedSeconds { get; set; }
+        public long? EstimatedSeconds { get; set; }
 
         /// <summary>
         /// Gets or Sets Id
         /// </summary>
         [DataMember(Name="id", EmitDefaultValue=false)]
-        public int? Id { get; set; }
+        public long? Id { get; set; }
 
         /// <summary>
         /// Gets or Sets Name
@@ -69,13 +69,13 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets ProjectId
         /// </summary>
         [DataMember(Name="project_id", EmitDefaultValue=false)]
-        public int? ProjectId { get; set; }
+        public long? ProjectId { get; set; }
 
         /// <summary>
         /// Gets or Sets TrackedSeconds
         /// </summary>
         [DataMember(Name="tracked_seconds", EmitDefaultValue=false)]
-        public int? TrackedSeconds { get; set; }
+        public long? TrackedSeconds { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

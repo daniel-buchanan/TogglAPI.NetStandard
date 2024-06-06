@@ -37,7 +37,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="endDate">endDate.</param>
         /// <param name="reminderDay">reminderDay.</param>
         /// <param name="reminderTime">reminderTime.</param>
-        public TimesheetsetupsUpdatePayload(int? approverId = default(int?), string endDate = default(string), string reminderDay = default(string), string reminderTime = default(string))
+        public TimesheetsetupsUpdatePayload(long? approverId = default(long?), string endDate = default(string), string reminderDay = default(string), string reminderTime = default(string))
         {
             this.ApproverId = approverId;
             this.EndDate = endDate;
@@ -49,7 +49,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets ApproverId
         /// </summary>
         [DataMember(Name="approver_id", EmitDefaultValue=false)]
-        public int? ApproverId { get; set; }
+        public long? ApproverId { get; set; }
 
         /// <summary>
         /// Gets or Sets EndDate

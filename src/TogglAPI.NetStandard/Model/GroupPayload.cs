@@ -36,7 +36,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="name">Group name.</param>
         /// <param name="users">Group users, optional.</param>
         /// <param name="workspaces">Group workspaces, optional.</param>
-        public GroupPayload(string name = default(string), List<int?> users = default(List<int?>), List<int?> workspaces = default(List<int?>))
+        public GroupPayload(string name = default(string), List<long?> users = default(List<long?>), List<long?> workspaces = default(List<long?>))
         {
             this.Name = name;
             this.Users = users;
@@ -55,14 +55,14 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Group users, optional</value>
         [DataMember(Name="users", EmitDefaultValue=false)]
-        public List<int?> Users { get; set; }
+        public List<long?> Users { get; set; }
 
         /// <summary>
         /// Group workspaces, optional
         /// </summary>
         /// <value>Group workspaces, optional</value>
         [DataMember(Name="workspaces", EmitDefaultValue=false)]
-        public List<int?> Workspaces { get; set; }
+        public List<long?> Workspaces { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

@@ -42,7 +42,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="successUrl">successUrl.</param>
         /// <param name="tax">tax.</param>
         /// <param name="zip">zip.</param>
-        public SubscriptionsCheckoutSessionPayload(string cancelUrl = default(string), string countryCode = default(string), int? countryId = default(int?), string priceTag = default(string), string referral = default(string), int? subdivisionId = default(int?), string successUrl = default(string), string tax = default(string), string zip = default(string))
+        public SubscriptionsCheckoutSessionPayload(string cancelUrl = default(string), string countryCode = default(string), long? countryId = default(long?), string priceTag = default(string), string referral = default(string), long? subdivisionId = default(long?), string successUrl = default(string), string tax = default(string), string zip = default(string))
         {
             this.CancelUrl = cancelUrl;
             this.CountryCode = countryCode;
@@ -71,7 +71,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets CountryId
         /// </summary>
         [DataMember(Name="country_id", EmitDefaultValue=false)]
-        public int? CountryId { get; set; }
+        public long? CountryId { get; set; }
 
         /// <summary>
         /// Gets or Sets PriceTag
@@ -89,7 +89,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets SubdivisionId
         /// </summary>
         [DataMember(Name="subdivision_id", EmitDefaultValue=false)]
-        public int? SubdivisionId { get; set; }
+        public long? SubdivisionId { get; set; }
 
         /// <summary>
         /// Gets or Sets SuccessUrl

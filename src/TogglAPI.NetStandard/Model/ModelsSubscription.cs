@@ -49,7 +49,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="subscriptionId">subscriptionId.</param>
         /// <param name="subscriptionPeriod">subscriptionPeriod.</param>
         /// <param name="workspaceId">workspaceId.</param>
-        public ModelsSubscription(bool? autoRenew = default(bool?), ModelsCardDetails cardDetails = default(ModelsCardDetails), int? companyId = default(int?), ModelsContactDetail contactDetail = default(ModelsContactDetail), DateTime? createdAt = default(DateTime?), string currency = default(string), int? customerId = default(int?), DateTime? deletedAt = default(DateTime?), int? lastPricingPlanId = default(int?), int? organizationId = default(int?), ModelsPaymentDetail paymentDetails = default(ModelsPaymentDetail), int? pricingPlanId = default(int?), DateTime? renewalAt = default(DateTime?), int? subscriptionId = default(int?), ModelsPeriod subscriptionPeriod = default(ModelsPeriod), int? workspaceId = default(int?))
+        public ModelsSubscription(bool? autoRenew = default(bool?), ModelsCardDetails cardDetails = default(ModelsCardDetails), long? companyId = default(long?), ModelsContactDetail contactDetail = default(ModelsContactDetail), DateTime? createdAt = default(DateTime?), string currency = default(string), long? customerId = default(long?), DateTime? deletedAt = default(DateTime?), long? lastPricingPlanId = default(long?), long? organizationId = default(long?), ModelsPaymentDetail paymentDetails = default(ModelsPaymentDetail), long? pricingPlanId = default(long?), DateTime? renewalAt = default(DateTime?), long? subscriptionId = default(long?), ModelsPeriod subscriptionPeriod = default(ModelsPeriod), long? workspaceId = default(long?))
         {
             this.AutoRenew = autoRenew;
             this.CardDetails = cardDetails;
@@ -85,7 +85,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets CompanyId
         /// </summary>
         [DataMember(Name="company_id", EmitDefaultValue=false)]
-        public int? CompanyId { get; set; }
+        public long? CompanyId { get; set; }
 
         /// <summary>
         /// Gets or Sets ContactDetail
@@ -109,7 +109,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets CustomerId
         /// </summary>
         [DataMember(Name="customer_id", EmitDefaultValue=false)]
-        public int? CustomerId { get; set; }
+        public long? CustomerId { get; set; }
 
         /// <summary>
         /// Gets or Sets DeletedAt
@@ -121,13 +121,13 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets LastPricingPlanId
         /// </summary>
         [DataMember(Name="last_pricing_plan_id", EmitDefaultValue=false)]
-        public int? LastPricingPlanId { get; set; }
+        public long? LastPricingPlanId { get; set; }
 
         /// <summary>
         /// Gets or Sets OrganizationId
         /// </summary>
         [DataMember(Name="organization_id", EmitDefaultValue=false)]
-        public int? OrganizationId { get; set; }
+        public long? OrganizationId { get; set; }
 
         /// <summary>
         /// Gets or Sets PaymentDetails
@@ -139,7 +139,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets PricingPlanId
         /// </summary>
         [DataMember(Name="pricing_plan_id", EmitDefaultValue=false)]
-        public int? PricingPlanId { get; set; }
+        public long? PricingPlanId { get; set; }
 
         /// <summary>
         /// Gets or Sets RenewalAt
@@ -151,7 +151,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets SubscriptionId
         /// </summary>
         [DataMember(Name="subscription_id", EmitDefaultValue=false)]
-        public int? SubscriptionId { get; set; }
+        public long? SubscriptionId { get; set; }
 
         /// <summary>
         /// Gets or Sets SubscriptionPeriod
@@ -163,7 +163,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets WorkspaceId
         /// </summary>
         [DataMember(Name="workspace_id", EmitDefaultValue=false)]
-        public int? WorkspaceId { get; set; }
+        public long? WorkspaceId { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

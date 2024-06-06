@@ -36,7 +36,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="enabled">enabled.</param>
         /// <param name="id">id.</param>
         /// <param name="name">name.</param>
-        public SubscriptionFeatureReturn(bool? enabled = default(bool?), int? id = default(int?), string name = default(string))
+        public SubscriptionFeatureReturn(bool? enabled = default(bool?), long? id = default(long?), string name = default(string))
         {
             this.Enabled = enabled;
             this.Id = id;
@@ -53,7 +53,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Id
         /// </summary>
         [DataMember(Name="id", EmitDefaultValue=false)]
-        public int? Id { get; set; }
+        public long? Id { get; set; }
 
         /// <summary>
         /// Gets or Sets Name

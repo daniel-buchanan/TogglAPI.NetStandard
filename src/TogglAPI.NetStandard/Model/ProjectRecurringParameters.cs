@@ -36,7 +36,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="customPeriod">Recurring custom period, the \&quot;period\&quot; field must be \&quot;custom\&quot;.</param>
         /// <param name="period">Recurring period, example \&quot;monthly\&quot;.</param>
         /// <param name="projectStartDate">Recurring start date.</param>
-        public ProjectRecurringParameters(int? customPeriod = default(int?), string period = default(string), string projectStartDate = default(string))
+        public ProjectRecurringParameters(long? customPeriod = default(long?), string period = default(string), string projectStartDate = default(string))
         {
             this.CustomPeriod = customPeriod;
             this.Period = period;
@@ -48,7 +48,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Recurring custom period, the \&quot;period\&quot; field must be \&quot;custom\&quot;</value>
         [DataMember(Name="custom_period", EmitDefaultValue=false)]
-        public int? CustomPeriod { get; set; }
+        public long? CustomPeriod { get; set; }
 
         /// <summary>
         /// Recurring period, example \&quot;monthly\&quot;

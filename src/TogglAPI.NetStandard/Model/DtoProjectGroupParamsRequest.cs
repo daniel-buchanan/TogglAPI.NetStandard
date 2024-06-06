@@ -36,7 +36,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="groupIds">Group IDs, optional. At least Projects IDs or Group IDs should be informed..</param>
         /// <param name="projectIds">Project IDs, optional. At least Projects IDs or Group IDs should be informed..</param>
         /// <param name="startId">startId.</param>
-        public DtoProjectGroupParamsRequest(List<int?> groupIds = default(List<int?>), List<int?> projectIds = default(List<int?>), int? startId = default(int?))
+        public DtoProjectGroupParamsRequest(List<long?> groupIds = default(List<long?>), List<long?> projectIds = default(List<long?>), long? startId = default(long?))
         {
             this.GroupIds = groupIds;
             this.ProjectIds = projectIds;
@@ -48,20 +48,20 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Group IDs, optional. At least Projects IDs or Group IDs should be informed.</value>
         [DataMember(Name="group_ids", EmitDefaultValue=false)]
-        public List<int?> GroupIds { get; set; }
+        public List<long?> GroupIds { get; set; }
 
         /// <summary>
         /// Project IDs, optional. At least Projects IDs or Group IDs should be informed.
         /// </summary>
         /// <value>Project IDs, optional. At least Projects IDs or Group IDs should be informed.</value>
         [DataMember(Name="project_ids", EmitDefaultValue=false)]
-        public List<int?> ProjectIds { get; set; }
+        public List<long?> ProjectIds { get; set; }
 
         /// <summary>
         /// Gets or Sets StartId
         /// </summary>
         [DataMember(Name="start_id", EmitDefaultValue=false)]
-        public int? StartId { get; set; }
+        public long? StartId { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

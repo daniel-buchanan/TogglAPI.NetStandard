@@ -59,7 +59,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="userID">userID.</param>
         /// <param name="userName">userName.</param>
         /// <param name="workspaceID">workspaceID.</param>
-        public ModelsGoal(bool? active = default(bool?), bool? billable = default(bool?), string comparison = default(string), int? creatorUserID = default(int?), string creatorUserName = default(string), string currentRecurrenceEndDate = default(string), string currentRecurrenceStartDate = default(string), int? currentRecurrenceTrackedSeconds = default(int?), string endDate = default(string), int? icon = default(int?), int? id = default(int?), string lastCompletedRecurrenceEndDate = default(string), string lastNotifiedAt = default(string), string name = default(string), UtilsInt64Slice projectIDs = default(UtilsInt64Slice), string recurrence = default(string), string startDate = default(string), string status = default(string), int? streak = default(int?), UtilsInt64Slice tagIDs = default(UtilsInt64Slice), int? targetSeconds = default(int?), UtilsInt64Slice taskIDs = default(UtilsInt64Slice), bool? teamGoal = default(bool?), int? userID = default(int?), string userName = default(string), int? workspaceID = default(int?))
+        public ModelsGoal(bool? active = default(bool?), bool? billable = default(bool?), string comparison = default(string), long? creatorUserID = default(long?), string creatorUserName = default(string), string currentRecurrenceEndDate = default(string), string currentRecurrenceStartDate = default(string), long? currentRecurrenceTrackedSeconds = default(long?), string endDate = default(string), long? icon = default(long?), long? id = default(long?), string lastCompletedRecurrenceEndDate = default(string), string lastNotifiedAt = default(string), string name = default(string), UtilsInt64Slice projectIDs = default(UtilsInt64Slice), string recurrence = default(string), string startDate = default(string), string status = default(string), long? streak = default(long?), UtilsInt64Slice tagIDs = default(UtilsInt64Slice), long? targetSeconds = default(long?), UtilsInt64Slice taskIDs = default(UtilsInt64Slice), bool? teamGoal = default(bool?), long? userID = default(long?), string userName = default(string), long? workspaceID = default(long?))
         {
             this.Active = active;
             this.Billable = billable;
@@ -111,7 +111,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets CreatorUserID
         /// </summary>
         [DataMember(Name="creatorUserID", EmitDefaultValue=false)]
-        public int? CreatorUserID { get; set; }
+        public long? CreatorUserID { get; set; }
 
         /// <summary>
         /// Gets or Sets CreatorUserName
@@ -135,7 +135,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets CurrentRecurrenceTrackedSeconds
         /// </summary>
         [DataMember(Name="currentRecurrenceTrackedSeconds", EmitDefaultValue=false)]
-        public int? CurrentRecurrenceTrackedSeconds { get; set; }
+        public long? CurrentRecurrenceTrackedSeconds { get; set; }
 
         /// <summary>
         /// Gets or Sets EndDate
@@ -147,13 +147,13 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Icon
         /// </summary>
         [DataMember(Name="icon", EmitDefaultValue=false)]
-        public int? Icon { get; set; }
+        public long? Icon { get; set; }
 
         /// <summary>
         /// Gets or Sets Id
         /// </summary>
         [DataMember(Name="id", EmitDefaultValue=false)]
-        public int? Id { get; set; }
+        public long? Id { get; set; }
 
         /// <summary>
         /// Gets or Sets LastCompletedRecurrenceEndDate
@@ -201,7 +201,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Streak
         /// </summary>
         [DataMember(Name="streak", EmitDefaultValue=false)]
-        public int? Streak { get; set; }
+        public long? Streak { get; set; }
 
         /// <summary>
         /// Gets or Sets TagIDs
@@ -213,7 +213,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets TargetSeconds
         /// </summary>
         [DataMember(Name="targetSeconds", EmitDefaultValue=false)]
-        public int? TargetSeconds { get; set; }
+        public long? TargetSeconds { get; set; }
 
         /// <summary>
         /// Gets or Sets TaskIDs
@@ -231,7 +231,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets UserID
         /// </summary>
         [DataMember(Name="userID", EmitDefaultValue=false)]
-        public int? UserID { get; set; }
+        public long? UserID { get; set; }
 
         /// <summary>
         /// Gets or Sets UserName
@@ -243,7 +243,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets WorkspaceID
         /// </summary>
         [DataMember(Name="workspaceID", EmitDefaultValue=false)]
-        public int? WorkspaceID { get; set; }
+        public long? WorkspaceID { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

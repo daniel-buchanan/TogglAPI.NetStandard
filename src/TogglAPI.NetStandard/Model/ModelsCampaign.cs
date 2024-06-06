@@ -38,7 +38,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="key">key.</param>
         /// <param name="name">name.</param>
         /// <param name="start">start.</param>
-        public ModelsCampaign(int? discount = default(int?), string end = default(string), string key = default(string), string name = default(string), string start = default(string))
+        public ModelsCampaign(long? discount = default(long?), string end = default(string), string key = default(string), string name = default(string), string start = default(string))
         {
             this.Discount = discount;
             this.End = end;
@@ -51,7 +51,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Discount
         /// </summary>
         [DataMember(Name="discount", EmitDefaultValue=false)]
-        public int? Discount { get; set; }
+        public long? Discount { get; set; }
 
         /// <summary>
         /// Gets or Sets End

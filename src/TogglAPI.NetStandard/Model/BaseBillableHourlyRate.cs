@@ -36,7 +36,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="billableSeconds">billableSeconds.</param>
         /// <param name="currency">currency.</param>
         /// <param name="hourlyRateInCents">hourlyRateInCents.</param>
-        public BaseBillableHourlyRate(int? billableSeconds = default(int?), string currency = default(string), int? hourlyRateInCents = default(int?))
+        public BaseBillableHourlyRate(long? billableSeconds = default(long?), string currency = default(string), long? hourlyRateInCents = default(long?))
         {
             this.BillableSeconds = billableSeconds;
             this.Currency = currency;
@@ -47,7 +47,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets BillableSeconds
         /// </summary>
         [DataMember(Name="billable_seconds", EmitDefaultValue=false)]
-        public int? BillableSeconds { get; set; }
+        public long? BillableSeconds { get; set; }
 
         /// <summary>
         /// Gets or Sets Currency
@@ -59,7 +59,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets HourlyRateInCents
         /// </summary>
         [DataMember(Name="hourly_rate_in_cents", EmitDefaultValue=false)]
-        public int? HourlyRateInCents { get; set; }
+        public long? HourlyRateInCents { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

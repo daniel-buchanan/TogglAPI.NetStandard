@@ -61,7 +61,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="userName">userName.</param>
         /// <param name="wid">Workspace ID, legacy field.</param>
         /// <param name="workspaceId">Workspace ID.</param>
-        public ModelsTimeEntry(string at = default(string), bool? billable = default(bool?), string clientName = default(string), string description = default(string), int? duration = default(int?), bool? duronly = default(bool?), int? id = default(int?), List<string> permissions = default(List<string>), int? pid = default(int?), bool? projectActive = default(bool?), string projectColor = default(string), int? projectId = default(int?), string projectName = default(string), string serverDeletedAt = default(string), List<ModelsTimeEntrySharedWith> sharedWith = default(List<ModelsTimeEntrySharedWith>), string start = default(string), string stop = default(string), List<int?> tagIds = default(List<int?>), List<string> tags = default(List<string>), int? taskId = default(int?), string taskName = default(string), int? tid = default(int?), int? uid = default(int?), string userAvatarUrl = default(string), int? userId = default(int?), string userName = default(string), int? wid = default(int?), int? workspaceId = default(int?))
+        public ModelsTimeEntry(string at = default(string), bool? billable = default(bool?), string clientName = default(string), string description = default(string), long? duration = default(long?), bool? duronly = default(bool?), long? id = default(long?), List<string> permissions = default(List<string>), long? pid = default(long?), bool? projectActive = default(bool?), string projectColor = default(string), long? projectId = default(long?), string projectName = default(string), string serverDeletedAt = default(string), List<ModelsTimeEntrySharedWith> sharedWith = default(List<ModelsTimeEntrySharedWith>), string start = default(string), string stop = default(string), List<long?> tagIds = default(List<long?>), List<string> tags = default(List<string>), long? taskId = default(long?), string taskName = default(string), long? tid = default(long?), long? uid = default(long?), string userAvatarUrl = default(string), long? userId = default(long?), string userName = default(string), long? wid = default(long?), long? workspaceId = default(long?))
         {
             this.At = at;
             this.Billable = billable;
@@ -126,7 +126,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Time entry duration. For running entries should be negative, preferable -1</value>
         [DataMember(Name="duration", EmitDefaultValue=false)]
-        public int? Duration { get; set; }
+        public long? Duration { get; set; }
 
         /// <summary>
         /// Used to create a TE with a duration but without a stop time, this field is deprecated for GET endpoints where the value will always be true.
@@ -140,7 +140,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Time Entry ID</value>
         [DataMember(Name="id", EmitDefaultValue=false)]
-        public int? Id { get; set; }
+        public long? Id { get; set; }
 
         /// <summary>
         /// Permission list
@@ -154,7 +154,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Project ID, legacy field</value>
         [DataMember(Name="pid", EmitDefaultValue=false)]
-        public int? Pid { get; set; }
+        public long? Pid { get; set; }
 
         /// <summary>
         /// Gets or Sets ProjectActive
@@ -173,7 +173,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Project ID. Can be null if project was not provided or project was later deleted</value>
         [DataMember(Name="project_id", EmitDefaultValue=false)]
-        public int? ProjectId { get; set; }
+        public long? ProjectId { get; set; }
 
         /// <summary>
         /// Gets or Sets ProjectName
@@ -214,7 +214,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Tag IDs, null if tags were not provided or were later deleted</value>
         [DataMember(Name="tag_ids", EmitDefaultValue=false)]
-        public List<int?> TagIds { get; set; }
+        public List<long?> TagIds { get; set; }
 
         /// <summary>
         /// Tag names, null if tags were not provided or were later deleted
@@ -228,7 +228,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Task ID. Can be null if task was not provided or project was later deleted</value>
         [DataMember(Name="task_id", EmitDefaultValue=false)]
-        public int? TaskId { get; set; }
+        public long? TaskId { get; set; }
 
         /// <summary>
         /// Gets or Sets TaskName
@@ -241,14 +241,14 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Task ID, legacy field</value>
         [DataMember(Name="tid", EmitDefaultValue=false)]
-        public int? Tid { get; set; }
+        public long? Tid { get; set; }
 
         /// <summary>
         /// Time Entry creator ID, legacy field
         /// </summary>
         /// <value>Time Entry creator ID, legacy field</value>
         [DataMember(Name="uid", EmitDefaultValue=false)]
-        public int? Uid { get; set; }
+        public long? Uid { get; set; }
 
         /// <summary>
         /// Gets or Sets UserAvatarUrl
@@ -261,7 +261,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Time Entry creator ID</value>
         [DataMember(Name="user_id", EmitDefaultValue=false)]
-        public int? UserId { get; set; }
+        public long? UserId { get; set; }
 
         /// <summary>
         /// Gets or Sets UserName
@@ -274,14 +274,14 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Workspace ID, legacy field</value>
         [DataMember(Name="wid", EmitDefaultValue=false)]
-        public int? Wid { get; set; }
+        public long? Wid { get; set; }
 
         /// <summary>
         /// Workspace ID
         /// </summary>
         /// <value>Workspace ID</value>
         [DataMember(Name="workspace_id", EmitDefaultValue=false)]
-        public int? WorkspaceId { get; set; }
+        public long? WorkspaceId { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

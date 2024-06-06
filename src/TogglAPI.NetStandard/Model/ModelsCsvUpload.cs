@@ -35,7 +35,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <param name="at">at.</param>
         /// <param name="logId">logId.</param>
-        public ModelsCsvUpload(string at = default(string), int? logId = default(int?))
+        public ModelsCsvUpload(string at = default(string), long? logId = default(long?))
         {
             this.At = at;
             this.LogId = logId;
@@ -51,7 +51,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets LogId
         /// </summary>
         [DataMember(Name="log_id", EmitDefaultValue=false)]
-        public int? LogId { get; set; }
+        public long? LogId { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

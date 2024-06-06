@@ -46,7 +46,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="owner">owner.</param>
         /// <param name="userId">userId.</param>
         /// <param name="workspaces">workspaces.</param>
-        public ModelsOrgUser(bool? admin = default(bool?), string avatarUrl = default(string), bool? canEditEmail = default(bool?), string email = default(string), List<ModelsGroupDict> groups = default(List<ModelsGroupDict>), int? id = default(int?), bool? inactive = default(bool?), string invitationCode = default(string), bool? joined = default(bool?), string name = default(string), bool? owner = default(bool?), int? userId = default(int?), List<ModelsOrgUserWorkspace> workspaces = default(List<ModelsOrgUserWorkspace>))
+        public ModelsOrgUser(bool? admin = default(bool?), string avatarUrl = default(string), bool? canEditEmail = default(bool?), string email = default(string), List<ModelsGroupDict> groups = default(List<ModelsGroupDict>), long? id = default(long?), bool? inactive = default(bool?), string invitationCode = default(string), bool? joined = default(bool?), string name = default(string), bool? owner = default(bool?), long? userId = default(long?), List<ModelsOrgUserWorkspace> workspaces = default(List<ModelsOrgUserWorkspace>))
         {
             this.Admin = admin;
             this.AvatarUrl = avatarUrl;
@@ -97,7 +97,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Id
         /// </summary>
         [DataMember(Name="id", EmitDefaultValue=false)]
-        public int? Id { get; set; }
+        public long? Id { get; set; }
 
         /// <summary>
         /// Gets or Sets Inactive
@@ -133,7 +133,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets UserId
         /// </summary>
         [DataMember(Name="user_id", EmitDefaultValue=false)]
-        public int? UserId { get; set; }
+        public long? UserId { get; set; }
 
         /// <summary>
         /// Gets or Sets Workspaces

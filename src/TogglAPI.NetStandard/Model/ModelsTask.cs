@@ -49,7 +49,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="trackedSeconds">The value tracked_seconds is in milliseconds, not in seconds..</param>
         /// <param name="userId">Task assignee, if available.</param>
         /// <param name="workspaceId">Workspace ID.</param>
-        public ModelsTask(bool? active = default(bool?), string at = default(string), string clientName = default(string), int? estimatedSeconds = default(int?), int? id = default(int?), string name = default(string), string permissions = default(string), string projectColor = default(string), int? projectId = default(int?), string projectName = default(string), bool? recurring = default(bool?), string serverDeletedAt = default(string), string togglAccountsId = default(string), int? trackedSeconds = default(int?), int? userId = default(int?), int? workspaceId = default(int?))
+        public ModelsTask(bool? active = default(bool?), string at = default(string), string clientName = default(string), long? estimatedSeconds = default(long?), long? id = default(long?), string name = default(string), string permissions = default(string), string projectColor = default(string), long? projectId = default(long?), string projectName = default(string), bool? recurring = default(bool?), string serverDeletedAt = default(string), string togglAccountsId = default(string), long? trackedSeconds = default(long?), long? userId = default(long?), long? workspaceId = default(long?))
         {
             this.Active = active;
             this.At = at;
@@ -94,14 +94,14 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Estimation time for this task in seconds</value>
         [DataMember(Name="estimated_seconds", EmitDefaultValue=false)]
-        public int? EstimatedSeconds { get; set; }
+        public long? EstimatedSeconds { get; set; }
 
         /// <summary>
         /// Task ID
         /// </summary>
         /// <value>Task ID</value>
         [DataMember(Name="id", EmitDefaultValue=false)]
-        public int? Id { get; set; }
+        public long? Id { get; set; }
 
         /// <summary>
         /// Task Name
@@ -128,7 +128,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Project ID</value>
         [DataMember(Name="project_id", EmitDefaultValue=false)]
-        public int? ProjectId { get; set; }
+        public long? ProjectId { get; set; }
 
         /// <summary>
         /// Gets or Sets ProjectName
@@ -162,21 +162,21 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>The value tracked_seconds is in milliseconds, not in seconds.</value>
         [DataMember(Name="tracked_seconds", EmitDefaultValue=false)]
-        public int? TrackedSeconds { get; set; }
+        public long? TrackedSeconds { get; set; }
 
         /// <summary>
         /// Task assignee, if available
         /// </summary>
         /// <value>Task assignee, if available</value>
         [DataMember(Name="user_id", EmitDefaultValue=false)]
-        public int? UserId { get; set; }
+        public long? UserId { get; set; }
 
         /// <summary>
         /// Workspace ID
         /// </summary>
         /// <value>Workspace ID</value>
         [DataMember(Name="workspace_id", EmitDefaultValue=false)]
-        public int? WorkspaceId { get; set; }
+        public long? WorkspaceId { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

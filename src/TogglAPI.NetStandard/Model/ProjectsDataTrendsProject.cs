@@ -40,7 +40,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="name">name.</param>
         /// <param name="projectId">projectId.</param>
         /// <param name="totalSeconds">totalSeconds.</param>
-        public ProjectsDataTrendsProject(int? billableSeconds = default(int?), string color = default(string), string currency = default(string), int? earnings = default(int?), string name = default(string), int? projectId = default(int?), int? totalSeconds = default(int?))
+        public ProjectsDataTrendsProject(long? billableSeconds = default(long?), string color = default(string), string currency = default(string), long? earnings = default(long?), string name = default(string), long? projectId = default(long?), long? totalSeconds = default(long?))
         {
             this.BillableSeconds = billableSeconds;
             this.Color = color;
@@ -55,7 +55,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets BillableSeconds
         /// </summary>
         [DataMember(Name="billable_seconds", EmitDefaultValue=false)]
-        public int? BillableSeconds { get; set; }
+        public long? BillableSeconds { get; set; }
 
         /// <summary>
         /// Gets or Sets Color
@@ -73,7 +73,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Earnings
         /// </summary>
         [DataMember(Name="earnings", EmitDefaultValue=false)]
-        public int? Earnings { get; set; }
+        public long? Earnings { get; set; }
 
         /// <summary>
         /// Gets or Sets Name
@@ -85,13 +85,13 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets ProjectId
         /// </summary>
         [DataMember(Name="project_id", EmitDefaultValue=false)]
-        public int? ProjectId { get; set; }
+        public long? ProjectId { get; set; }
 
         /// <summary>
         /// Gets or Sets TotalSeconds
         /// </summary>
         [DataMember(Name="total_seconds", EmitDefaultValue=false)]
-        public int? TotalSeconds { get; set; }
+        public long? TotalSeconds { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

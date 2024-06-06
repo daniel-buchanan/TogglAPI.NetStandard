@@ -38,7 +38,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="deletedAt">Time of deletion, omitted if empty.</param>
         /// <param name="description">Feature description, omitted if empty.</param>
         /// <param name="enabled">Whether the feature is enabled.</param>
-        public ModelsAlphaFeature(int? alphaFeatureId = default(int?), string code = default(string), string deletedAt = default(string), string description = default(string), bool? enabled = default(bool?))
+        public ModelsAlphaFeature(long? alphaFeatureId = default(long?), string code = default(string), string deletedAt = default(string), string description = default(string), bool? enabled = default(bool?))
         {
             this.AlphaFeatureId = alphaFeatureId;
             this.Code = code;
@@ -52,7 +52,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Feature ID</value>
         [DataMember(Name="alpha_feature_id", EmitDefaultValue=false)]
-        public int? AlphaFeatureId { get; set; }
+        public long? AlphaFeatureId { get; set; }
 
         /// <summary>
         /// Feature code

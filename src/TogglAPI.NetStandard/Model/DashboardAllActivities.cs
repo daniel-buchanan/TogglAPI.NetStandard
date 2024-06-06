@@ -39,7 +39,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="stop">stop.</param>
         /// <param name="tid">tid.</param>
         /// <param name="userId">userId.</param>
-        public DashboardAllActivities(string description = default(string), int? duration = default(int?), int? projectId = default(int?), DateTime? stop = default(DateTime?), int? tid = default(int?), int? userId = default(int?))
+        public DashboardAllActivities(string description = default(string), long? duration = default(long?), long? projectId = default(long?), DateTime? stop = default(DateTime?), long? tid = default(long?), long? userId = default(long?))
         {
             this.Description = description;
             this.Duration = duration;
@@ -59,13 +59,13 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Duration
         /// </summary>
         [DataMember(Name="duration", EmitDefaultValue=false)]
-        public int? Duration { get; set; }
+        public long? Duration { get; set; }
 
         /// <summary>
         /// Gets or Sets ProjectId
         /// </summary>
         [DataMember(Name="project_id", EmitDefaultValue=false)]
-        public int? ProjectId { get; set; }
+        public long? ProjectId { get; set; }
 
         /// <summary>
         /// Gets or Sets Stop
@@ -77,13 +77,13 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Tid
         /// </summary>
         [DataMember(Name="tid", EmitDefaultValue=false)]
-        public int? Tid { get; set; }
+        public long? Tid { get; set; }
 
         /// <summary>
         /// Gets or Sets UserId
         /// </summary>
         [DataMember(Name="user_id", EmitDefaultValue=false)]
-        public int? UserId { get; set; }
+        public long? UserId { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

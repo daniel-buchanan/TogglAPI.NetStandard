@@ -38,7 +38,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="expMonth">expMonth.</param>
         /// <param name="expYear">expYear.</param>
         /// <param name="last4">last4.</param>
-        public CustomerPaymentMethodCard(string brand = default(string), string country = default(string), int? expMonth = default(int?), int? expYear = default(int?), string last4 = default(string))
+        public CustomerPaymentMethodCard(string brand = default(string), string country = default(string), long? expMonth = default(long?), long? expYear = default(long?), string last4 = default(string))
         {
             this.Brand = brand;
             this.Country = country;
@@ -63,13 +63,13 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets ExpMonth
         /// </summary>
         [DataMember(Name="exp_month", EmitDefaultValue=false)]
-        public int? ExpMonth { get; set; }
+        public long? ExpMonth { get; set; }
 
         /// <summary>
         /// Gets or Sets ExpYear
         /// </summary>
         [DataMember(Name="exp_year", EmitDefaultValue=false)]
-        public int? ExpYear { get; set; }
+        public long? ExpYear { get; set; }
 
         /// <summary>
         /// Gets or Sets Last4

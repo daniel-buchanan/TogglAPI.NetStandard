@@ -47,7 +47,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="remindTracking">The following fields are deprecated but we need to keep them for backward compatibility with previous versions of mobile apps.</param>
         /// <param name="selected">selected.</param>
         /// <param name="updatedAt">updatedAt.</param>
-        public ModelsCalendar(string backgroundColor = default(string), int? calendarId = default(int?), int? calendarIntegrationId = default(int?), string createdAt = default(string), int? defaultPlannedTaskId = default(int?), int? defaultProjectId = default(int?), int? defaultWorkspaceId = default(int?), string deletedAt = default(string), string externalId = default(string), string foregroundColor = default(string), string name = default(string), bool? remindTracking = default(bool?), bool? selected = default(bool?), string updatedAt = default(string))
+        public ModelsCalendar(string backgroundColor = default(string), long? calendarId = default(long?), long? calendarIntegrationId = default(long?), string createdAt = default(string), long? defaultPlannedTaskId = default(long?), long? defaultProjectId = default(long?), long? defaultWorkspaceId = default(long?), string deletedAt = default(string), string externalId = default(string), string foregroundColor = default(string), string name = default(string), bool? remindTracking = default(bool?), bool? selected = default(bool?), string updatedAt = default(string))
         {
             this.BackgroundColor = backgroundColor;
             this.CalendarId = calendarId;
@@ -75,13 +75,13 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets CalendarId
         /// </summary>
         [DataMember(Name="calendar_id", EmitDefaultValue=false)]
-        public int? CalendarId { get; set; }
+        public long? CalendarId { get; set; }
 
         /// <summary>
         /// Gets or Sets CalendarIntegrationId
         /// </summary>
         [DataMember(Name="calendar_integration_id", EmitDefaultValue=false)]
-        public int? CalendarIntegrationId { get; set; }
+        public long? CalendarIntegrationId { get; set; }
 
         /// <summary>
         /// Gets or Sets CreatedAt
@@ -93,19 +93,19 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets DefaultPlannedTaskId
         /// </summary>
         [DataMember(Name="default_planned_task_id", EmitDefaultValue=false)]
-        public int? DefaultPlannedTaskId { get; set; }
+        public long? DefaultPlannedTaskId { get; set; }
 
         /// <summary>
         /// Gets or Sets DefaultProjectId
         /// </summary>
         [DataMember(Name="default_project_id", EmitDefaultValue=false)]
-        public int? DefaultProjectId { get; set; }
+        public long? DefaultProjectId { get; set; }
 
         /// <summary>
         /// Gets or Sets DefaultWorkspaceId
         /// </summary>
         [DataMember(Name="default_workspace_id", EmitDefaultValue=false)]
-        public int? DefaultWorkspaceId { get; set; }
+        public long? DefaultWorkspaceId { get; set; }
 
         /// <summary>
         /// Gets or Sets DeletedAt

@@ -38,7 +38,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="countrySubdivisionId">countrySubdivisionId.</param>
         /// <param name="isoCode">isoCode.</param>
         /// <param name="name">name.</param>
-        public ModelsSubdivision(int? companyId = default(int?), int? countryId = default(int?), int? countrySubdivisionId = default(int?), string isoCode = default(string), string name = default(string))
+        public ModelsSubdivision(long? companyId = default(long?), long? countryId = default(long?), long? countrySubdivisionId = default(long?), string isoCode = default(string), string name = default(string))
         {
             this.CompanyId = companyId;
             this.CountryId = countryId;
@@ -51,19 +51,19 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets CompanyId
         /// </summary>
         [DataMember(Name="company_id", EmitDefaultValue=false)]
-        public int? CompanyId { get; set; }
+        public long? CompanyId { get; set; }
 
         /// <summary>
         /// Gets or Sets CountryId
         /// </summary>
         [DataMember(Name="country_id", EmitDefaultValue=false)]
-        public int? CountryId { get; set; }
+        public long? CountryId { get; set; }
 
         /// <summary>
         /// Gets or Sets CountrySubdivisionId
         /// </summary>
         [DataMember(Name="country_subdivision_id", EmitDefaultValue=false)]
-        public int? CountrySubdivisionId { get; set; }
+        public long? CountrySubdivisionId { get; set; }
 
         /// <summary>
         /// Gets or Sets IsoCode

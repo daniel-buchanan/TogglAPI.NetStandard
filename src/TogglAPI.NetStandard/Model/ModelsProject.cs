@@ -68,7 +68,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="templateId">Template ID.</param>
         /// <param name="wid">Workspace ID legacy field.</param>
         /// <param name="workspaceId">Workspace ID.</param>
-        public ModelsProject(bool? active = default(bool?), int? actualHours = default(int?), int? actualSeconds = default(int?), string at = default(string), bool? autoEstimates = default(bool?), bool? billable = default(bool?), bool? canTrackTime = default(bool?), int? cid = default(int?), int? clientId = default(int?), string color = default(string), string createdAt = default(string), string currency = default(string), ModelsRecurringPeriod currentPeriod = default(ModelsRecurringPeriod), string endDate = default(string), int? estimatedHours = default(int?), int? estimatedSeconds = default(int?), decimal? fixedFee = default(decimal?), int? id = default(int?), bool? isPrivate = default(bool?), bool? isShared = default(bool?), string name = default(string), string permissions = default(string), decimal? rate = default(decimal?), string rateLastUpdated = default(string), bool? recurring = default(bool?), List<ModelsRecurringProjectParameters> recurringParameters = default(List<ModelsRecurringProjectParameters>), string serverDeletedAt = default(string), string sharedAt = default(string), string sharedHash = default(string), string startDate = default(string), string status = default(string), bool? template = default(bool?), int? templateId = default(int?), int? wid = default(int?), int? workspaceId = default(int?))
+        public ModelsProject(bool? active = default(bool?), long? actualHours = default(long?), long? actualSeconds = default(long?), string at = default(string), bool? autoEstimates = default(bool?), bool? billable = default(bool?), bool? canTrackTime = default(bool?), long? cid = default(long?), long? clientId = default(long?), string color = default(string), string createdAt = default(string), string currency = default(string), ModelsRecurringPeriod currentPeriod = default(ModelsRecurringPeriod), string endDate = default(string), long? estimatedHours = default(long?), long? estimatedSeconds = default(long?), decimal? fixedFee = default(decimal?), long? id = default(long?), bool? isPrivate = default(bool?), bool? isShared = default(bool?), string name = default(string), string permissions = default(string), decimal? rate = default(decimal?), string rateLastUpdated = default(string), bool? recurring = default(bool?), List<ModelsRecurringProjectParameters> recurringParameters = default(List<ModelsRecurringProjectParameters>), string serverDeletedAt = default(string), string sharedAt = default(string), string sharedHash = default(string), string startDate = default(string), string status = default(string), bool? template = default(bool?), long? templateId = default(long?), long? wid = default(long?), long? workspaceId = default(long?))
         {
             this.Active = active;
             this.ActualHours = actualHours;
@@ -119,14 +119,14 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Actual hours</value>
         [DataMember(Name="actual_hours", EmitDefaultValue=false)]
-        public int? ActualHours { get; set; }
+        public long? ActualHours { get; set; }
 
         /// <summary>
         /// Actual seconds
         /// </summary>
         /// <value>Actual seconds</value>
         [DataMember(Name="actual_seconds", EmitDefaultValue=false)]
-        public int? ActualSeconds { get; set; }
+        public long? ActualSeconds { get; set; }
 
         /// <summary>
         /// Last updated date
@@ -160,14 +160,14 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Client ID legacy field</value>
         [DataMember(Name="cid", EmitDefaultValue=false)]
-        public int? Cid { get; set; }
+        public long? Cid { get; set; }
 
         /// <summary>
         /// Client ID
         /// </summary>
         /// <value>Client ID</value>
         [DataMember(Name="client_id", EmitDefaultValue=false)]
-        public int? ClientId { get; set; }
+        public long? ClientId { get; set; }
 
         /// <summary>
         /// Color
@@ -209,14 +209,14 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Estimated hours</value>
         [DataMember(Name="estimated_hours", EmitDefaultValue=false)]
-        public int? EstimatedHours { get; set; }
+        public long? EstimatedHours { get; set; }
 
         /// <summary>
         /// Estimated seconds
         /// </summary>
         /// <value>Estimated seconds</value>
         [DataMember(Name="estimated_seconds", EmitDefaultValue=false)]
-        public int? EstimatedSeconds { get; set; }
+        public long? EstimatedSeconds { get; set; }
 
         /// <summary>
         /// Fixed fee, premium feature
@@ -230,7 +230,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Project ID</value>
         [DataMember(Name="id", EmitDefaultValue=false)]
-        public int? Id { get; set; }
+        public long? Id { get; set; }
 
         /// <summary>
         /// Whether the project is private
@@ -332,21 +332,21 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Template ID</value>
         [DataMember(Name="template_id", EmitDefaultValue=false)]
-        public int? TemplateId { get; set; }
+        public long? TemplateId { get; set; }
 
         /// <summary>
         /// Workspace ID legacy field
         /// </summary>
         /// <value>Workspace ID legacy field</value>
         [DataMember(Name="wid", EmitDefaultValue=false)]
-        public int? Wid { get; set; }
+        public long? Wid { get; set; }
 
         /// <summary>
         /// Workspace ID
         /// </summary>
         /// <value>Workspace ID</value>
         [DataMember(Name="workspace_id", EmitDefaultValue=false)]
-        public int? WorkspaceId { get; set; }
+        public long? WorkspaceId { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

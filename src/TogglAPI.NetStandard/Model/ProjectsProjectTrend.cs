@@ -40,7 +40,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="rounding">Rounding, optional, duration rounding settings, premium feature..</param>
         /// <param name="roundingMinutes">RoundingMinutes, optional, duration rounding minutes settings, premium feature..</param>
         /// <param name="startDate">Start date, example time.DateOnly. Should be less than End date..</param>
-        public ProjectsProjectTrend(bool? billable = default(bool?), string endDate = default(string), string previousPeriodStart = default(string), List<int?> projectIds = default(List<int?>), int? rounding = default(int?), int? roundingMinutes = default(int?), string startDate = default(string))
+        public ProjectsProjectTrend(bool? billable = default(bool?), string endDate = default(string), string previousPeriodStart = default(string), List<long?> projectIds = default(List<long?>), long? rounding = default(long?), long? roundingMinutes = default(long?), string startDate = default(string))
         {
             this.Billable = billable;
             this.EndDate = endDate;
@@ -77,21 +77,21 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Project IDs, optional.</value>
         [DataMember(Name="project_ids", EmitDefaultValue=false)]
-        public List<int?> ProjectIds { get; set; }
+        public List<long?> ProjectIds { get; set; }
 
         /// <summary>
         /// Rounding, optional, duration rounding settings, premium feature.
         /// </summary>
         /// <value>Rounding, optional, duration rounding settings, premium feature.</value>
         [DataMember(Name="rounding", EmitDefaultValue=false)]
-        public int? Rounding { get; set; }
+        public long? Rounding { get; set; }
 
         /// <summary>
         /// RoundingMinutes, optional, duration rounding minutes settings, premium feature.
         /// </summary>
         /// <value>RoundingMinutes, optional, duration rounding minutes settings, premium feature.</value>
         [DataMember(Name="rounding_minutes", EmitDefaultValue=false)]
-        public int? RoundingMinutes { get; set; }
+        public long? RoundingMinutes { get; set; }
 
         /// <summary>
         /// Start date, example time.DateOnly. Should be less than End date.

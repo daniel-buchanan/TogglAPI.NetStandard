@@ -56,7 +56,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="timesheetSetupId">timesheetSetupId.</param>
         /// <param name="workingHoursInMinutes">workingHoursInMinutes.</param>
         /// <param name="workspaceId">workspaceId.</param>
-        public TimesheetsAPITimesheet(string approvedOrRejectedAt = default(string), int? approvedOrRejectedId = default(int?), string approvedOrRejectedName = default(string), int? approverId = default(int?), string approverName = default(string), string endDate = default(string), int? memberId = default(int?), string memberName = default(string), bool? periodEditable = default(bool?), string periodEnd = default(string), bool? periodLocked = default(bool?), string periodStart = default(string), string periodicity = default(string), string rejectionComment = default(string), string reminderDay = default(string), string reminderSentAt = default(string), string reminderTime = default(string), string startDate = default(string), string status = default(string), string submittedAt = default(string), int? timesheetSetupId = default(int?), int? workingHoursInMinutes = default(int?), int? workspaceId = default(int?))
+        public TimesheetsAPITimesheet(string approvedOrRejectedAt = default(string), long? approvedOrRejectedId = default(long?), string approvedOrRejectedName = default(string), long? approverId = default(long?), string approverName = default(string), string endDate = default(string), long? memberId = default(long?), string memberName = default(string), bool? periodEditable = default(bool?), string periodEnd = default(string), bool? periodLocked = default(bool?), string periodStart = default(string), string periodicity = default(string), string rejectionComment = default(string), string reminderDay = default(string), string reminderSentAt = default(string), string reminderTime = default(string), string startDate = default(string), string status = default(string), string submittedAt = default(string), long? timesheetSetupId = default(long?), long? workingHoursInMinutes = default(long?), long? workspaceId = default(long?))
         {
             this.ApprovedOrRejectedAt = approvedOrRejectedAt;
             this.ApprovedOrRejectedId = approvedOrRejectedId;
@@ -93,7 +93,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets ApprovedOrRejectedId
         /// </summary>
         [DataMember(Name="approved_or_rejected_id", EmitDefaultValue=false)]
-        public int? ApprovedOrRejectedId { get; set; }
+        public long? ApprovedOrRejectedId { get; set; }
 
         /// <summary>
         /// Gets or Sets ApprovedOrRejectedName
@@ -105,7 +105,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets ApproverId
         /// </summary>
         [DataMember(Name="approver_id", EmitDefaultValue=false)]
-        public int? ApproverId { get; set; }
+        public long? ApproverId { get; set; }
 
         /// <summary>
         /// Gets or Sets ApproverName
@@ -123,7 +123,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets MemberId
         /// </summary>
         [DataMember(Name="member_id", EmitDefaultValue=false)]
-        public int? MemberId { get; set; }
+        public long? MemberId { get; set; }
 
         /// <summary>
         /// Gets or Sets MemberName
@@ -207,19 +207,19 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets TimesheetSetupId
         /// </summary>
         [DataMember(Name="timesheet_setup_id", EmitDefaultValue=false)]
-        public int? TimesheetSetupId { get; set; }
+        public long? TimesheetSetupId { get; set; }
 
         /// <summary>
         /// Gets or Sets WorkingHoursInMinutes
         /// </summary>
         [DataMember(Name="working_hours_in_minutes", EmitDefaultValue=false)]
-        public int? WorkingHoursInMinutes { get; set; }
+        public long? WorkingHoursInMinutes { get; set; }
 
         /// <summary>
         /// Gets or Sets WorkspaceId
         /// </summary>
         [DataMember(Name="workspace_id", EmitDefaultValue=false)]
-        public int? WorkspaceId { get; set; }
+        public long? WorkspaceId { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

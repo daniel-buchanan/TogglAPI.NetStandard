@@ -37,7 +37,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="entity">entity.</param>
         /// <param name="name">name.</param>
         /// <param name="permissionId">permissionId.</param>
-        public RolesPermission(string description = default(string), string entity = default(string), string name = default(string), int? permissionId = default(int?))
+        public RolesPermission(string description = default(string), string entity = default(string), string name = default(string), long? permissionId = default(long?))
         {
             this.Description = description;
             this.Entity = entity;
@@ -67,7 +67,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets PermissionId
         /// </summary>
         [DataMember(Name="permission_id", EmitDefaultValue=false)]
-        public int? PermissionId { get; set; }
+        public long? PermissionId { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

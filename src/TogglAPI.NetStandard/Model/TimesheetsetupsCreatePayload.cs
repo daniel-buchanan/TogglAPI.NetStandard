@@ -39,7 +39,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="reminderDay">reminderDay.</param>
         /// <param name="reminderTime">reminderTime.</param>
         /// <param name="startDate">startDate.</param>
-        public TimesheetsetupsCreatePayload(int? approverId = default(int?), List<int?> memberIds = default(List<int?>), string periodicity = default(string), string reminderDay = default(string), string reminderTime = default(string), string startDate = default(string))
+        public TimesheetsetupsCreatePayload(long? approverId = default(long?), List<long?> memberIds = default(List<long?>), string periodicity = default(string), string reminderDay = default(string), string reminderTime = default(string), string startDate = default(string))
         {
             this.ApproverId = approverId;
             this.MemberIds = memberIds;
@@ -53,13 +53,13 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets ApproverId
         /// </summary>
         [DataMember(Name="approver_id", EmitDefaultValue=false)]
-        public int? ApproverId { get; set; }
+        public long? ApproverId { get; set; }
 
         /// <summary>
         /// Gets or Sets MemberIds
         /// </summary>
         [DataMember(Name="member_ids", EmitDefaultValue=false)]
-        public List<int?> MemberIds { get; set; }
+        public List<long?> MemberIds { get; set; }
 
         /// <summary>
         /// Gets or Sets Periodicity

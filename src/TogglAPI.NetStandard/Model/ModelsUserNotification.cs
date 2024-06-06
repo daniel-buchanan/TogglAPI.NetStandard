@@ -44,7 +44,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="title">title.</param>
         /// <param name="userId">userId.</param>
         /// <param name="workspaceId">workspaceId.</param>
-        public ModelsUserNotification(ModelsActions actions = default(ModelsActions), int? _class = default(int?), I18nMessage content = default(I18nMessage), string createdAt = default(string), int? id = default(int?), string notificationType = default(string), int? organizationId = default(int?), string readAt = default(string), I18nMessage title = default(I18nMessage), int? userId = default(int?), int? workspaceId = default(int?))
+        public ModelsUserNotification(ModelsActions actions = default(ModelsActions), long? _class = default(long?), I18nMessage content = default(I18nMessage), string createdAt = default(string), long? id = default(long?), string notificationType = default(string), long? organizationId = default(long?), string readAt = default(string), I18nMessage title = default(I18nMessage), long? userId = default(long?), long? workspaceId = default(long?))
         {
             this.Actions = actions;
             this.Class = _class;
@@ -69,7 +69,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Class
         /// </summary>
         [DataMember(Name="class", EmitDefaultValue=false)]
-        public int? Class { get; set; }
+        public long? Class { get; set; }
 
         /// <summary>
         /// Gets or Sets Content
@@ -87,7 +87,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets Id
         /// </summary>
         [DataMember(Name="id", EmitDefaultValue=false)]
-        public int? Id { get; set; }
+        public long? Id { get; set; }
 
         /// <summary>
         /// Gets or Sets NotificationType
@@ -99,7 +99,7 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets OrganizationId
         /// </summary>
         [DataMember(Name="organization_id", EmitDefaultValue=false)]
-        public int? OrganizationId { get; set; }
+        public long? OrganizationId { get; set; }
 
         /// <summary>
         /// Gets or Sets ReadAt
@@ -117,13 +117,13 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets UserId
         /// </summary>
         [DataMember(Name="user_id", EmitDefaultValue=false)]
-        public int? UserId { get; set; }
+        public long? UserId { get; set; }
 
         /// <summary>
         /// Gets or Sets WorkspaceId
         /// </summary>
         [DataMember(Name="workspace_id", EmitDefaultValue=false)]
-        public int? WorkspaceId { get; set; }
+        public long? WorkspaceId { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

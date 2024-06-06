@@ -113,7 +113,7 @@ namespace TogglAPI.NetStandard.Model
         /// <param name="taskIds">Task IDs, optional, filtering attribute. To filter records with no tasks, use [null]..</param>
         /// <param name="timeEntryIds">TimeEntryIDs filters by time entries. This was added to support retro-compatibility with reports v2..</param>
         /// <param name="userIds">User IDs, optional, filtering attribute..</param>
-        public DetailedExportPDFPost(bool? billable = default(bool?), string centsSeparator = default(string), List<int?> clientIds = default(List<int?>), DateFormatEnum? dateFormat = default(DateFormatEnum?), string description = default(string), string displayMode = default(string), string durationFormat = default(string), string endDate = default(string), bool? enrichResponse = default(bool?), int? firstId = default(int?), int? firstRowNumber = default(int?), int? firstTimestamp = default(int?), List<int?> groupIds = default(List<int?>), bool? grouped = default(bool?), bool? hideAmounts = default(bool?), string hourFormat = default(string), int? maxDurationSeconds = default(int?), int? minDurationSeconds = default(int?), string orderBy = default(string), string orderDir = default(string), int? pageSize = default(int?), List<string> postedFields = default(List<string>), List<int?> projectIds = default(List<int?>), int? rounding = default(int?), int? roundingMinutes = default(int?), string startTime = default(string), string startDate = default(string), List<int?> tagIds = default(List<int?>), List<int?> taskIds = default(List<int?>), List<int?> timeEntryIds = default(List<int?>), List<int?> userIds = default(List<int?>))
+        public DetailedExportPDFPost(bool? billable = default(bool?), string centsSeparator = default(string), List<long?> clientIds = default(List<long?>), DateFormatEnum? dateFormat = default(DateFormatEnum?), string description = default(string), string displayMode = default(string), string durationFormat = default(string), string endDate = default(string), bool? enrichResponse = default(bool?), long? firstId = default(long?), long? firstRowNumber = default(long?), long? firstTimestamp = default(long?), List<long?> groupIds = default(List<long?>), bool? grouped = default(bool?), bool? hideAmounts = default(bool?), string hourFormat = default(string), long? maxDurationSeconds = default(long?), long? minDurationSeconds = default(long?), string orderBy = default(string), string orderDir = default(string), long? pageSize = default(long?), List<string> postedFields = default(List<string>), List<long?> projectIds = default(List<long?>), long? rounding = default(long?), long? roundingMinutes = default(long?), string startTime = default(string), string startDate = default(string), List<long?> tagIds = default(List<long?>), List<long?> taskIds = default(List<long?>), List<long?> timeEntryIds = default(List<long?>), List<long?> userIds = default(List<long?>))
         {
             this.Billable = billable;
             this.CentsSeparator = centsSeparator;
@@ -166,7 +166,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Client IDs, optional, filtering attribute. To filter records with no clients, use [null].</value>
         [DataMember(Name="client_ids", EmitDefaultValue=false)]
-        public List<int?> ClientIds { get; set; }
+        public List<long?> ClientIds { get; set; }
 
 
         /// <summary>
@@ -207,26 +207,26 @@ namespace TogglAPI.NetStandard.Model
         /// Gets or Sets FirstId
         /// </summary>
         [DataMember(Name="first_id", EmitDefaultValue=false)]
-        public int? FirstId { get; set; }
+        public long? FirstId { get; set; }
 
         /// <summary>
         /// Gets or Sets FirstRowNumber
         /// </summary>
         [DataMember(Name="first_row_number", EmitDefaultValue=false)]
-        public int? FirstRowNumber { get; set; }
+        public long? FirstRowNumber { get; set; }
 
         /// <summary>
         /// Gets or Sets FirstTimestamp
         /// </summary>
         [DataMember(Name="first_timestamp", EmitDefaultValue=false)]
-        public int? FirstTimestamp { get; set; }
+        public long? FirstTimestamp { get; set; }
 
         /// <summary>
         /// Group IDs, optional, filtering attribute.
         /// </summary>
         /// <value>Group IDs, optional, filtering attribute.</value>
         [DataMember(Name="group_ids", EmitDefaultValue=false)]
-        public List<int?> GroupIds { get; set; }
+        public List<long?> GroupIds { get; set; }
 
         /// <summary>
         /// Whether time entries should be grouped, optional, default false.
@@ -253,14 +253,14 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Max duration seconds, optional, filtering attribute. Time Audit only, should be greater than MinDurationSeconds.</value>
         [DataMember(Name="max_duration_seconds", EmitDefaultValue=false)]
-        public int? MaxDurationSeconds { get; set; }
+        public long? MaxDurationSeconds { get; set; }
 
         /// <summary>
         /// Min duration seconds, optional, filtering attribute. Time Audit only, should be less than MaxDurationSeconds.
         /// </summary>
         /// <value>Min duration seconds, optional, filtering attribute. Time Audit only, should be less than MaxDurationSeconds.</value>
         [DataMember(Name="min_duration_seconds", EmitDefaultValue=false)]
-        public int? MinDurationSeconds { get; set; }
+        public long? MinDurationSeconds { get; set; }
 
         /// <summary>
         /// Order by field, optional, default \&quot;date\&quot;. Can be \&quot;date\&quot;, \&quot;user\&quot;, \&quot;duration\&quot;, \&quot;description\&quot; or \&quot;last_update\&quot;.
@@ -281,7 +281,7 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>PageSize defines the number of items per page, optional, default 50.</value>
         [DataMember(Name="page_size", EmitDefaultValue=false)]
-        public int? PageSize { get; set; }
+        public long? PageSize { get; set; }
 
         /// <summary>
         /// Gets or Sets PostedFields
@@ -294,21 +294,21 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Project IDs, optional, filtering attribute. To filter records with no projects, use [null].</value>
         [DataMember(Name="project_ids", EmitDefaultValue=false)]
-        public List<int?> ProjectIds { get; set; }
+        public List<long?> ProjectIds { get; set; }
 
         /// <summary>
         /// Whether time should be rounded, optional, default from workspace settings.
         /// </summary>
         /// <value>Whether time should be rounded, optional, default from workspace settings.</value>
         [DataMember(Name="rounding", EmitDefaultValue=false)]
-        public int? Rounding { get; set; }
+        public long? Rounding { get; set; }
 
         /// <summary>
         /// Rounding minutes value, optional, default from workspace settings. Should be 0, 1, 5, 6, 10, 12, 15, 30, 60 or 240.
         /// </summary>
         /// <value>Rounding minutes value, optional, default from workspace settings. Should be 0, 1, 5, 6, 10, 12, 15, 30, 60 or 240.</value>
         [DataMember(Name="rounding_minutes", EmitDefaultValue=false)]
-        public int? RoundingMinutes { get; set; }
+        public long? RoundingMinutes { get; set; }
 
         /// <summary>
         /// Gets or Sets StartTime
@@ -328,28 +328,28 @@ namespace TogglAPI.NetStandard.Model
         /// </summary>
         /// <value>Tag IDs, optional, filtering attribute. To filter records with no tags, use [null].</value>
         [DataMember(Name="tag_ids", EmitDefaultValue=false)]
-        public List<int?> TagIds { get; set; }
+        public List<long?> TagIds { get; set; }
 
         /// <summary>
         /// Task IDs, optional, filtering attribute. To filter records with no tasks, use [null].
         /// </summary>
         /// <value>Task IDs, optional, filtering attribute. To filter records with no tasks, use [null].</value>
         [DataMember(Name="task_ids", EmitDefaultValue=false)]
-        public List<int?> TaskIds { get; set; }
+        public List<long?> TaskIds { get; set; }
 
         /// <summary>
         /// TimeEntryIDs filters by time entries. This was added to support retro-compatibility with reports v2.
         /// </summary>
         /// <value>TimeEntryIDs filters by time entries. This was added to support retro-compatibility with reports v2.</value>
         [DataMember(Name="time_entry_ids", EmitDefaultValue=false)]
-        public List<int?> TimeEntryIds { get; set; }
+        public List<long?> TimeEntryIds { get; set; }
 
         /// <summary>
         /// User IDs, optional, filtering attribute.
         /// </summary>
         /// <value>User IDs, optional, filtering attribute.</value>
         [DataMember(Name="user_ids", EmitDefaultValue=false)]
-        public List<int?> UserIds { get; set; }
+        public List<long?> UserIds { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
